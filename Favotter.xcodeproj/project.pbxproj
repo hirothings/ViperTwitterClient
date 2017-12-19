@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		547592681FE934FF00C9E11E /* FavotterStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 547592661FE934FF00C9E11E /* FavotterStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5475926B1FE934FF00C9E11E /* FavotterStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547592641FE934FF00C9E11E /* FavotterStyle.framework */; };
+		5475926C1FE934FF00C9E11E /* FavotterStyle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 547592641FE934FF00C9E11E /* FavotterStyle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5475927A1FE9390600C9E11E /* FavotterModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 547592781FE9390600C9E11E /* FavotterModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5475927D1FE9390600C9E11E /* FavotterModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547592761FE9390500C9E11E /* FavotterModel.framework */; };
+		5475927E1FE9390600C9E11E /* FavotterModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 547592761FE9390500C9E11E /* FavotterModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5475928B1FE9391700C9E11E /* FavotterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 547592891FE9391700C9E11E /* FavotterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5475928E1FE9391700C9E11E /* FavotterView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547592871FE9391700C9E11E /* FavotterView.framework */; };
+		5475928F1FE9391700C9E11E /* FavotterView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 547592871FE9391700C9E11E /* FavotterView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5475929C1FE9393600C9E11E /* FavotterUtill.h in Headers */ = {isa = PBXBuildFile; fileRef = 5475929A1FE9393600C9E11E /* FavotterUtill.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5475929F1FE9393600C9E11E /* FavotterUtill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547592981FE9393600C9E11E /* FavotterUtill.framework */; };
+		547592A01FE9393600C9E11E /* FavotterUtill.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 547592981FE9393600C9E11E /* FavotterUtill.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		547592AD1FE9395200C9E11E /* FavotterAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 547592AB1FE9395200C9E11E /* FavotterAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		547592B01FE9395200C9E11E /* FavotterAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547592A91FE9395200C9E11E /* FavotterAPIClient.framework */; };
+		547592B11FE9395200C9E11E /* FavotterAPIClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 547592A91FE9395200C9E11E /* FavotterAPIClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		54871B5A1FE931C800235B29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54871B591FE931C800235B29 /* AppDelegate.swift */; };
 		54871B5C1FE931C800235B29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54871B5B1FE931C800235B29 /* ViewController.swift */; };
 		54871B5F1FE931C800235B29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54871B5D1FE931C800235B29 /* Main.storyboard */; };
@@ -17,6 +32,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		547592691FE934FF00C9E11E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54871B4E1FE931C800235B29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 547592631FE934FF00C9E11E;
+			remoteInfo = FavotterStyle;
+		};
+		5475927B1FE9390600C9E11E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54871B4E1FE931C800235B29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 547592751FE9390500C9E11E;
+			remoteInfo = FavotterModel;
+		};
+		5475928C1FE9391700C9E11E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54871B4E1FE931C800235B29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 547592861FE9391700C9E11E;
+			remoteInfo = FavotterView;
+		};
+		5475929D1FE9393600C9E11E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54871B4E1FE931C800235B29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 547592971FE9393600C9E11E;
+			remoteInfo = FavotterUtill;
+		};
+		547592AE1FE9395200C9E11E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54871B4E1FE931C800235B29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 547592A81FE9395200C9E11E;
+			remoteInfo = FavotterAPIClient;
+		};
 		54871B6B1FE931C800235B29 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 54871B4E1FE931C800235B29 /* Project object */;
@@ -33,7 +83,40 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		547592701FE934FF00C9E11E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				547592A01FE9393600C9E11E /* FavotterUtill.framework in Embed Frameworks */,
+				5475926C1FE934FF00C9E11E /* FavotterStyle.framework in Embed Frameworks */,
+				547592B11FE9395200C9E11E /* FavotterAPIClient.framework in Embed Frameworks */,
+				5475928F1FE9391700C9E11E /* FavotterView.framework in Embed Frameworks */,
+				5475927E1FE9390600C9E11E /* FavotterModel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		547592641FE934FF00C9E11E /* FavotterStyle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FavotterStyle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		547592661FE934FF00C9E11E /* FavotterStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavotterStyle.h; sourceTree = "<group>"; };
+		547592671FE934FF00C9E11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		547592761FE9390500C9E11E /* FavotterModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FavotterModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		547592781FE9390600C9E11E /* FavotterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavotterModel.h; sourceTree = "<group>"; };
+		547592791FE9390600C9E11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		547592871FE9391700C9E11E /* FavotterView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FavotterView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		547592891FE9391700C9E11E /* FavotterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavotterView.h; sourceTree = "<group>"; };
+		5475928A1FE9391700C9E11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		547592981FE9393600C9E11E /* FavotterUtill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FavotterUtill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5475929A1FE9393600C9E11E /* FavotterUtill.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavotterUtill.h; sourceTree = "<group>"; };
+		5475929B1FE9393600C9E11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		547592A91FE9395200C9E11E /* FavotterAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FavotterAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		547592AB1FE9395200C9E11E /* FavotterAPIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavotterAPIClient.h; sourceTree = "<group>"; };
+		547592AC1FE9395200C9E11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54871B561FE931C800235B29 /* Favotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Favotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54871B591FE931C800235B29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54871B5B1FE931C800235B29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,10 +133,50 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		547592601FE934FF00C9E11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547592721FE9390500C9E11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547592831FE9391700C9E11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547592941FE9393600C9E11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547592A51FE9395200C9E11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54871B531FE931C800235B29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5475929F1FE9393600C9E11E /* FavotterUtill.framework in Frameworks */,
+				5475926B1FE934FF00C9E11E /* FavotterStyle.framework in Frameworks */,
+				547592B01FE9395200C9E11E /* FavotterAPIClient.framework in Frameworks */,
+				5475928E1FE9391700C9E11E /* FavotterView.framework in Frameworks */,
+				5475927D1FE9390600C9E11E /* FavotterModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +197,62 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		547592651FE934FF00C9E11E /* FavotterStyle */ = {
+			isa = PBXGroup;
+			children = (
+				547592661FE934FF00C9E11E /* FavotterStyle.h */,
+				547592671FE934FF00C9E11E /* Info.plist */,
+			);
+			path = FavotterStyle;
+			sourceTree = "<group>";
+		};
+		547592771FE9390600C9E11E /* FavotterModel */ = {
+			isa = PBXGroup;
+			children = (
+				547592781FE9390600C9E11E /* FavotterModel.h */,
+				547592791FE9390600C9E11E /* Info.plist */,
+			);
+			path = FavotterModel;
+			sourceTree = "<group>";
+		};
+		547592881FE9391700C9E11E /* FavotterView */ = {
+			isa = PBXGroup;
+			children = (
+				547592891FE9391700C9E11E /* FavotterView.h */,
+				5475928A1FE9391700C9E11E /* Info.plist */,
+			);
+			path = FavotterView;
+			sourceTree = "<group>";
+		};
+		547592991FE9393600C9E11E /* FavotterUtill */ = {
+			isa = PBXGroup;
+			children = (
+				5475929A1FE9393600C9E11E /* FavotterUtill.h */,
+				5475929B1FE9393600C9E11E /* Info.plist */,
+			);
+			path = FavotterUtill;
+			sourceTree = "<group>";
+		};
+		547592AA1FE9395200C9E11E /* FavotterAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				547592AB1FE9395200C9E11E /* FavotterAPIClient.h */,
+				547592AC1FE9395200C9E11E /* Info.plist */,
+			);
+			path = FavotterAPIClient;
+			sourceTree = "<group>";
+		};
 		54871B4D1FE931C800235B29 = {
 			isa = PBXGroup;
 			children = (
 				54871B581FE931C800235B29 /* Favotter */,
 				54871B6D1FE931C800235B29 /* FavotterTests */,
 				54871B781FE931C800235B29 /* FavotterUITests */,
+				547592651FE934FF00C9E11E /* FavotterStyle */,
+				547592771FE9390600C9E11E /* FavotterModel */,
+				547592881FE9391700C9E11E /* FavotterView */,
+				547592991FE9393600C9E11E /* FavotterUtill */,
+				547592AA1FE9395200C9E11E /* FavotterAPIClient */,
 				54871B571FE931C800235B29 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +263,11 @@
 				54871B561FE931C800235B29 /* Favotter.app */,
 				54871B6A1FE931C800235B29 /* FavotterTests.xctest */,
 				54871B751FE931C800235B29 /* FavotterUITests.xctest */,
+				547592641FE934FF00C9E11E /* FavotterStyle.framework */,
+				547592761FE9390500C9E11E /* FavotterModel.framework */,
+				547592871FE9391700C9E11E /* FavotterView.framework */,
+				547592981FE9393600C9E11E /* FavotterUtill.framework */,
+				547592A91FE9395200C9E11E /* FavotterAPIClient.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,7 +305,140 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		547592611FE934FF00C9E11E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547592681FE934FF00C9E11E /* FavotterStyle.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547592731FE9390500C9E11E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5475927A1FE9390600C9E11E /* FavotterModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547592841FE9391700C9E11E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5475928B1FE9391700C9E11E /* FavotterView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547592951FE9393600C9E11E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5475929C1FE9393600C9E11E /* FavotterUtill.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547592A61FE9395200C9E11E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				547592AD1FE9395200C9E11E /* FavotterAPIClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		547592631FE934FF00C9E11E /* FavotterStyle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5475926F1FE934FF00C9E11E /* Build configuration list for PBXNativeTarget "FavotterStyle" */;
+			buildPhases = (
+				5475925F1FE934FF00C9E11E /* Sources */,
+				547592601FE934FF00C9E11E /* Frameworks */,
+				547592611FE934FF00C9E11E /* Headers */,
+				547592621FE934FF00C9E11E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FavotterStyle;
+			productName = FavotterStyle;
+			productReference = 547592641FE934FF00C9E11E /* FavotterStyle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		547592751FE9390500C9E11E /* FavotterModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5475927F1FE9390600C9E11E /* Build configuration list for PBXNativeTarget "FavotterModel" */;
+			buildPhases = (
+				547592711FE9390500C9E11E /* Sources */,
+				547592721FE9390500C9E11E /* Frameworks */,
+				547592731FE9390500C9E11E /* Headers */,
+				547592741FE9390500C9E11E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FavotterModel;
+			productName = FavotterModel;
+			productReference = 547592761FE9390500C9E11E /* FavotterModel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		547592861FE9391700C9E11E /* FavotterView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 547592901FE9391700C9E11E /* Build configuration list for PBXNativeTarget "FavotterView" */;
+			buildPhases = (
+				547592821FE9391700C9E11E /* Sources */,
+				547592831FE9391700C9E11E /* Frameworks */,
+				547592841FE9391700C9E11E /* Headers */,
+				547592851FE9391700C9E11E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FavotterView;
+			productName = FavotterView;
+			productReference = 547592871FE9391700C9E11E /* FavotterView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		547592971FE9393600C9E11E /* FavotterUtill */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 547592A11FE9393600C9E11E /* Build configuration list for PBXNativeTarget "FavotterUtill" */;
+			buildPhases = (
+				547592931FE9393600C9E11E /* Sources */,
+				547592941FE9393600C9E11E /* Frameworks */,
+				547592951FE9393600C9E11E /* Headers */,
+				547592961FE9393600C9E11E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FavotterUtill;
+			productName = FavotterUtill;
+			productReference = 547592981FE9393600C9E11E /* FavotterUtill.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		547592A81FE9395200C9E11E /* FavotterAPIClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 547592B21FE9395200C9E11E /* Build configuration list for PBXNativeTarget "FavotterAPIClient" */;
+			buildPhases = (
+				547592A41FE9395200C9E11E /* Sources */,
+				547592A51FE9395200C9E11E /* Frameworks */,
+				547592A61FE9395200C9E11E /* Headers */,
+				547592A71FE9395200C9E11E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FavotterAPIClient;
+			productName = FavotterAPIClient;
+			productReference = 547592A91FE9395200C9E11E /* FavotterAPIClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		54871B551FE931C800235B29 /* Favotter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54871B7E1FE931C800235B29 /* Build configuration list for PBXNativeTarget "Favotter" */;
@@ -135,10 +446,16 @@
 				54871B521FE931C800235B29 /* Sources */,
 				54871B531FE931C800235B29 /* Frameworks */,
 				54871B541FE931C800235B29 /* Resources */,
+				547592701FE934FF00C9E11E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5475926A1FE934FF00C9E11E /* PBXTargetDependency */,
+				5475927C1FE9390600C9E11E /* PBXTargetDependency */,
+				5475928D1FE9391700C9E11E /* PBXTargetDependency */,
+				5475929E1FE9393600C9E11E /* PBXTargetDependency */,
+				547592AF1FE9395200C9E11E /* PBXTargetDependency */,
 			);
 			name = Favotter;
 			productName = Favotter;
@@ -191,6 +508,27 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = hirothings;
 				TargetAttributes = {
+					547592631FE934FF00C9E11E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					547592751FE9390500C9E11E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					547592861FE9391700C9E11E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					547592971FE9393600C9E11E = {
+						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+					547592A81FE9395200C9E11E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 					54871B551FE931C800235B29 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
@@ -223,11 +561,51 @@
 				54871B551FE931C800235B29 /* Favotter */,
 				54871B691FE931C800235B29 /* FavotterTests */,
 				54871B741FE931C800235B29 /* FavotterUITests */,
+				547592631FE934FF00C9E11E /* FavotterStyle */,
+				547592751FE9390500C9E11E /* FavotterModel */,
+				547592861FE9391700C9E11E /* FavotterView */,
+				547592971FE9393600C9E11E /* FavotterUtill */,
+				547592A81FE9395200C9E11E /* FavotterAPIClient */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		547592621FE934FF00C9E11E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547592741FE9390500C9E11E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547592851FE9391700C9E11E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547592961FE9393600C9E11E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547592A71FE9395200C9E11E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54871B541FE931C800235B29 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +633,41 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5475925F1FE934FF00C9E11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547592711FE9390500C9E11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547592821FE9391700C9E11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547592931FE9393600C9E11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		547592A41FE9395200C9E11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54871B521FE931C800235B29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -283,6 +696,31 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5475926A1FE934FF00C9E11E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 547592631FE934FF00C9E11E /* FavotterStyle */;
+			targetProxy = 547592691FE934FF00C9E11E /* PBXContainerItemProxy */;
+		};
+		5475927C1FE9390600C9E11E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 547592751FE9390500C9E11E /* FavotterModel */;
+			targetProxy = 5475927B1FE9390600C9E11E /* PBXContainerItemProxy */;
+		};
+		5475928D1FE9391700C9E11E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 547592861FE9391700C9E11E /* FavotterView */;
+			targetProxy = 5475928C1FE9391700C9E11E /* PBXContainerItemProxy */;
+		};
+		5475929E1FE9393600C9E11E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 547592971FE9393600C9E11E /* FavotterUtill */;
+			targetProxy = 5475929D1FE9393600C9E11E /* PBXContainerItemProxy */;
+		};
+		547592AF1FE9395200C9E11E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 547592A81FE9395200C9E11E /* FavotterAPIClient */;
+			targetProxy = 547592AE1FE9395200C9E11E /* PBXContainerItemProxy */;
+		};
 		54871B6C1FE931C800235B29 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 54871B551FE931C800235B29 /* Favotter */;
@@ -315,6 +753,239 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5475926D1FE934FF00C9E11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FavotterStyle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterStyle;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5475926E1FE934FF00C9E11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FavotterStyle/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterStyle;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		547592801FE9390600C9E11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FavotterModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterModel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		547592811FE9390600C9E11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FavotterModel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterModel;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		547592911FE9391700C9E11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FavotterView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		547592921FE9391700C9E11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FavotterView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		547592A21FE9393600C9E11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FavotterUtill/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterUtill;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		547592A31FE9393600C9E11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FavotterUtill/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterUtill;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		547592B31FE9395200C9E11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FavotterAPIClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterAPIClient;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		547592B41FE9395200C9E11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FavotterAPIClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterAPIClient;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		54871B7C1FE931C800235B29 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -515,6 +1186,51 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5475926F1FE934FF00C9E11E /* Build configuration list for PBXNativeTarget "FavotterStyle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5475926D1FE934FF00C9E11E /* Debug */,
+				5475926E1FE934FF00C9E11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5475927F1FE9390600C9E11E /* Build configuration list for PBXNativeTarget "FavotterModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				547592801FE9390600C9E11E /* Debug */,
+				547592811FE9390600C9E11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		547592901FE9391700C9E11E /* Build configuration list for PBXNativeTarget "FavotterView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				547592911FE9391700C9E11E /* Debug */,
+				547592921FE9391700C9E11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		547592A11FE9393600C9E11E /* Build configuration list for PBXNativeTarget "FavotterUtill" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				547592A21FE9393600C9E11E /* Debug */,
+				547592A31FE9393600C9E11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		547592B21FE9395200C9E11E /* Build configuration list for PBXNativeTarget "FavotterAPIClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				547592B31FE9395200C9E11E /* Debug */,
+				547592B41FE9395200C9E11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		54871B511FE931C800235B29 /* Build configuration list for PBXProject "Favotter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
