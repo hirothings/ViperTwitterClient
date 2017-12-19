@@ -7,32 +7,32 @@
 		<key>Favotter.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>14</integer>
 		</dict>
 		<key>FavotterAPIClient.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>19</integer>
 		</dict>
 		<key>FavotterModel.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>16</integer>
 		</dict>
 		<key>FavotterStyle.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>15</integer>
 		</dict>
 		<key>FavotterUtill.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>18</integer>
 		</dict>
 		<key>FavotterView.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>17</integer>
 		</dict>
 	</dict>
 </dict>
