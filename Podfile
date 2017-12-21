@@ -28,6 +28,7 @@ abstract_target 'FavotterTarget' do
 
   target 'FavotterAPIClient' do
     pod 'Himotoki', '~> 3.1'
+    pod 'TwitterKit'
   end
 
   target 'FavotterUtill' do

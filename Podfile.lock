@@ -15,6 +15,9 @@ PODS:
   - RxSwift (4.0.0)
   - SnapKit (4.0.0)
   - SwiftGen (5.2.1)
+  - TwitterCore (3.1.0)
+  - TwitterKit (3.3.0):
+    - TwitterCore (>= 3.1.0)
 
 DEPENDENCIES:
   - Action
@@ -25,6 +28,7 @@ DEPENDENCIES:
   - RxSwift (~> 4.0)
   - SnapKit (~> 4.0.0)
   - SwiftGen
+  - TwitterKit
 
 SPEC CHECKSUMS:
   Action: d60087ebce41b969d1afdad01e2fa1372a82f26e
@@ -37,7 +41,9 @@ SPEC CHECKSUMS:
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftGen: 444b4c467e512a4812b8a800d731643fd265139e
+  TwitterCore: 644d59e75abccb26cf0a9050d2c4dea0e5412241
+  TwitterKit: a2e60ddcedbf54091eac6f27685ca7a87681e1d7
 
-PODFILE CHECKSUM: 87fe71644a135f88c6e06e9587c7ead89abe95ed
+PODFILE CHECKSUM: f29b8cb7ce531f303ee90fded9193b89a6df4fff
 
 COCOAPODS: 1.3.1
