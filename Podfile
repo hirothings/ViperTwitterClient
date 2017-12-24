@@ -5,6 +5,7 @@ def common_frameworks
   pod 'Nuke', '~> 5.0'
   pod 'SwiftGen'
   pod 'LicensePlist'
+  pod 'TwitterKit'
 end
 
 abstract_target 'FavotterTarget' do
@@ -27,8 +28,6 @@ abstract_target 'FavotterTarget' do
   end
 
   target 'FavotterAPIClient' do
-    pod 'Himotoki', '~> 3.1'
-    pod 'TwitterKit'
   end
 
   target 'FavotterUtill' do

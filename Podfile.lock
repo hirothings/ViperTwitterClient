@@ -2,7 +2,6 @@ PODS:
   - Action (3.5.0):
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
-  - Himotoki (3.1.0)
   - LicensePlist (1.8.0)
   - Nuke (5.2)
   - Realm (3.0.2):
@@ -21,7 +20,6 @@ PODS:
 
 DEPENDENCIES:
   - Action
-  - Himotoki (~> 3.1)
   - LicensePlist
   - Nuke (~> 5.0)
   - RealmSwift
@@ -32,7 +30,6 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Action: d60087ebce41b969d1afdad01e2fa1372a82f26e
-  Himotoki: b09643fa5456d49bda43d0fb4e30dfa79e37f72f
   LicensePlist: 192f7c5525da52cbbaf8243b15e71cb2a3486ce2
   Nuke: 5f420c4637415f979c83afb35e73176dd03232d9
   Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
@@ -44,6 +41,6 @@ SPEC CHECKSUMS:
   TwitterCore: 644d59e75abccb26cf0a9050d2c4dea0e5412241
   TwitterKit: a2e60ddcedbf54091eac6f27685ca7a87681e1d7
 
-PODFILE CHECKSUM: f29b8cb7ce531f303ee90fded9193b89a6df4fff
+PODFILE CHECKSUM: dba73c6206d3271195d8e7464595b1b6f01e24ce
 
 COCOAPODS: 1.3.1
