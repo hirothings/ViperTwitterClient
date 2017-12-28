@@ -6,6 +6,7 @@ def common_frameworks
   pod 'SwiftGen'
   pod 'LicensePlist'
   pod 'TwitterKit'
+  pod 'SwiftLint'
 end
 
 abstract_target 'FavotterTarget' do
@@ -24,7 +25,7 @@ abstract_target 'FavotterTarget' do
   target 'FavotterStyle' do
   end
 
-  target 'FavotterModel' do
+  target 'FavotterDomain' do
   end
 
   target 'FavotterAPIClient' do
