@@ -8,11 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		2EA622C1421214E93934EB3E /* Pods_FavotterTarget_FavotterAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CFD76423D9B9B6E93224131 /* Pods_FavotterTarget_FavotterAPIClient.framework */; };
+		40FA48001FF4CB07008529B6 /* FavotterDomain.h in Headers */ = {isa = PBXBuildFile; fileRef = 40FA47FE1FF4CB07008529B6 /* FavotterDomain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40FA48031FF4CB07008529B6 /* FavotterDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40FA47FC1FF4CB07008529B6 /* FavotterDomain.framework */; };
+		40FA48041FF4CB07008529B6 /* FavotterDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 40FA47FC1FF4CB07008529B6 /* FavotterDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		44A62984CB89E62EDDD749C7 /* Pods_FavotterTarget_FavotterView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB810FD91531B10C23663A5B /* Pods_FavotterTarget_FavotterView.framework */; };
+		5423462A1FEF90570086AF54 /* TimelineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 542346291FEF90570086AF54 /* TimelineViewController.storyboard */; };
+		545E8D781FEC2BC9004334EF /* TwitterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E8D731FEC2BC8004334EF /* TwitterRequest.swift */; };
+		545E8D791FEC2BC9004334EF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E8D741FEC2BC8004334EF /* APIClient.swift */; };
+		545E8D7A1FEC2BC9004334EF /* TwitterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E8D751FEC2BC9004334EF /* TwitterAPI.swift */; };
+		545E8D7B1FEC2BC9004334EF /* TwitterAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E8D761FEC2BC9004334EF /* TwitterAPIError.swift */; };
+		545E8D7E1FEC2D76004334EF /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E8D7D1FEC2D76004334EF /* Tweet.swift */; };
+		545E8D801FEC2DE7004334EF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E8D7F1FEC2DE7004334EF /* User.swift */; };
 		547592681FE934FF00C9E11E /* FavotterStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 547592661FE934FF00C9E11E /* FavotterStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5475926B1FE934FF00C9E11E /* FavotterStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547592641FE934FF00C9E11E /* FavotterStyle.framework */; };
 		5475926C1FE934FF00C9E11E /* FavotterStyle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 547592641FE934FF00C9E11E /* FavotterStyle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5475927A1FE9390600C9E11E /* FavotterModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 547592781FE9390600C9E11E /* FavotterModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5475927D1FE9390600C9E11E /* FavotterModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 547592761FE9390500C9E11E /* FavotterModel.framework */; };
 		5475927E1FE9390600C9E11E /* FavotterModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 547592761FE9390500C9E11E /* FavotterModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5475928B1FE9391700C9E11E /* FavotterView.h in Headers */ = {isa = PBXBuildFile; fileRef = 547592891FE9391700C9E11E /* FavotterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,6 +40,7 @@
 		54871B641FE931C800235B29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54871B621FE931C800235B29 /* LaunchScreen.storyboard */; };
 		54871B6F1FE931C800235B29 /* FavotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54871B6E1FE931C800235B29 /* FavotterTests.swift */; };
 		54871B7A1FE931C800235B29 /* FavotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54871B791FE931C800235B29 /* FavotterUITests.swift */; };
+		54E3A40F1FEF825900584B97 /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E3A40D1FEF825900584B97 /* TimelineViewController.swift */; };
 		867E707BE535DBAF35D7E06F /* Pods_FavotterTarget_FavotterStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1872C49E9153A7DE6A5DD04F /* Pods_FavotterTarget_FavotterStyle.framework */; };
 		AC98CF7FFFD49B4166F4EE05 /* Pods_FavotterTarget_FavotterModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7AC2A486A52BDA5762A8427 /* Pods_FavotterTarget_FavotterModel.framework */; };
 		BBD9EC14CC8D45E36FC169DA /* Pods_FavotterTarget_FavotterUtill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 146D4AC1254AE859CC4D7063 /* Pods_FavotterTarget_FavotterUtill.framework */; };
@@ -38,6 +48,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		40FA48011FF4CB07008529B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54871B4E1FE931C800235B29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40FA47FB1FF4CB07008529B6;
+			remoteInfo = FavotterDomain;
+		};
 		547592691FE934FF00C9E11E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 54871B4E1FE931C800235B29 /* Project object */;
@@ -101,6 +118,7 @@
 				547592B11FE9395200C9E11E /* FavotterAPIClient.framework in Embed Frameworks */,
 				5475928F1FE9391700C9E11E /* FavotterView.framework in Embed Frameworks */,
 				5475927E1FE9390600C9E11E /* FavotterModel.framework in Embed Frameworks */,
+				40FA48041FF4CB07008529B6 /* FavotterDomain.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,14 +129,22 @@
 		02B4DAEF01AE4B9FBE5D2120 /* Pods-FavotterTarget-FavotterView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterView/Pods-FavotterTarget-FavotterView.debug.xcconfig"; sourceTree = "<group>"; };
 		146D4AC1254AE859CC4D7063 /* Pods_FavotterTarget_FavotterUtill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterUtill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1872C49E9153A7DE6A5DD04F /* Pods_FavotterTarget_FavotterStyle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterStyle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40FA47FC1FF4CB07008529B6 /* FavotterDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FavotterDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40FA47FE1FF4CB07008529B6 /* FavotterDomain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavotterDomain.h; sourceTree = "<group>"; };
+		40FA47FF1FF4CB07008529B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4130752B1AF9C8F44E68773C /* Pods_FavotterTarget_Favotter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_Favotter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5405220A82FC7DC458C3633D /* Pods-FavotterTarget-FavotterModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterModel/Pods-FavotterTarget-FavotterModel.debug.xcconfig"; sourceTree = "<group>"; };
+		542346291FEF90570086AF54 /* TimelineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimelineViewController.storyboard; sourceTree = "<group>"; };
+		545E8D731FEC2BC8004334EF /* TwitterRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterRequest.swift; sourceTree = "<group>"; };
+		545E8D741FEC2BC8004334EF /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		545E8D751FEC2BC9004334EF /* TwitterAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAPI.swift; sourceTree = "<group>"; };
+		545E8D761FEC2BC9004334EF /* TwitterAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAPIError.swift; sourceTree = "<group>"; };
+		545E8D7D1FEC2D76004334EF /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
+		545E8D7F1FEC2DE7004334EF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		547592641FE934FF00C9E11E /* FavotterStyle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FavotterStyle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		547592661FE934FF00C9E11E /* FavotterStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavotterStyle.h; sourceTree = "<group>"; };
 		547592671FE934FF00C9E11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		547592761FE9390500C9E11E /* FavotterModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FavotterModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		547592781FE9390600C9E11E /* FavotterModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavotterModel.h; sourceTree = "<group>"; };
-		547592791FE9390600C9E11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		547592871FE9391700C9E11E /* FavotterView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FavotterView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		547592891FE9391700C9E11E /* FavotterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavotterView.h; sourceTree = "<group>"; };
 		5475928A1FE9391700C9E11E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,6 +167,7 @@
 		54871B751FE931C800235B29 /* FavotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54871B791FE931C800235B29 /* FavotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavotterUITests.swift; sourceTree = "<group>"; };
 		54871B7B1FE931C800235B29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54E3A40D1FEF825900584B97 /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		6DDAF34D6ECEFA78BF33E5D2 /* Pods-FavotterTarget-FavotterStyle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterStyle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterStyle/Pods-FavotterTarget-FavotterStyle.debug.xcconfig"; sourceTree = "<group>"; };
 		814B5B20FF56E49F54E317D8 /* Pods-FavotterTarget-FavotterAPIClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterAPIClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterAPIClient/Pods-FavotterTarget-FavotterAPIClient.release.xcconfig"; sourceTree = "<group>"; };
 		84B8282EF977C8B14AF96577 /* Pods-FavotterTarget-FavotterStyle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterStyle.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterStyle/Pods-FavotterTarget-FavotterStyle.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,6 +184,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		40FA47F81FF4CB07008529B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		547592601FE934FF00C9E11E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,6 +241,7 @@
 				5475928E1FE9391700C9E11E /* FavotterView.framework in Frameworks */,
 				5475927D1FE9390600C9E11E /* FavotterModel.framework in Frameworks */,
 				E6C93E480C544ED50D8B9C29 /* Pods_FavotterTarget_Favotter.framework in Frameworks */,
+				40FA48031FF4CB07008529B6 /* FavotterDomain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +262,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40FA47FD1FF4CB07008529B6 /* FavotterDomain */ = {
+			isa = PBXGroup;
+			children = (
+				40FA48091FF4CC29008529B6 /* Interactor */,
+				40FA48081FF4CBFB008529B6 /* Entity */,
+				40FA47FE1FF4CB07008529B6 /* FavotterDomain.h */,
+				40FA47FF1FF4CB07008529B6 /* Info.plist */,
+			);
+			path = FavotterDomain;
+			sourceTree = "<group>";
+		};
+		40FA48081FF4CBFB008529B6 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				545E8D7D1FEC2D76004334EF /* Tweet.swift */,
+				545E8D7F1FEC2DE7004334EF /* User.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		40FA48091FF4CC29008529B6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		40FA48171FF4CDAF008529B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54871B5B1FE931C800235B29 /* ViewController.swift */,
+				54E3A40D1FEF825900584B97 /* TimelineViewController.swift */,
+				542346291FEF90570086AF54 /* TimelineViewController.storyboard */,
+				54871B5D1FE931C800235B29 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		40FA48181FF4CDBE008529B6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		40FA48191FF4CDC6008529B6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		547592651FE934FF00C9E11E /* FavotterStyle */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,18 +323,12 @@
 			path = FavotterStyle;
 			sourceTree = "<group>";
 		};
-		547592771FE9390600C9E11E /* FavotterModel */ = {
-			isa = PBXGroup;
-			children = (
-				547592781FE9390600C9E11E /* FavotterModel.h */,
-				547592791FE9390600C9E11E /* Info.plist */,
-			);
-			path = FavotterModel;
-			sourceTree = "<group>";
-		};
 		547592881FE9391700C9E11E /* FavotterView */ = {
 			isa = PBXGroup;
 			children = (
+				40FA48191FF4CDC6008529B6 /* Presenter */,
+				40FA48181FF4CDBE008529B6 /* Router */,
+				40FA48171FF4CDAF008529B6 /* View */,
 				547592891FE9391700C9E11E /* FavotterView.h */,
 				5475928A1FE9391700C9E11E /* Info.plist */,
 			);
@@ -266,6 +347,10 @@
 		547592AA1FE9395200C9E11E /* FavotterAPIClient */ = {
 			isa = PBXGroup;
 			children = (
+				545E8D741FEC2BC8004334EF /* APIClient.swift */,
+				545E8D751FEC2BC9004334EF /* TwitterAPI.swift */,
+				545E8D761FEC2BC9004334EF /* TwitterAPIError.swift */,
+				545E8D731FEC2BC8004334EF /* TwitterRequest.swift */,
 				547592AB1FE9395200C9E11E /* FavotterAPIClient.h */,
 				547592AC1FE9395200C9E11E /* Info.plist */,
 			);
@@ -279,10 +364,10 @@
 				54871B6D1FE931C800235B29 /* FavotterTests */,
 				54871B781FE931C800235B29 /* FavotterUITests */,
 				547592651FE934FF00C9E11E /* FavotterStyle */,
-				547592771FE9390600C9E11E /* FavotterModel */,
 				547592881FE9391700C9E11E /* FavotterView */,
 				547592991FE9393600C9E11E /* FavotterUtill */,
 				547592AA1FE9395200C9E11E /* FavotterAPIClient */,
+				40FA47FD1FF4CB07008529B6 /* FavotterDomain */,
 				54871B571FE931C800235B29 /* Products */,
 				C432B129C47A90995FBBFC06 /* Pods */,
 				AD13ABFB596A9F212BDB9B89 /* Frameworks */,
@@ -300,6 +385,7 @@
 				547592871FE9391700C9E11E /* FavotterView.framework */,
 				547592981FE9393600C9E11E /* FavotterUtill.framework */,
 				547592A91FE9395200C9E11E /* FavotterAPIClient.framework */,
+				40FA47FC1FF4CB07008529B6 /* FavotterDomain.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -308,8 +394,6 @@
 			isa = PBXGroup;
 			children = (
 				54871B591FE931C800235B29 /* AppDelegate.swift */,
-				54871B5B1FE931C800235B29 /* ViewController.swift */,
-				54871B5D1FE931C800235B29 /* Main.storyboard */,
 				54871B601FE931C800235B29 /* Assets.xcassets */,
 				54871B621FE931C800235B29 /* LaunchScreen.storyboard */,
 				54871B651FE931C800235B29 /* Info.plist */,
@@ -370,6 +454,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		40FA47F91FF4CB07008529B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40FA48001FF4CB07008529B6 /* FavotterDomain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		547592611FE934FF00C9E11E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,7 +474,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5475927A1FE9390600C9E11E /* FavotterModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +504,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		40FA47FB1FF4CB07008529B6 /* FavotterDomain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40FA48051FF4CB07008529B6 /* Build configuration list for PBXNativeTarget "FavotterDomain" */;
+			buildPhases = (
+				40FA47F71FF4CB07008529B6 /* Sources */,
+				40FA47F81FF4CB07008529B6 /* Frameworks */,
+				40FA47F91FF4CB07008529B6 /* Headers */,
+				40FA47FA1FF4CB07008529B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FavotterDomain;
+			productName = FavotterDomain;
+			productReference = 40FA47FC1FF4CB07008529B6 /* FavotterDomain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		547592631FE934FF00C9E11E /* FavotterStyle */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5475926F1FE934FF00C9E11E /* Build configuration list for PBXNativeTarget "FavotterStyle" */;
@@ -533,6 +642,7 @@
 				5475928D1FE9391700C9E11E /* PBXTargetDependency */,
 				5475929E1FE9393600C9E11E /* PBXTargetDependency */,
 				547592AF1FE9395200C9E11E /* PBXTargetDependency */,
+				40FA48021FF4CB07008529B6 /* PBXTargetDependency */,
 			);
 			name = Favotter;
 			productName = Favotter;
@@ -585,6 +695,10 @@
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = hirothings;
 				TargetAttributes = {
+					40FA47FB1FF4CB07008529B6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					547592631FE934FF00C9E11E = {
 						CreatedOnToolsVersion = 9.1;
 						LastSwiftMigration = 0910;
@@ -592,6 +706,7 @@
 					};
 					547592751FE9390500C9E11E = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					547592861FE9391700C9E11E = {
@@ -605,6 +720,7 @@
 					};
 					547592A81FE9395200C9E11E = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					54871B551FE931C800235B29 = {
@@ -644,11 +760,19 @@
 				547592861FE9391700C9E11E /* FavotterView */,
 				547592971FE9393600C9E11E /* FavotterUtill */,
 				547592A81FE9395200C9E11E /* FavotterAPIClient */,
+				40FA47FB1FF4CB07008529B6 /* FavotterDomain */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		40FA47FA1FF4CB07008529B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		547592621FE934FF00C9E11E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -690,6 +814,7 @@
 			files = (
 				54871B641FE931C800235B29 /* LaunchScreen.storyboard in Resources */,
 				54871B611FE931C800235B29 /* Assets.xcassets in Resources */,
+				5423462A1FEF90570086AF54 /* TimelineViewController.storyboard in Resources */,
 				54871B5F1FE931C800235B29 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -717,9 +842,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FavotterTarget-FavotterAPIClient/Pods-FavotterTarget-FavotterAPIClient-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -768,9 +897,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FavotterTarget-FavotterStyle/Pods-FavotterTarget-FavotterStyle-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -783,9 +916,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FavotterTarget-FavotterModel/Pods-FavotterTarget-FavotterModel-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -834,9 +971,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FavotterTarget-FavotterUtill/Pods-FavotterTarget-FavotterUtill-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -867,9 +1008,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FavotterTarget-Favotter/Pods-FavotterTarget-Favotter-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -900,9 +1045,13 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FavotterTarget-FavotterView/Pods-FavotterTarget-FavotterView-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -922,8 +1071,9 @@
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Himotoki/Himotoki.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -933,8 +1083,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Himotoki.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -944,6 +1095,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		40FA47F71FF4CB07008529B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5475925F1FE934FF00C9E11E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -955,6 +1113,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545E8D801FEC2DE7004334EF /* User.swift in Sources */,
+				545E8D7E1FEC2D76004334EF /* Tweet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -976,6 +1136,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				545E8D781FEC2BC9004334EF /* TwitterRequest.swift in Sources */,
+				545E8D7A1FEC2BC9004334EF /* TwitterAPI.swift in Sources */,
+				545E8D791FEC2BC9004334EF /* APIClient.swift in Sources */,
+				545E8D7B1FEC2BC9004334EF /* TwitterAPIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -985,6 +1149,7 @@
 			files = (
 				54871B5C1FE931C800235B29 /* ViewController.swift in Sources */,
 				54871B5A1FE931C800235B29 /* AppDelegate.swift in Sources */,
+				54E3A40F1FEF825900584B97 /* TimelineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1007,6 +1172,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		40FA48021FF4CB07008529B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 40FA47FB1FF4CB07008529B6 /* FavotterDomain */;
+			targetProxy = 40FA48011FF4CB07008529B6 /* PBXContainerItemProxy */;
+		};
 		5475926A1FE934FF00C9E11E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 547592631FE934FF00C9E11E /* FavotterStyle */;
@@ -1064,6 +1234,56 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		40FA48061FF4CB07008529B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = G6788ACX5G;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FavotterDomain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterDomain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		40FA48071FF4CB07008529B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = G6788ACX5G;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = FavotterDomain/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterDomain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		5475926D1FE934FF00C9E11E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6DDAF34D6ECEFA78BF33E5D2 /* Pods-FavotterTarget-FavotterStyle.debug.xcconfig */;
@@ -1119,6 +1339,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5405220A82FC7DC458C3633D /* Pods-FavotterTarget-FavotterModel.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1132,6 +1353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterModel;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1143,6 +1365,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E26232BED17165213D3C4CC6 /* Pods-FavotterTarget-FavotterModel.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1266,6 +1489,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 84FE3C1F87AC4C64EC1D6CF4 /* Pods-FavotterTarget-FavotterAPIClient.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1279,6 +1503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterAPIClient;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1290,6 +1515,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 814B5B20FF56E49F54E317D8 /* Pods-FavotterTarget-FavotterAPIClient.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1421,8 +1647,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F2CA94F6258D1B8150D27D0F /* Pods-FavotterTarget-Favotter.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G6788ACX5G;
 				INFOPLIST_FILE = Favotter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -Xfrontend -warn-long-function-bodies=100";
@@ -1437,8 +1665,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B2F4D56F5A90E0372B2ABC31 /* Pods-FavotterTarget-Favotter.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G6788ACX5G;
 				INFOPLIST_FILE = Favotter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -Xfrontend -warn-long-function-bodies=100";
@@ -1514,6 +1744,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		40FA48051FF4CB07008529B6 /* Build configuration list for PBXNativeTarget "FavotterDomain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40FA48061FF4CB07008529B6 /* Debug */,
+				40FA48071FF4CB07008529B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5475926F1FE934FF00C9E11E /* Build configuration list for PBXNativeTarget "FavotterStyle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
