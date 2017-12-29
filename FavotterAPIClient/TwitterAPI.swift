@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import FavotterModel
 
 public final class TwitterAPI {
     

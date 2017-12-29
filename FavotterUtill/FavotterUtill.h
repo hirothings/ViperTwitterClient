@@ -2,7 +2,7 @@
 //  FavotterUtill.h
 //  FavotterUtill
 //
-//  Created by hirothings on 2017/12/19.
+//  Created by hirothings on 2017/12/30.
 //  Copyright © 2017年 hirothings. All rights reserved.
 //
 
