@@ -25,7 +25,7 @@ abstract_target 'FavotterTarget' do
   target 'FavotterStyle' do
   end
 
-  target 'FavotterModel' do
+  target 'FavotterDomain' do
   end
 
   target 'FavotterAPIClient' do
