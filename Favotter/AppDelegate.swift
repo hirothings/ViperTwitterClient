@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import TwitterKit
+import FavotterView
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        TWTRTwitter.sharedInstance().start(withConsumerKey:"OIJZqrAxKlUSfx8pWtLZOOWua", consumerSecret:"NGkhWlHDGJmE3WvH96ma4W9807XD4H5g0gYsvEI4QcWEUx3kgx")
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let router = RootRouter(window: self.window!)
+        router.showRootScreen()
         return true
     }
 
