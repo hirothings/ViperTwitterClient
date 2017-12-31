@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3EFEB12A41D6AC43233AF5AD /* Pods_FavotterTarget_FavotterStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236E3855CEBDD40CC2FE613B /* Pods_FavotterTarget_FavotterStyle.framework */; };
+		5431211A1FF8DC45002D49C8 /* TimelineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BDB9CC1FF6C7600038738D /* TimelineViewController.storyboard */; };
 		54884CA61FF6C657007DBA43 /* FavotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54884CA51FF6C657007DBA43 /* FavotterUITests.swift */; };
 		5488881B1FF6C94100D0757B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548888191FF6C94100D0757B /* APIClient.swift */; };
 		5488881C1FF6C94100D0757B /* TwitterAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5488881A1FF6C94100D0757B /* TwitterAPIError.swift */; };
@@ -22,7 +23,6 @@
 		54BDB9CF1FF6C7600038738D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BDB9C81FF6C7600038738D /* AppDelegate.swift */; };
 		54BDB9D01FF6C7600038738D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BDB9C91FF6C7600038738D /* Assets.xcassets */; };
 		54BDB9D11FF6C7600038738D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BDB9CA1FF6C7600038738D /* LaunchScreen.storyboard */; };
-		54BDB9D21FF6C7600038738D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BDB9CC1FF6C7600038738D /* Main.storyboard */; };
 		54BDB9D31FF6C7600038738D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54BDB9CE1FF6C7600038738D /* Info.plist */; };
 		54BDB9FC1FF6C7B40038738D /* FavotterAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 54BDB9FA1FF6C7B40038738D /* FavotterAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54BDB9FF1FF6C7B40038738D /* FavotterAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BDB9F81FF6C7B40038738D /* FavotterAPIClient.framework */; };
@@ -36,6 +36,14 @@
 		54BDBA2F1FF6C8090038738D /* FavotterStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 54BDBA2D1FF6C8090038738D /* FavotterStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54BDBA321FF6C8090038738D /* FavotterStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BDBA2B1FF6C8090038738D /* FavotterStyle.framework */; };
 		54BDBA331FF6C8090038738D /* FavotterStyle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54BDBA2B1FF6C8090038738D /* FavotterStyle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54BF13551FF8D5E000D713DF /* TimelinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF13501FF8D5E000D713DF /* TimelinePresenter.swift */; };
+		54BF13561FF8D5E000D713DF /* TimelineRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF13521FF8D5E000D713DF /* TimelineRouter.swift */; };
+		54BF13571FF8D5E000D713DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF13541FF8D5E000D713DF /* ViewController.swift */; };
+		54BF135D1FF8D63400D713DF /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF13591FF8D63400D713DF /* TweetTableViewCell.swift */; };
+		54BF135E1FF8D63400D713DF /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF135A1FF8D63400D713DF /* ProfileTableViewCell.swift */; };
+		54BF135F1FF8D63400D713DF /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54BF135B1FF8D63400D713DF /* ProfileTableViewCell.xib */; };
+		54BF13601FF8D63400D713DF /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54BF135C1FF8D63400D713DF /* TweetTableViewCell.xib */; };
+		54BF13631FF8D7BA00D713DF /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BF13621FF8D7BA00D713DF /* TimelineViewController.swift */; };
 		78B0D5B876CD533D2BD696F3 /* Pods_FavotterTarget_Favotter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B2C58C03EF7D3981BDABE4 /* Pods_FavotterTarget_Favotter.framework */; };
 		AF2F857276A155B96C58F88A /* Pods_FavotterTarget_FavotterView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F461200200D9A9C524C73732 /* Pods_FavotterTarget_FavotterView.framework */; };
 		CF5F4B3F5401659938E73D74 /* Pods_FavotterTarget_FavotterDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CC60EB6C66D626534A962A /* Pods_FavotterTarget_FavotterDomain.framework */; };
@@ -127,7 +135,7 @@
 		54BDB9C81FF6C7600038738D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54BDB9C91FF6C7600038738D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54BDB9CB1FF6C7600038738D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		54BDB9CD1FF6C7600038738D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54BDB9CD1FF6C7600038738D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TimelineViewController.storyboard; sourceTree = "<group>"; };
 		54BDB9CE1FF6C7600038738D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54BDB9E71FF6C7A00038738D /* TwitterAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAPI.swift; sourceTree = "<group>"; };
 		54BDB9E81FF6C7A00038738D /* TwitterRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterRequest.swift; sourceTree = "<group>"; };
@@ -146,6 +154,14 @@
 		54BDBA2B1FF6C8090038738D /* FavotterStyle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FavotterStyle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BDBA2D1FF6C8090038738D /* FavotterStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavotterStyle.h; sourceTree = "<group>"; };
 		54BDBA2E1FF6C8090038738D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54BF13501FF8D5E000D713DF /* TimelinePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelinePresenter.swift; sourceTree = "<group>"; };
+		54BF13521FF8D5E000D713DF /* TimelineRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineRouter.swift; sourceTree = "<group>"; };
+		54BF13541FF8D5E000D713DF /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54BF13591FF8D63400D713DF /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
+		54BF135A1FF8D63400D713DF /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		54BF135B1FF8D63400D713DF /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		54BF135C1FF8D63400D713DF /* TweetTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
+		54BF13621FF8D7BA00D713DF /* TimelineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		55299CE6D0F526F4C2665157 /* Pods_FavotterTarget_FavotterUtill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterUtill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D588DA32DF5912A730495C /* Pods-FavotterTarget-FavotterUtill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterUtill.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterUtill/Pods-FavotterTarget-FavotterUtill.release.xcconfig"; sourceTree = "<group>"; };
 		6051A55900D7BBB5B829B8B0 /* Pods-FavotterTarget-FavotterAPIClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterAPIClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterAPIClient/Pods-FavotterTarget-FavotterAPIClient.debug.xcconfig"; sourceTree = "<group>"; };
@@ -280,7 +296,6 @@
 				54BDB9C81FF6C7600038738D /* AppDelegate.swift */,
 				54BDB9C91FF6C7600038738D /* Assets.xcassets */,
 				54BDB9CA1FF6C7600038738D /* LaunchScreen.storyboard */,
-				54BDB9CC1FF6C7600038738D /* Main.storyboard */,
 				54BDB9CE1FF6C7600038738D /* Info.plist */,
 			);
 			path = Favotter;
@@ -320,6 +335,9 @@
 		54BDBA0A1FF6C7C30038738D /* FavotterView */ = {
 			isa = PBXGroup;
 			children = (
+				54BF134F1FF8D5E000D713DF /* Presenter */,
+				54BF13511FF8D5E000D713DF /* Router */,
+				54BF13531FF8D5E000D713DF /* View */,
 				54BDBA0B1FF6C7C30038738D /* FavotterView.h */,
 				54BDBA0C1FF6C7C30038738D /* Info.plist */,
 			);
@@ -342,6 +360,52 @@
 				54BDBA2E1FF6C8090038738D /* Info.plist */,
 			);
 			path = FavotterStyle;
+			sourceTree = "<group>";
+		};
+		54BF134F1FF8D5E000D713DF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				54BF13501FF8D5E000D713DF /* TimelinePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		54BF13511FF8D5E000D713DF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				54BF13521FF8D5E000D713DF /* TimelineRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		54BF13531FF8D5E000D713DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54BF13611FF8D68300D713DF /* StoryBoard */,
+				54BF13581FF8D5ED00D713DF /* TableViewCell */,
+				54BF13541FF8D5E000D713DF /* ViewController.swift */,
+				54BF13621FF8D7BA00D713DF /* TimelineViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54BF13581FF8D5ED00D713DF /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				54BF135A1FF8D63400D713DF /* ProfileTableViewCell.swift */,
+				54BF135B1FF8D63400D713DF /* ProfileTableViewCell.xib */,
+				54BF13591FF8D63400D713DF /* TweetTableViewCell.swift */,
+				54BF135C1FF8D63400D713DF /* TweetTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		54BF13611FF8D68300D713DF /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				54BDB9CC1FF6C7600038738D /* TimelineViewController.storyboard */,
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 		C364946A864D55DC0A22FE1E /* Frameworks */ = {
@@ -599,6 +663,7 @@
 					};
 					54BDBA081FF6C7C30038738D = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					54BDBA191FF6C7E10038738D = {
@@ -641,7 +706,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				54BDB9D31FF6C7600038738D /* Info.plist in Resources */,
-				54BDB9D21FF6C7600038738D /* Main.storyboard in Resources */,
 				54BDB9D01FF6C7600038738D /* Assets.xcassets in Resources */,
 				54BDB9D11FF6C7600038738D /* LaunchScreen.storyboard in Resources */,
 			);
@@ -672,6 +736,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5431211A1FF8DC45002D49C8 /* TimelineViewController.storyboard in Resources */,
+				54BF135F1FF8D63400D713DF /* ProfileTableViewCell.xib in Resources */,
+				54BF13601FF8D63400D713DF /* TweetTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -992,6 +1059,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54BF13571FF8D5E000D713DF /* ViewController.swift in Sources */,
+				54BF13551FF8D5E000D713DF /* TimelinePresenter.swift in Sources */,
+				54BF13561FF8D5E000D713DF /* TimelineRouter.swift in Sources */,
+				54BF135E1FF8D63400D713DF /* ProfileTableViewCell.swift in Sources */,
+				54BF135D1FF8D63400D713DF /* TweetTableViewCell.swift in Sources */,
+				54BF13631FF8D7BA00D713DF /* TimelineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1053,12 +1126,12 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		54BDB9CC1FF6C7600038738D /* Main.storyboard */ = {
+		54BDB9CC1FF6C7600038738D /* TimelineViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				54BDB9CD1FF6C7600038738D /* Base */,
 			);
-			name = Main.storyboard;
+			name = TimelineViewController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1336,6 +1409,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 64D42B900B60F759A47ABC80 /* Pods-FavotterTarget-FavotterView.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1349,6 +1423,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1360,6 +1435,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 33B63EE7883ABED48E444F3F /* Pods-FavotterTarget-FavotterView.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
