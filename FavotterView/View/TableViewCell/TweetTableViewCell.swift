@@ -1,6 +1,6 @@
 //
 //  TweetTableViewCell.swift
-//  TwitterSampleAPP
+//  Favotter
 //
 //  Created by hirothings on 2017/06/12.
 //  Copyright © 2017年 hirothings. All rights reserved.
