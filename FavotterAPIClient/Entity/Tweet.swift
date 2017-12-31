@@ -9,10 +9,10 @@
 import Foundation
 
 public struct Tweet: Codable {
-    let text: String
-    let user: User
-    let retweetCount: Int
-    let favCount: Int
+    public let text: String
+    public let user: User
+    public let retweetCount: Int
+    public let favCount: Int
     
     private enum CodingKeys: String, CodingKey {
         case text

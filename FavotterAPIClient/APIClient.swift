@@ -10,16 +10,13 @@ import Foundation
 import TwitterKit
 import RxSwift
 
-public final class APIClient {
-    
-    let userID: String
+public class APIClient {
+    private let userID: String
     private let store = TWTRTwitter.sharedInstance().sessionStore
-    
     
     public init() {
         userID = store.session()?.userID ?? ""
     }
-    
     
     public func call<Request: TwitterRequest>(request: Request) -> Observable<Request.Response> {
         let client = TWTRAPIClient(userID: userID)

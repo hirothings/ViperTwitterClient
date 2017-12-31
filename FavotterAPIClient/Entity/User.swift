@@ -9,13 +9,13 @@
 import Foundation
 
 public struct User: Codable {
-    let name: String
-    let screenName: String
-    let description: String
-    let profileImageURL: String
-    let profileBGImageURL: String
-    let friendsCount: Int
-    let followersCount: Int
+    public let name: String
+    public let screenName: String
+    public let description: String
+    public let profileImageURL: String
+    public let profileBGImageURL: String
+    public let friendsCount: Int
+    public let followersCount: Int
     
     private enum CodingKeys: String, CodingKey {
         case name
