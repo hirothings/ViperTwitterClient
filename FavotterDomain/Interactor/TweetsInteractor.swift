@@ -10,7 +10,14 @@ import Foundation
 import RxSwift
 import FavotterAPIClient
 
-protocol TweetsInteractorInput {}
+public protocol TweetsInteractorInput: class {
+    func fetch(with userID: String) -> Observable<[Tweet]>
+}
+
+public protocol TweetsInteractorOutput {
+    func tweetsFetched(_ tweets: [Tweet])
+    func tweetsFetchFailed()
+}
 
 public class TweetsInteractor: TweetsInteractorInput {
     
