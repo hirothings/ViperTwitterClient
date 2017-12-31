@@ -7,15 +7,39 @@
 //
 
 import UIKit
+import FavotterDomain
 
 protocol TimelineWireframe {
     weak var viewController: UIViewController? { get set }
-    func pushDetailView(userID: String)
+    func pushUserProfileView(userID: String)
+    static func assembleModule(userID: String) -> UIViewController
 }
 
 class TimelineRouter: TimelineWireframe {
     weak var viewController: UIViewController?
 
-    func pushDetailView(userID: String) {
+    // memo: ここでモック化できる
+    static func assembleModule(userID: String) -> UIViewController {
+        let bundle = Bundle(for: TimelineViewController.self)
+        let storyBoard = UIStoryboard(name: "TimelineViewController", bundle: bundle)
+        let view = storyBoard.instantiateInitialViewController() as! TimelineViewController
+        let presenter = TimelinePresenter()
+        let interactor = TweetsInteractor()
+        let router = TimelineRouter()
+        let nav = UINavigationController(rootViewController: view)
+        
+        view.presenter = presenter
+        
+        presenter.view = view
+        presenter.interactor = interactor
+        presenter.router = router
+        
+        router.viewController = view
+        
+        return nav
+    }
+    
+    func pushUserProfileView(userID: String) {
+        
     }
 }
