@@ -14,7 +14,7 @@ import FavotterAPIClient
 protocol TimelinePresentation {
     weak var view: TimelineView? { get }
     var router: TimelineWireframe! { get }
-    var interactor: TweetsInteractorInput! { get }
+    var interactor: TweetsInteractorUsecase! { get }
     var output: TweetsInteractorOutput! { get }
     
     func viewDidLoad()
@@ -23,28 +23,28 @@ protocol TimelinePresentation {
 class TimelinePresenter: TimelinePresentation {
     weak var view: TimelineView?
     var router: TimelineWireframe!
-    var interactor: TweetsInteractorInput!
+    var interactor: TweetsInteractorUsecase!
     var output: TweetsInteractorOutput!
-    var tweets: [Tweet] = []
+    var tweets: [Tweet] = [] {
+        didSet {
+            if tweets.isEmpty {
+                view?.showNoContentView()
+            } else {
+                view?.showTimeline(tweets: tweets)
+            }
+        }
+    }
     
     private let bag = DisposeBag()
     
     func viewDidLoad() {
         interactor.fetch(with: "hirothings")
-            .subscribe(
-                onNext: { [weak self] (tweets: [Tweet]) in
-                    self?.output.tweetsFetched(tweets)
-                },
-                onError: { [weak self] _ in
-                    self?.output.tweetsFetchFailed()
-                }
-            )
-            .disposed(by: bag)
     }
 }
 
 extension TimelinePresenter: TweetsInteractorOutput {
     func tweetsFetched(_ tweets: [Tweet]) {
+        self.tweets = tweets
     }
     
     func tweetsFetchFailed() {

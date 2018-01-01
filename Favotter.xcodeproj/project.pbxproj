@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3EFEB12A41D6AC43233AF5AD /* Pods_FavotterTarget_FavotterStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236E3855CEBDD40CC2FE613B /* Pods_FavotterTarget_FavotterStyle.framework */; };
-		5431211A1FF8DC45002D49C8 /* TimelineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BDB9CC1FF6C7600038738D /* TimelineViewController.storyboard */; };
 		5431211C1FF8E1D0002D49C8 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5431211B1FF8E1D0002D49C8 /* LoginViewController.storyboard */; };
+		5431211E1FF8E33A002D49C8 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5431211D1FF8E33A002D49C8 /* RootRouter.swift */; };
+		543121201FF8E838002D49C8 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5431211F1FF8E838002D49C8 /* LoginRouter.swift */; };
+		543121231FF91674002D49C8 /* TimelineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 543121221FF91674002D49C8 /* TimelineViewController.storyboard */; };
 		54884CA61FF6C657007DBA43 /* FavotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54884CA51FF6C657007DBA43 /* FavotterUITests.swift */; };
 		5488881B1FF6C94100D0757B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548888191FF6C94100D0757B /* APIClient.swift */; };
 		5488881C1FF6C94100D0757B /* TwitterAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5488881A1FF6C94100D0757B /* TwitterAPIError.swift */; };
@@ -24,7 +26,6 @@
 		54BDB9CF1FF6C7600038738D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54BDB9C81FF6C7600038738D /* AppDelegate.swift */; };
 		54BDB9D01FF6C7600038738D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BDB9C91FF6C7600038738D /* Assets.xcassets */; };
 		54BDB9D11FF6C7600038738D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BDB9CA1FF6C7600038738D /* LaunchScreen.storyboard */; };
-		54BDB9D31FF6C7600038738D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54BDB9CE1FF6C7600038738D /* Info.plist */; };
 		54BDB9FC1FF6C7B40038738D /* FavotterAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 54BDB9FA1FF6C7B40038738D /* FavotterAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54BDB9FF1FF6C7B40038738D /* FavotterAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BDB9F81FF6C7B40038738D /* FavotterAPIClient.framework */; };
 		54BDBA001FF6C7B40038738D /* FavotterAPIClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54BDB9F81FF6C7B40038738D /* FavotterAPIClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -125,6 +126,9 @@
 		4A10093A5F8BED4336E0F415 /* Pods-FavotterTarget-FavotterStyle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterStyle.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterStyle/Pods-FavotterTarget-FavotterStyle.release.xcconfig"; sourceTree = "<group>"; };
 		51EA557E5C1758A66718A6EE /* Pods-FavotterTarget-FavotterUtill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterUtill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterUtill/Pods-FavotterTarget-FavotterUtill.debug.xcconfig"; sourceTree = "<group>"; };
 		5431211B1FF8E1D0002D49C8 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		5431211D1FF8E33A002D49C8 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		5431211F1FF8E838002D49C8 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		543121221FF91674002D49C8 /* TimelineViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TimelineViewController.storyboard; sourceTree = "<group>"; };
 		54884C8D1FF6C657007DBA43 /* Favotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Favotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54884CA11FF6C657007DBA43 /* FavotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54884CA51FF6C657007DBA43 /* FavotterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavotterUITests.swift; sourceTree = "<group>"; };
@@ -137,7 +141,6 @@
 		54BDB9C81FF6C7600038738D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54BDB9C91FF6C7600038738D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54BDB9CB1FF6C7600038738D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		54BDB9CD1FF6C7600038738D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TimelineViewController.storyboard; sourceTree = "<group>"; };
 		54BDB9CE1FF6C7600038738D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54BDB9E71FF6C7A00038738D /* TwitterAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAPI.swift; sourceTree = "<group>"; };
 		54BDB9E81FF6C7A00038738D /* TwitterRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterRequest.swift; sourceTree = "<group>"; };
@@ -376,6 +379,8 @@
 			isa = PBXGroup;
 			children = (
 				54BF13521FF8D5E000D713DF /* TimelineRouter.swift */,
+				5431211D1FF8E33A002D49C8 /* RootRouter.swift */,
+				5431211F1FF8E838002D49C8 /* LoginRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -405,7 +410,7 @@
 		54BF13611FF8D68300D713DF /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
-				54BDB9CC1FF6C7600038738D /* TimelineViewController.storyboard */,
+				543121221FF91674002D49C8 /* TimelineViewController.storyboard */,
 				5431211B1FF8E1D0002D49C8 /* LoginViewController.storyboard */,
 			);
 			path = StoryBoard;
@@ -708,7 +713,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54BDB9D31FF6C7600038738D /* Info.plist in Resources */,
 				54BDB9D01FF6C7600038738D /* Assets.xcassets in Resources */,
 				54BDB9D11FF6C7600038738D /* LaunchScreen.storyboard in Resources */,
 			);
@@ -739,9 +743,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5431211A1FF8DC45002D49C8 /* TimelineViewController.storyboard in Resources */,
 				5431211C1FF8E1D0002D49C8 /* LoginViewController.storyboard in Resources */,
 				54BF135F1FF8D63400D713DF /* ProfileTableViewCell.xib in Resources */,
+				543121231FF91674002D49C8 /* TimelineViewController.storyboard in Resources */,
 				54BF13601FF8D63400D713DF /* TweetTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1067,7 +1071,9 @@
 				54BF13551FF8D5E000D713DF /* TimelinePresenter.swift in Sources */,
 				54BF13561FF8D5E000D713DF /* TimelineRouter.swift in Sources */,
 				54BF135E1FF8D63400D713DF /* ProfileTableViewCell.swift in Sources */,
+				5431211E1FF8E33A002D49C8 /* RootRouter.swift in Sources */,
 				54BF135D1FF8D63400D713DF /* TweetTableViewCell.swift in Sources */,
+				543121201FF8E838002D49C8 /* LoginRouter.swift in Sources */,
 				54BF13631FF8D7BA00D713DF /* TimelineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1128,14 +1134,6 @@
 				54BDB9CB1FF6C7600038738D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		54BDB9CC1FF6C7600038738D /* TimelineViewController.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				54BDB9CD1FF6C7600038738D /* Base */,
-			);
-			name = TimelineViewController.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
