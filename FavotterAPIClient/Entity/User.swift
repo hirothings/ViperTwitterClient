@@ -13,7 +13,7 @@ public struct User: Codable {
     public let screenName: String
     public let description: String
     public let profileImageURL: String
-    public let profileBGImageURL: String
+    public let profileBGImageURL: String?
     public let friendsCount: Int
     public let followersCount: Int
     
