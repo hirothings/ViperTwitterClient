@@ -2,8 +2,8 @@
 //  FavotterStyle.h
 //  FavotterStyle
 //
-//  Created by hirothings on 2017/12/30.
-//  Copyright © 2017年 hirothings. All rights reserved.
+//  Created by hirothings on 2018/01/02.
+//  Copyright © 2018年 hirothings. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

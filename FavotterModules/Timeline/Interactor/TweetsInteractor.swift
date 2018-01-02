@@ -8,7 +8,7 @@
 
 import Foundation
 import RxSwift
-import FavotterAPIClient
+import FavotterModel
 
 public protocol TweetsInteractorUsecase: class {
     weak var output: TweetsInteractorOutput! { get }

@@ -8,8 +8,7 @@
 
 import Foundation
 import RxSwift
-import FavotterDomain
-import FavotterAPIClient
+import FavotterModel
 
 protocol TimelinePresentation {
     weak var view: TimelineView? { get }

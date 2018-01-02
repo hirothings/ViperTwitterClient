@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
-import FavotterAPIClient
+import FavotterModel
 
 protocol TimelineView: class {
     var presenter: TimelinePresenter! { get set }

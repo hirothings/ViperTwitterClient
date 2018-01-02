@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FavotterDomain
 
 protocol TimelineWireframe {
     weak var viewController: UIViewController? { get set }

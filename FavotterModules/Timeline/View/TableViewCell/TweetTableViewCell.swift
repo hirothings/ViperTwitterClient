@@ -8,7 +8,7 @@
 
 import UIKit
 import RxSwift
-import FavotterAPIClient
+import FavotterModel
 
 class TweetTableViewCell: UITableViewCell {
 

@@ -18,17 +18,14 @@ abstract_target 'FavotterTarget' do
   target 'Favotter' do
   end
 
-  target 'FavotterView' do
+  target 'FavotterModules' do
     pod 'SnapKit', '~> 4.0.0'
   end
 
   target 'FavotterStyle' do
   end
 
-  target 'FavotterDomain' do
-  end
-
-  target 'FavotterAPIClient' do
+  target 'FavotterModel' do
   end
 
   target 'FavotterUtill' do
