@@ -9,6 +9,7 @@
 import Foundation
 import RxSwift
 import FavotterModel
+import TwitterKit
 
 protocol TimelinePresentation: class {
     weak var view: TimelineView? { get }
@@ -21,13 +22,16 @@ protocol TimelinePresentation: class {
     
     func viewDidLoad()
     func pullToRefresh()
+    func didSelectTweet(with user: User)
 }
 
 class TimelinePresenter: TimelinePresentation {
     weak var view: TimelineView?
     private let router: TimelineWireframe
     private let interactor: TimelineUsecase
-    
+    private let userID: String
+    private let store = TWTRTwitter.sharedInstance().sessionStore
+
     required init(
         view: TimelineView?,
         router: TimelineWireframe,
@@ -36,6 +40,7 @@ class TimelinePresenter: TimelinePresentation {
         self.view = view
         self.router = router
         self.interactor = interactor
+        self.userID = store.session()?.userID ?? ""
     }
     
     var tweets: [Tweet] = [] {
@@ -51,11 +56,15 @@ class TimelinePresenter: TimelinePresentation {
     private let bag = DisposeBag()
     
     func viewDidLoad() {
-        interactor.fetch(with: "hirothings")
+        interactor.fetch(with: userID)
     }
     
     func pullToRefresh() {
-        interactor.fetch(with: "hirothings")
+        interactor.fetch(with: userID)
+    }
+    
+    func didSelectTweet(with user: User) {
+        router.pushUserProfileView(user)
     }
 }
 
