@@ -47,7 +47,7 @@
 		54DE74871FFB598A0075B77B /* FavotterUtill.h in Headers */ = {isa = PBXBuildFile; fileRef = 54DE74851FFB59890075B77B /* FavotterUtill.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54DE74891FFB5C240075B77B /* FavotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74021FFB59170075B77B /* FavotterUITests.swift */; };
 		54DE748C1FFB5C650075B77B /* FavotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74051FFB59170075B77B /* FavotterTests.swift */; };
-		6AIZ6T9TMP8ESAE4QD64MXHI /* UserTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7O58G0L4MMQ670EVO3SNFIFD /* UserTimelineView.swift */; };
+		6AIZ6T9TMP8ESAE4QD64MXHI /* UserTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7O58G0L4MMQ670EVO3SNFIFD /* UserTimelineViewController.swift */; };
 		6OXG3H29LZYFX2WY3HTS05AH /* UserTimelinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = WK5CXQRJZPMFOSNJZPIMFI59 /* UserTimelinePresenter.swift */; };
 		AC50889B06D281AF37282BFD /* Pods_FavotterTarget_FavotterModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A55559C37CB41C35C84989 /* Pods_FavotterTarget_FavotterModel.framework */; };
 		C6AF371706933DFFB1ED91E3 /* Pods_FavotterTarget_FavotterUtill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55299CE6D0F526F4C2665157 /* Pods_FavotterTarget_FavotterUtill.framework */; };
@@ -168,7 +168,7 @@
 		64D42B900B60F759A47ABC80 /* Pods-FavotterTarget-FavotterView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterView/Pods-FavotterTarget-FavotterView.debug.xcconfig"; sourceTree = "<group>"; };
 		6DAE188A408B625FA59C5C18 /* Pods-FavotterTarget-Favotter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-Favotter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-Favotter/Pods-FavotterTarget-Favotter.debug.xcconfig"; sourceTree = "<group>"; };
 		6EAA25CB6AABF2F95A3836AD /* Pods-FavotterTarget-FavotterModules.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterModules.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterModules/Pods-FavotterTarget-FavotterModules.debug.xcconfig"; sourceTree = "<group>"; };
-		7O58G0L4MMQ670EVO3SNFIFD /* UserTimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTimelineView.swift; sourceTree = "<group>"; };
+		7O58G0L4MMQ670EVO3SNFIFD /* UserTimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTimelineViewController.swift; sourceTree = "<group>"; };
 		81B2C58C03EF7D3981BDABE4 /* Pods_FavotterTarget_Favotter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_Favotter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		830DBA3AFE077F7C3511FD83 /* Pods-FavotterTarget-FavotterDomain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterDomain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterDomain/Pods-FavotterTarget-FavotterDomain.debug.xcconfig"; sourceTree = "<group>"; };
 		B9A55559C37CB41C35C84989 /* Pods_FavotterTarget_FavotterModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -492,7 +492,7 @@
 		Y0RYPCSIWMULDTGURW32DGTK /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7O58G0L4MMQ670EVO3SNFIFD /* UserTimelineView.swift */,
+				7O58G0L4MMQ670EVO3SNFIFD /* UserTimelineViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1040,7 +1040,7 @@
 				Q6H5SW86S8V5WWVJ4SLFO36C /* UserTimelineInteractor.swift in Sources */,
 				6OXG3H29LZYFX2WY3HTS05AH /* UserTimelinePresenter.swift in Sources */,
 				K6F6PADR836B55F1GBPGO52R /* UserTimelineRouter.swift in Sources */,
-				6AIZ6T9TMP8ESAE4QD64MXHI /* UserTimelineView.swift in Sources */,
+				6AIZ6T9TMP8ESAE4QD64MXHI /* UserTimelineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
