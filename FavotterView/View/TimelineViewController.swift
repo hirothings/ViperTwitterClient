@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 import FavotterAPIClient
 
 protocol TimelineView: class {
@@ -20,6 +22,9 @@ class TimelineViewController: UIViewController {
     
     var presenter: TimelinePresenter!
     var tweets: [Tweet] = []
+    
+    private let refreshControl = UIRefreshControl()
+    private let bag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +45,11 @@ class TimelineViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.addSubview(refreshControl)
+        
+        refreshControl.rx.controlEvent(.valueChanged)
+            .subscribe(onNext: { [weak self] _ in self?.presenter.pullToRefresh() })
+            .disposed(by: bag)
     }
 }
 
@@ -51,6 +61,7 @@ extension TimelineViewController: TimelineView {
     func showTimeline(tweets: [Tweet]) {
         self.tweets = tweets
         tableView.reloadData()
+        refreshControl.endRefreshing()
     }
 }
 

@@ -18,6 +18,7 @@ protocol TimelinePresentation {
     var output: TweetsInteractorOutput! { get }
     
     func viewDidLoad()
+    func pullToRefresh()
 }
 
 class TimelinePresenter: TimelinePresentation {
@@ -38,6 +39,10 @@ class TimelinePresenter: TimelinePresentation {
     private let bag = DisposeBag()
     
     func viewDidLoad() {
+        interactor.fetch(with: "hirothings")
+    }
+    
+    func pullToRefresh() {
         interactor.fetch(with: "hirothings")
     }
 }
