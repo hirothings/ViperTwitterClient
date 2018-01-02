@@ -1,0 +1,5 @@
+DefaultTemplateDirectoryPath: ./KuriTemplate/
+ProjectRootPath: ./
+ProjectFileName: Favotter.xcodeproj
+GenerateRootPath: ./FavotterModules/
+Target: FavotterModules

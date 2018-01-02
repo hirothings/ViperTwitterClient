@@ -47,9 +47,13 @@
 		54DE74871FFB598A0075B77B /* FavotterUtill.h in Headers */ = {isa = PBXBuildFile; fileRef = 54DE74851FFB59890075B77B /* FavotterUtill.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54DE74891FFB5C240075B77B /* FavotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74021FFB59170075B77B /* FavotterUITests.swift */; };
 		54DE748C1FFB5C650075B77B /* FavotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74051FFB59170075B77B /* FavotterTests.swift */; };
+		6AIZ6T9TMP8ESAE4QD64MXHI /* UserTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7O58G0L4MMQ670EVO3SNFIFD /* UserTimelineView.swift */; };
+		6OXG3H29LZYFX2WY3HTS05AH /* UserTimelinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = WK5CXQRJZPMFOSNJZPIMFI59 /* UserTimelinePresenter.swift */; };
 		AC50889B06D281AF37282BFD /* Pods_FavotterTarget_FavotterModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A55559C37CB41C35C84989 /* Pods_FavotterTarget_FavotterModel.framework */; };
 		C6AF371706933DFFB1ED91E3 /* Pods_FavotterTarget_FavotterUtill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55299CE6D0F526F4C2665157 /* Pods_FavotterTarget_FavotterUtill.framework */; };
 		EFC5F892A080A63371ADFD3F /* Pods_FavotterTarget_FavotterModules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5542D37DDD550C38D9E20F99 /* Pods_FavotterTarget_FavotterModules.framework */; };
+		K6F6PADR836B55F1GBPGO52R /* UserTimelineRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = I18O7613EL17S5SZND0XELEU /* UserTimelineRouter.swift */; };
+		Q6H5SW86S8V5WWVJ4SLFO36C /* UserTimelineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = U366JEZRUHQTEZJWOYO00VD6 /* UserTimelineInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +168,7 @@
 		64D42B900B60F759A47ABC80 /* Pods-FavotterTarget-FavotterView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterView/Pods-FavotterTarget-FavotterView.debug.xcconfig"; sourceTree = "<group>"; };
 		6DAE188A408B625FA59C5C18 /* Pods-FavotterTarget-Favotter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-Favotter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-Favotter/Pods-FavotterTarget-Favotter.debug.xcconfig"; sourceTree = "<group>"; };
 		6EAA25CB6AABF2F95A3836AD /* Pods-FavotterTarget-FavotterModules.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterModules.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterModules/Pods-FavotterTarget-FavotterModules.debug.xcconfig"; sourceTree = "<group>"; };
+		7O58G0L4MMQ670EVO3SNFIFD /* UserTimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTimelineView.swift; sourceTree = "<group>"; };
 		81B2C58C03EF7D3981BDABE4 /* Pods_FavotterTarget_Favotter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_Favotter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		830DBA3AFE077F7C3511FD83 /* Pods-FavotterTarget-FavotterDomain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterDomain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterDomain/Pods-FavotterTarget-FavotterDomain.debug.xcconfig"; sourceTree = "<group>"; };
 		B9A55559C37CB41C35C84989 /* Pods_FavotterTarget_FavotterModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +178,9 @@
 		F461200200D9A9C524C73732 /* Pods_FavotterTarget_FavotterView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8AEE799E0DF13E1F17AC6E5 /* Pods_FavotterTarget_FavotterAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2376E94D6F36461F6EC86D /* Pods-FavotterTarget-Favotter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-Favotter.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-Favotter/Pods-FavotterTarget-Favotter.release.xcconfig"; sourceTree = "<group>"; };
+		I18O7613EL17S5SZND0XELEU /* UserTimelineRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTimelineRouter.swift; sourceTree = "<group>"; };
+		U366JEZRUHQTEZJWOYO00VD6 /* UserTimelineInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTimelineInteractor.swift; sourceTree = "<group>"; };
+		WK5CXQRJZPMFOSNJZPIMFI59 /* UserTimelinePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTimelinePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +325,7 @@
 				54DE748D1FFB5CF60075B77B /* Timeline */,
 				54DE745B1FFB596F0075B77B /* FavotterModules.h */,
 				54DE745C1FFB596F0075B77B /* Info.plist */,
+				AWSVVHTUZHZ6APAS3UC44W7L /* UserTimeline */,
 			);
 			path = FavotterModules;
 			sourceTree = "<group>";
@@ -407,6 +416,33 @@
 			path = Timeline;
 			sourceTree = "<group>";
 		};
+		7D13OOTMOZQ5HI0C2SEUCA29 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				WK5CXQRJZPMFOSNJZPIMFI59 /* UserTimelinePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		95J70FHLY88TBQI2ENIQ39LL /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				I18O7613EL17S5SZND0XELEU /* UserTimelineRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AWSVVHTUZHZ6APAS3UC44W7L /* UserTimeline */ = {
+			isa = PBXGroup;
+			children = (
+				QQ3JO1WWOQMWAQ4NLWOAJBNT /* Interactor */,
+				7D13OOTMOZQ5HI0C2SEUCA29 /* Presenter */,
+				95J70FHLY88TBQI2ENIQ39LL /* Router */,
+				Y0RYPCSIWMULDTGURW32DGTK /* View */,
+			);
+			path = UserTimeline;
+			sourceTree = "<group>";
+		};
 		C364946A864D55DC0A22FE1E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -443,6 +479,22 @@
 				FE2376E94D6F36461F6EC86D /* Pods-FavotterTarget-Favotter.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		QQ3JO1WWOQMWAQ4NLWOAJBNT /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				U366JEZRUHQTEZJWOYO00VD6 /* UserTimelineInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		Y0RYPCSIWMULDTGURW32DGTK /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7O58G0L4MMQ670EVO3SNFIFD /* UserTimelineView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -985,6 +1037,10 @@
 				54DE74731FFB596F0075B77B /* TimelinePresenter.swift in Sources */,
 				54DE74741FFB596F0075B77B /* LoginRouter.swift in Sources */,
 				54DE747C1FFB596F0075B77B /* TweetTableViewCell.swift in Sources */,
+				Q6H5SW86S8V5WWVJ4SLFO36C /* UserTimelineInteractor.swift in Sources */,
+				6OXG3H29LZYFX2WY3HTS05AH /* UserTimelinePresenter.swift in Sources */,
+				K6F6PADR836B55F1GBPGO52R /* UserTimelineRouter.swift in Sources */,
+				6AIZ6T9TMP8ESAE4QD64MXHI /* UserTimelineView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
