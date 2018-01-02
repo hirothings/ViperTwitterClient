@@ -33,7 +33,7 @@
                         <viewLayoutGuide key="safeArea" id="9RD-j9-BMa"/>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="Pkh-Vv-rpk" id="EhL-xM-nNt"/>
+                        <outlet property="tableView" destination="Pkh-Vv-rpk" id="p0G-z5-HOj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BFr-Pk-L1v" userLabel="First Responder" sceneMemberID="firstResponder"/>

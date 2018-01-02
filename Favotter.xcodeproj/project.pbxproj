@@ -47,6 +47,7 @@
 		54DE74871FFB598A0075B77B /* FavotterUtill.h in Headers */ = {isa = PBXBuildFile; fileRef = 54DE74851FFB59890075B77B /* FavotterUtill.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54DE74891FFB5C240075B77B /* FavotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74021FFB59170075B77B /* FavotterUITests.swift */; };
 		54DE748C1FFB5C650075B77B /* FavotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74051FFB59170075B77B /* FavotterTests.swift */; };
+		54DE748F1FFB73D90075B77B /* UserTimelineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DE748E1FFB73D90075B77B /* UserTimelineViewController.storyboard */; };
 		6AIZ6T9TMP8ESAE4QD64MXHI /* UserTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7O58G0L4MMQ670EVO3SNFIFD /* UserTimelineViewController.swift */; };
 		6OXG3H29LZYFX2WY3HTS05AH /* UserTimelinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = WK5CXQRJZPMFOSNJZPIMFI59 /* UserTimelinePresenter.swift */; };
 		AC50889B06D281AF37282BFD /* Pods_FavotterTarget_FavotterModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A55559C37CB41C35C84989 /* Pods_FavotterTarget_FavotterModel.framework */; };
@@ -161,6 +162,7 @@
 		54DE74811FFB597F0075B77B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54DE74851FFB59890075B77B /* FavotterUtill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavotterUtill.h; sourceTree = "<group>"; };
 		54DE74861FFB59890075B77B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54DE748E1FFB73D90075B77B /* UserTimelineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserTimelineViewController.storyboard; sourceTree = "<group>"; };
 		55299CE6D0F526F4C2665157 /* Pods_FavotterTarget_FavotterUtill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterUtill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5542D37DDD550C38D9E20F99 /* Pods_FavotterTarget_FavotterModules.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterModules.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		59D588DA32DF5912A730495C /* Pods-FavotterTarget-FavotterUtill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterUtill.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterUtill/Pods-FavotterTarget-FavotterUtill.release.xcconfig"; sourceTree = "<group>"; };
@@ -493,6 +495,7 @@
 			isa = PBXGroup;
 			children = (
 				7O58G0L4MMQ670EVO3SNFIFD /* UserTimelineViewController.swift */,
+				54DE748E1FFB73D90075B77B /* UserTimelineViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -750,6 +753,7 @@
 			files = (
 				54DE747D1FFB596F0075B77B /* TweetTableViewCell.xib in Resources */,
 				54DE74791FFB596F0075B77B /* TimelineViewController.storyboard in Resources */,
+				54DE748F1FFB73D90075B77B /* UserTimelineViewController.storyboard in Resources */,
 				54DE747B1FFB596F0075B77B /* ProfileTableViewCell.xib in Resources */,
 				54DE74781FFB596F0075B77B /* LoginViewController.storyboard in Resources */,
 			);

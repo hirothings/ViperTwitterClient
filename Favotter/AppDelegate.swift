@@ -8,7 +8,7 @@
 
 import UIKit
 import TwitterKit
-import FavotterView
+import FavotterModules
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

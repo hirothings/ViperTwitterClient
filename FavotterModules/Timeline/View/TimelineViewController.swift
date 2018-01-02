@@ -78,5 +78,9 @@ extension TimelineViewController: UITableViewDataSource {
 }
 
 extension TimelineViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let tweet = tweets[indexPath.row]
+        self.presenter.didSelectTweet(with: tweet.user)
+    }
 }

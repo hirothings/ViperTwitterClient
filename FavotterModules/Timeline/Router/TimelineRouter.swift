@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import FavotterModel
 
 protocol TimelineWireframe {
     weak var viewController: UIViewController? { get set }
     
     init(viewController: UIViewController)
     
-    func pushUserProfileView(userID: String)
+    func pushUserProfileView(_ user: User)
     static func assembleModule(userID: String) -> UIViewController
 }
 
@@ -44,7 +45,8 @@ class TimelineRouter: TimelineWireframe {
         return nav
     }
     
-    func pushUserProfileView(userID: String) {
-        
+    func pushUserProfileView(_ user: User) {
+        let userProfileVC = UserTimelineRouter.assembleModule(user: user)
+        self.viewController?.navigationController?.pushViewController(userProfileVC, animated: true)
     }
 }

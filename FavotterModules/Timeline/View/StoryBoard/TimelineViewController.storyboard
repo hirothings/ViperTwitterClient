@@ -13,7 +13,7 @@
         <!--Timeline View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="TimelineViewController" id="BYZ-38-t0r" customClass="TimelineViewController" customModule="FavotterView" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TimelineViewController" id="BYZ-38-t0r" customClass="TimelineViewController" customModule="FavotterModules" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
