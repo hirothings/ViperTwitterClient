@@ -10,23 +10,21 @@ import Foundation
 import RxSwift
 import FavotterModel
 
-public protocol TimelineUsecase: class {
+protocol TimelineUsecase: class {
     weak var output: TimelineInteractorOutput! { get }
     func fetch(with userID: String)
 }
 
-public protocol TimelineInteractorOutput: class {
+protocol TimelineInteractorOutput: class {
     func tweetsFetched(_ tweets: [Tweet])
     func tweetsFetchFailed()
 }
 
-public class TimelineInteractor: TimelineUsecase {
-    public weak var output: TimelineInteractorOutput!
+class TimelineInteractor: TimelineUsecase {
+    weak var output: TimelineInteractorOutput!
     private let bag = DisposeBag()
     
-    public init() {}
-    
-    public func fetch(with userID: String) {
+    func fetch(with userID: String) {
         let client = APIClient()
         let request = TwitterAPI.HomeTimeline(userID: userID)
         client.call(request: request)

@@ -10,11 +10,14 @@ import Foundation
 import RxSwift
 import FavotterModel
 
-protocol TimelinePresentation {
+protocol TimelinePresentation: class {
     weak var view: TimelineView? { get }
-    var router: TimelineWireframe! { get }
-    var interactor: TimelineUsecase! { get }
-    var output: TimelineInteractorOutput! { get }
+    
+    init(
+        view: TimelineView?,
+        router: TimelineWireframe,
+        interactor: TimelineUsecase
+    )
     
     func viewDidLoad()
     func pullToRefresh()
@@ -22,9 +25,19 @@ protocol TimelinePresentation {
 
 class TimelinePresenter: TimelinePresentation {
     weak var view: TimelineView?
-    var router: TimelineWireframe!
-    var interactor: TimelineUsecase!
-    var output: TimelineInteractorOutput!
+    private let router: TimelineWireframe
+    private let interactor: TimelineUsecase
+    
+    required init(
+        view: TimelineView?,
+        router: TimelineWireframe,
+        interactor: TimelineUsecase
+        ) {
+        self.view = view
+        self.router = router
+        self.interactor = interactor
+    }
+    
     var tweets: [Tweet] = [] {
         didSet {
             if tweets.isEmpty {
