@@ -1,9 +1,11 @@
 disabled_rules:
   - trailing_whitespace
   - vertical_whitespace
-  - statement_position
 excluded: # paths to ignore during linting. Takes precedence over `included`.
   - Carthage
   - Pods
   - FavotterTests
   - FavotterUITests
+  - KuriTemplate
+line_length:
+  warning: 120 # only Warning
