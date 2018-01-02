@@ -1,5 +1,5 @@
 //
-//  TweetsInteractor.swift
+//  TimelineInteractor.swift
 //  FavotterModel
 //
 //  Created by hirothings on 2017/12/28.
@@ -10,18 +10,18 @@ import Foundation
 import RxSwift
 import FavotterModel
 
-public protocol TweetsInteractorUsecase: class {
-    weak var output: TimelineInteractor! { get }
+public protocol TimelineUsecase: class {
+    weak var output: TimelineInteractorOutput! { get }
     func fetch(with userID: String)
 }
 
-public protocol TimelineInteractor: class {
+public protocol TimelineInteractorOutput: class {
     func tweetsFetched(_ tweets: [Tweet])
     func tweetsFetchFailed()
 }
 
-public class TweetsInteractor: TweetsInteractorUsecase {
-    public weak var output: TimelineInteractor!
+public class TimelineInteractor: TimelineUsecase {
+    public weak var output: TimelineInteractorOutput!
     private let bag = DisposeBag()
     
     public init() {}
