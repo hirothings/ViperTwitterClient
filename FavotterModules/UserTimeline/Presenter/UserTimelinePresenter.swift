@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import FavotterModel
 
 protocol UserTimelinePresentation {
     init(
@@ -15,13 +16,23 @@ protocol UserTimelinePresentation {
         interactor: UserTimelineUsecase
     )
     
-    func viewDidLoad()
+    func fetchUserTimeline(user: User)
 }
 
 class UserTimelinePresenter: UserTimelinePresentation {
     private weak var view: UserTimelineView?
     private let router: UserTimelineWireframe
     private let interactor: UserTimelineUsecase
+    
+    var tweets: [Tweet] = [] {
+        didSet {
+            if tweets.isEmpty {
+                view?.showNoContentView()
+            } else {
+                view?.showTimeline(tweets: tweets)
+            }
+        }
+    }
     
     required init(
         view: UserTimelineView,
@@ -33,11 +44,16 @@ class UserTimelinePresenter: UserTimelinePresentation {
         self.interactor = interactor
     }
     
-    func viewDidLoad() {
-        
+    func fetchUserTimeline(user: User) {
+        interactor.fetch(with: user.screenName)
     }
 }
 
 extension UserTimelinePresenter: UserTimelineInteractorOutput {
-
+    func tweetsFetched(_ tweets: [Tweet]) {
+        self.tweets = tweets
+    }
+    
+    func tweetsFetchFailed() {
+    }
 }
