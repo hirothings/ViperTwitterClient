@@ -30,7 +30,7 @@
 		54DE74581FFB59640075B77B /* TwitterAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74501FFB59640075B77B /* TwitterAPIError.swift */; };
 		54DE74591FFB59640075B77B /* TwitterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74511FFB59640075B77B /* TwitterRequest.swift */; };
 		54DE74701FFB596F0075B77B /* FavotterModules.h in Headers */ = {isa = PBXBuildFile; fileRef = 54DE745B1FFB596F0075B77B /* FavotterModules.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54DE74721FFB596F0075B77B /* TweetsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE745E1FFB596F0075B77B /* TweetsInteractor.swift */; };
+		54DE74721FFB596F0075B77B /* TimelineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE745E1FFB596F0075B77B /* TimelineInteractor.swift */; };
 		54DE74731FFB596F0075B77B /* TimelinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74601FFB596F0075B77B /* TimelinePresenter.swift */; };
 		54DE74741FFB596F0075B77B /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74621FFB596F0075B77B /* LoginRouter.swift */; };
 		54DE74751FFB596F0075B77B /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74631FFB596F0075B77B /* RootRouter.swift */; };
@@ -140,7 +140,7 @@
 		54DE74511FFB59640075B77B /* TwitterRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterRequest.swift; sourceTree = "<group>"; };
 		54DE745B1FFB596F0075B77B /* FavotterModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavotterModules.h; sourceTree = "<group>"; };
 		54DE745C1FFB596F0075B77B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54DE745E1FFB596F0075B77B /* TweetsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetsInteractor.swift; sourceTree = "<group>"; };
+		54DE745E1FFB596F0075B77B /* TimelineInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineInteractor.swift; sourceTree = "<group>"; };
 		54DE74601FFB596F0075B77B /* TimelinePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelinePresenter.swift; sourceTree = "<group>"; };
 		54DE74621FFB596F0075B77B /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		54DE74631FFB596F0075B77B /* RootRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
@@ -314,12 +314,9 @@
 		54DE745A1FFB596F0075B77B /* FavotterModules */ = {
 			isa = PBXGroup;
 			children = (
+				54DE748D1FFB5CF60075B77B /* Timeline */,
 				54DE745B1FFB596F0075B77B /* FavotterModules.h */,
 				54DE745C1FFB596F0075B77B /* Info.plist */,
-				54DE745D1FFB596F0075B77B /* Interactor */,
-				54DE745F1FFB596F0075B77B /* Presenter */,
-				54DE74611FFB596F0075B77B /* Router */,
-				54DE74651FFB596F0075B77B /* View */,
 			);
 			path = FavotterModules;
 			sourceTree = "<group>";
@@ -327,7 +324,7 @@
 		54DE745D1FFB596F0075B77B /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				54DE745E1FFB596F0075B77B /* TweetsInteractor.swift */,
+				54DE745E1FFB596F0075B77B /* TimelineInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -397,6 +394,17 @@
 				54DE74861FFB59890075B77B /* Info.plist */,
 			);
 			path = FavotterUtill;
+			sourceTree = "<group>";
+		};
+		54DE748D1FFB5CF60075B77B /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				54DE745D1FFB596F0075B77B /* Interactor */,
+				54DE745F1FFB596F0075B77B /* Presenter */,
+				54DE74611FFB596F0075B77B /* Router */,
+				54DE74651FFB596F0075B77B /* View */,
+			);
+			path = Timeline;
 			sourceTree = "<group>";
 		};
 		C364946A864D55DC0A22FE1E /* Frameworks */ = {
@@ -972,7 +980,7 @@
 				54DE747A1FFB596F0075B77B /* ProfileTableViewCell.swift in Sources */,
 				54DE74761FFB596F0075B77B /* TimelineRouter.swift in Sources */,
 				54DE74751FFB596F0075B77B /* RootRouter.swift in Sources */,
-				54DE74721FFB596F0075B77B /* TweetsInteractor.swift in Sources */,
+				54DE74721FFB596F0075B77B /* TimelineInteractor.swift in Sources */,
 				54DE747E1FFB596F0075B77B /* TimelineViewController.swift in Sources */,
 				54DE74731FFB596F0075B77B /* TimelinePresenter.swift in Sources */,
 				54DE74741FFB596F0075B77B /* LoginRouter.swift in Sources */,

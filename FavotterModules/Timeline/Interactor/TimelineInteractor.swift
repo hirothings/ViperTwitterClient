@@ -11,17 +11,17 @@ import RxSwift
 import FavotterModel
 
 public protocol TweetsInteractorUsecase: class {
-    weak var output: TweetsInteractorOutput! { get }
+    weak var output: TimelineInteractor! { get }
     func fetch(with userID: String)
 }
 
-public protocol TweetsInteractorOutput: class {
+public protocol TimelineInteractor: class {
     func tweetsFetched(_ tweets: [Tweet])
     func tweetsFetchFailed()
 }
 
 public class TweetsInteractor: TweetsInteractorUsecase {
-    public weak var output: TweetsInteractorOutput!
+    public weak var output: TimelineInteractor!
     private let bag = DisposeBag()
     
     public init() {}

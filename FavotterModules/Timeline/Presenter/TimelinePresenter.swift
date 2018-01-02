@@ -13,8 +13,8 @@ import FavotterModel
 protocol TimelinePresentation {
     weak var view: TimelineView? { get }
     var router: TimelineWireframe! { get }
-    var interactor: TweetsInteractorUsecase! { get }
-    var output: TweetsInteractorOutput! { get }
+    var interactor: TimelineUsecase! { get }
+    var output: TimelineInteractorOutput! { get }
     
     func viewDidLoad()
     func pullToRefresh()
@@ -23,8 +23,8 @@ protocol TimelinePresentation {
 class TimelinePresenter: TimelinePresentation {
     weak var view: TimelineView?
     var router: TimelineWireframe!
-    var interactor: TweetsInteractorUsecase!
-    var output: TweetsInteractorOutput!
+    var interactor: TimelineUsecase!
+    var output: TimelineInteractorOutput!
     var tweets: [Tweet] = [] {
         didSet {
             if tweets.isEmpty {
@@ -46,7 +46,7 @@ class TimelinePresenter: TimelinePresentation {
     }
 }
 
-extension TimelinePresenter: TweetsInteractorOutput {
+extension TimelinePresenter: TimelineInteractorOutput {
     func tweetsFetched(_ tweets: [Tweet]) {
         self.tweets = tweets
     }

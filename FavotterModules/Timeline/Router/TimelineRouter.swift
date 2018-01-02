@@ -23,7 +23,7 @@ class TimelineRouter: TimelineWireframe {
         let storyBoard = UIStoryboard(name: "TimelineViewController", bundle: bundle)
         let view = storyBoard.instantiateInitialViewController() as! TimelineViewController
         let presenter = TimelinePresenter()
-        let interactor = TweetsInteractor()
+        let interactor = TimelineInteractor()
         let router = TimelineRouter()
         let nav = UINavigationController(rootViewController: view)
         
