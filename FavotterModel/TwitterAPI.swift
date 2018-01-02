@@ -28,8 +28,8 @@ public final class TwitterAPI {
     }
     
     public struct UserTimeline: TwitterRequest {
-        public typealias Response = User
-        
+        public typealias Response = [Tweet]
+
         public var urlString: String {
             return baseURL + "/statuses/user_timeline.json"
         }
