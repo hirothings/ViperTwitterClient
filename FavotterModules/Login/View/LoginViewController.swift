@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
             }
             else {
                 // TODO: Use Router
-                let timelineVC = self.storyboard!.instantiateViewController(withIdentifier: "TimeLineViewController")
+                let timelineVC = TimelineViewController.initialViewController()
                 let nvc = UINavigationController(rootViewController: timelineVC)
                 self.present(nvc, animated: true, completion: nil)
             }

@@ -26,9 +26,7 @@ class UserTimelineRouter: UserTimelineWireframe {
     }
 
     static func assembleModule(user: User) -> UIViewController {
-        let bundle = Bundle(for: UserTimelineViewController.self)
-        let storyBoard = UIStoryboard(name: "UserTimelineViewController", bundle: bundle)
-        let view = storyBoard.instantiateInitialViewController() as! UserTimelineViewController
+        let view = UserTimelineViewController.initialViewController()
         let interactor = UserTimelineInteractor()
         let router = UserTimelineRouter(viewController: view)
         

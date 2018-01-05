@@ -9,11 +9,11 @@ PODS:
   - Realm/Headers (3.0.2)
   - RealmSwift (3.0.2):
     - Realm (= 3.0.2)
+  - ResourceKit (0.3.0)
   - RxCocoa (4.0.0):
     - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
   - SnapKit (4.0.0)
-  - SwiftGen (5.2.1)
   - SwiftLint (0.24.0)
   - TwitterCore (3.1.0)
   - TwitterKit (3.3.0):
@@ -24,9 +24,9 @@ DEPENDENCIES:
   - LicensePlist
   - Nuke (~> 5.0)
   - RealmSwift
+  - ResourceKit (= 0.3.0)
   - RxSwift (~> 4.0)
   - SnapKit (~> 4.0.0)
-  - SwiftGen
   - SwiftLint
   - TwitterKit
 
@@ -36,14 +36,14 @@ SPEC CHECKSUMS:
   Nuke: 5f420c4637415f979c83afb35e73176dd03232d9
   Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
   RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
+  ResourceKit: bb82ebc0c3747761eec5d317e093b8875e03452d
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
-  SwiftGen: 444b4c467e512a4812b8a800d731643fd265139e
   SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
   TwitterCore: 644d59e75abccb26cf0a9050d2c4dea0e5412241
   TwitterKit: a2e60ddcedbf54091eac6f27685ca7a87681e1d7
 
-PODFILE CHECKSUM: 289df85739e1cb7798c54dbf3417352a59748187
+PODFILE CHECKSUM: 3dc804fa4212fb84795cb8374a6eded3716e3a84
 
 COCOAPODS: 1.3.1

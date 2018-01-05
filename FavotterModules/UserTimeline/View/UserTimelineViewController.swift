@@ -40,11 +40,8 @@ class UserTimelineViewController: UIViewController {
     }
     
     private func setupView() {
-        let bundle = Bundle(for: UserTimelineViewController.self)
-        let profNib = UINib(nibName: "ProfileTableViewCell", bundle: bundle)
-        let twNib = UINib(nibName: "TweetTableViewCell", bundle: bundle)
-        tableView.register(profNib, forCellReuseIdentifier: "ProfileTableViewCell")
-        tableView.register(twNib, forCellReuseIdentifier: "TweetTableViewCell")
+        tableView.register(xib: TweetTableViewCell.Xib.self)
+        tableView.register(xib: ProfileTableViewCell.Xib.self)
         tableView.estimatedRowHeight =  85.0
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.separatorInset = UIEdgeInsets.zero
@@ -86,11 +83,11 @@ extension UserTimelineViewController: UITableViewDataSource {
         
         switch section {
         case .profile:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileTableViewCell", for: indexPath) as! ProfileTableViewCell
+            let cell = tableView.dequeueReusableCell(with: ProfileTableViewCell.Xib.self, for: indexPath)
             cell.user = self.user
             return cell
         case .timeline:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TweetTableViewCell", for: indexPath) as! TweetTableViewCell
+            let cell = tableView.dequeueReusableCell(with: TweetTableViewCell.Xib.self, for: indexPath)
             cell.tweet = self.tweets[indexPath.row]
             return cell
         }

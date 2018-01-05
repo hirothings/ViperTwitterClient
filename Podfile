@@ -2,8 +2,6 @@ def common_frameworks
   pod 'RxSwift',    '~> 4.0'
   pod 'Action'
   pod 'RealmSwift'
-  pod 'Nuke', '~> 5.0'
-  pod 'SwiftGen'
   pod 'LicensePlist'
   pod 'TwitterKit'
   pod 'SwiftLint'
@@ -20,6 +18,8 @@ abstract_target 'FavotterTarget' do
 
   target 'FavotterModules' do
     pod 'SnapKit', '~> 4.0.0'
+    pod 'Nuke', '~> 5.0'
+    pod 'ResourceKit', '0.3.0'
   end
 
   target 'FavotterStyle' do
