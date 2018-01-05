@@ -8,6 +8,7 @@
 
 import UIKit
 import RxSwift
+import Nuke
 import FavotterModel
 
 class ProfileTableViewCell: UITableViewCell {
@@ -22,8 +23,12 @@ class ProfileTableViewCell: UITableViewCell {
     
     var user: User! {
         didSet {
-//            profileImageView.sd_setImage(with: URL(string: user.profileImageURL))
-//            profileBGImageView.sd_setImage(with: URL(string: user.profileBGImageURL))
+            if let url = URL(string: user.profileImageURL) {
+                Manager.shared.loadImage(with: url, into: profileImageView)
+            }
+            if let urlStr = user.profileBGImageURL, let url = URL(string: urlStr) {
+                Manager.shared.loadImage(with: url, into: profileBGImageView)
+            }
             nameLabel.text = user.name
             screenNameLabel.text = "@\(user.screenName)"
             descriptionLabel.text = user.description

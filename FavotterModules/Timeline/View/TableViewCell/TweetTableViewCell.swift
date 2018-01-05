@@ -8,6 +8,7 @@
 
 import UIKit
 import RxSwift
+import Nuke
 import FavotterModel
 
 class TweetTableViewCell: UITableViewCell {
@@ -22,7 +23,9 @@ class TweetTableViewCell: UITableViewCell {
     // TODO: Force Unwrap以外の手段ないか？delayかdefferか..
     var tweet: Tweet! {
         didSet {
-//            profileImageView.sd_setImage(with: URL(string: tweet.user.profileImageURL))
+            if let url = URL(string: tweet.user.profileImageURL) {
+                Manager.shared.loadImage(with: url, into: profileImageView)
+            }
             nameLabel.text = tweet.user.name
             screenNameLabel.text = "@\(tweet.user.screenName)"
             tweetLabel.text = tweet.text
