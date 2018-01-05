@@ -41,17 +41,17 @@
 	</array>
 	<key>CFBundleURLTypes</key>
 	<array>
-	  <dict>
-	    <key>CFBundleURLSchemes</key>
-	    <array>
-	      <string>twitterkit-<consumerKey></string>
-	    </array>
-	  </dict>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>twitterkit-OIJZqrAxKlUSfx8pWtLZOOWua</string>
+			</array>
+		</dict>
 	</array>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
-	    <string>twitter</string>
-	    <string>twitterauth</string>
+		<string>twitter</string>
+		<string>twitterauth</string>
 	</array>
 </dict>
 </plist>
