@@ -12,7 +12,7 @@ public protocol TwitterRequest {
     associatedtype Response: Codable
     var baseURL: String { get }
     var urlString: String { get }
-    var parameters: [AnyHashable : Any]? { get }
+    var parameters: [AnyHashable: Any]? { get }
     func response(data: Data) throws -> Response
 }
 

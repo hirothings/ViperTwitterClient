@@ -7,7 +7,7 @@ excluded: # paths to ignore during linting. Takes precedence over `included`.
   - FavotterTests
   - FavotterUITests
   - KuriTemplate
-  - Resource.generated.swift
+  - FavotterModules/Generated
 line_length:
-  warning: 120
+  warning: 180
   error: 300

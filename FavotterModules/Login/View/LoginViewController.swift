@@ -13,15 +13,14 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let loginButton = TWTRLogInButton { [weak self] (session: TWTRSession?, error: Error?) in
+        let loginButton = TWTRLogInButton { [weak self] (_, error: Error?) in
             guard let `self` = self else { return }
             if let error = error {
                 let nsError = error as NSError
                 if nsError.code == 1 { return }
                 // TODO: Use Router
 //                self.showError(error: TwitterAPIError(error: nsError))
-            }
-            else {
+            } else {
                 // TODO: Use Router
                 let timelineVC = StoryboardScene.TimelineViewController.initialScene.instantiate()
                 let nvc = UINavigationController(rootViewController: timelineVC)
@@ -33,4 +32,3 @@ class LoginViewController: UIViewController {
         self.view.addSubview(loginButton)
     }
 }
-

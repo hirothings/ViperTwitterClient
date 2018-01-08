@@ -40,8 +40,7 @@ public class APIClient {
                     let res = try request.response(data: data)
                     observer.on(.next(res))
                     observer.onCompleted()
-                }
-                catch {
+                } catch {
                     observer.onError(error)
                 }
             }
