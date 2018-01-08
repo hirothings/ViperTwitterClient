@@ -1,0 +1,5 @@
+output_dir: ./FavotterModules/Generated
+storyboards:
+  templateName: swift4
+  paths: ./FavotterModules/
+  output: StoryBoards.swift
