@@ -21,7 +21,7 @@ public struct User: Codable {
         case name
         case screenName = "screen_name"
         case description
-        case profileImageURL = "profile_image_url"
+        case profileImageURL = "profile_image_url_https"
         case profileBGImageURL = "profile_background_image_url_https"
         case friendsCount = "friends_count"
         case followersCount = "followers_count"
