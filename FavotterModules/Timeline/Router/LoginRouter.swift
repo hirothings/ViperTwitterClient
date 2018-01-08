@@ -18,7 +18,7 @@ class LoginRouter: LoginRouterWireframe {
     weak var viewController: UIViewController?
     
     static func assembleModule() -> UIViewController {
-        let view = LoginViewController.initialViewController()
+        let view = StoryboardScene.LoginViewController.initialScene.instantiate()
         let nav = UINavigationController(rootViewController: view)
         // TODO: Use Presenter
         

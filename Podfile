@@ -19,7 +19,8 @@ abstract_target 'FavotterTarget' do
   target 'FavotterModules' do
     pod 'SnapKit', '~> 4.0.0'
     pod 'Nuke', '~> 5.0'
-    pod 'ResourceKit', '0.3.0'
+    pod 'SwiftGen'
+    pod 'Reusable'
   end
 
   target 'FavotterStyle' do

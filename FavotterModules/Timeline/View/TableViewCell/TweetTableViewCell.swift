@@ -10,8 +10,9 @@ import UIKit
 import RxSwift
 import Nuke
 import FavotterModel
+import Reusable
 
-class TweetTableViewCell: UITableViewCell {
+class TweetTableViewCell: UITableViewCell, NibReusable {
 
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!

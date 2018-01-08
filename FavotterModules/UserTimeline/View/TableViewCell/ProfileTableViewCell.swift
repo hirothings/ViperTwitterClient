@@ -10,8 +10,9 @@ import UIKit
 import RxSwift
 import Nuke
 import FavotterModel
+import Reusable
 
-class ProfileTableViewCell: UITableViewCell {
+class ProfileTableViewCell: UITableViewCell, NibReusable {
 
     @IBOutlet weak var profileBGImageView: UIImageView!
     @IBOutlet weak var profileImageView: UIImageView!

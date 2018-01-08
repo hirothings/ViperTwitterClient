@@ -35,7 +35,7 @@ class TimelineViewController: UIViewController {
     private func setupView() {
         self.navigationItem.title = "タイムライン"
         
-        tableView.register(xib: TweetTableViewCell.Xib.self)
+        tableView.register(cellType: TweetTableViewCell.self)
         tableView.estimatedRowHeight = 85.0
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.separatorInset = UIEdgeInsets.zero
@@ -69,7 +69,7 @@ extension TimelineViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(with: TweetTableViewCell.Xib.self, for: indexPath)
+        let cell: TweetTableViewCell = tableView.dequeueReusableCell(for: indexPath)
         cell.tweet = self.tweets[indexPath.row]
         return cell
     }

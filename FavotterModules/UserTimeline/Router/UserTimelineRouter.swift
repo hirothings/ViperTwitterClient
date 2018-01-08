@@ -26,7 +26,7 @@ class UserTimelineRouter: UserTimelineWireframe {
     }
 
     static func assembleModule(user: User) -> UIViewController {
-        let view = UserTimelineViewController.initialViewController()
+        let view = StoryboardScene.UserTimelineViewController.initialScene.instantiate()
         let interactor = UserTimelineInteractor()
         let router = UserTimelineRouter(viewController: view)
         

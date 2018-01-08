@@ -27,7 +27,7 @@ class TimelineRouter: TimelineWireframe {
 
     // memo: ここでモック化できる
     static func assembleModule(userID: String) -> UIViewController {
-        let view = TimelineViewController.initialViewController()
+        let view = StoryboardScene.TimelineViewController.initialScene.instantiate()
         let interactor = TimelineInteractor()
         let router = TimelineRouter(viewController: view)
         

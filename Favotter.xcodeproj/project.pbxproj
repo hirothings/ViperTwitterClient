@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0555809A06D96E548ABA656D /* Pods_FavotterTarget_Favotter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B2C58C03EF7D3981BDABE4 /* Pods_FavotterTarget_Favotter.framework */; };
 		23178DAFFF0C9376F1FF5D27 /* Pods_FavotterTarget_FavotterStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236E3855CEBDD40CC2FE613B /* Pods_FavotterTarget_FavotterStyle.framework */; };
-		5420CAB420000DC7008DF79F /* Resource.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5420CAB320000DC6008DF79F /* Resource.generated.swift */; };
+		5424318C20001EED00B56E90 /* StoryBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5424318B20001EED00B56E90 /* StoryBoards.swift */; };
 		5432DF6D1FFCEAF20067789A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5432DF6C1FFCEAF20067789A /* Assets.xcassets */; };
 		54DE739F1FFB58220075B77B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE73701FFB58220075B77B /* AppDelegate.swift */; };
 		54DE73A11FFB58220075B77B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DE73721FFB58220075B77B /* LaunchScreen.storyboard */; };
@@ -122,7 +122,7 @@
 		43E179BE177475BB9793DA92 /* Pods-FavotterTarget-FavotterModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterModel/Pods-FavotterTarget-FavotterModel.debug.xcconfig"; sourceTree = "<group>"; };
 		4A10093A5F8BED4336E0F415 /* Pods-FavotterTarget-FavotterStyle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterStyle.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterStyle/Pods-FavotterTarget-FavotterStyle.release.xcconfig"; sourceTree = "<group>"; };
 		51EA557E5C1758A66718A6EE /* Pods-FavotterTarget-FavotterUtill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterUtill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterUtill/Pods-FavotterTarget-FavotterUtill.debug.xcconfig"; sourceTree = "<group>"; };
-		5420CAB320000DC6008DF79F /* Resource.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.generated.swift; sourceTree = SOURCE_ROOT; };
+		5424318B20001EED00B56E90 /* StoryBoards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoards.swift; sourceTree = "<group>"; };
 		5432DF6C1FFCEAF20067789A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54884C8D1FF6C657007DBA43 /* Favotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Favotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54884CA11FF6C657007DBA43 /* FavotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -242,6 +242,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5424318A20001EC400B56E90 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				5424318B20001EED00B56E90 /* StoryBoards.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		5432DF711FFCF52D0067789A /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -368,7 +376,7 @@
 		54DE745A1FFB596F0075B77B /* FavotterModules */ = {
 			isa = PBXGroup;
 			children = (
-				5420CAB320000DC6008DF79F /* Resource.generated.swift */,
+				5424318A20001EC400B56E90 /* Generated */,
 				5432DF731FFCF5810067789A /* Login */,
 				54DE748D1FFB5CF60075B77B /* Timeline */,
 				54DE745B1FFB596F0075B77B /* FavotterModules.h */,
@@ -655,7 +663,6 @@
 				54DE73D01FFB586A0075B77B /* Headers */,
 				54DE73D11FFB586A0075B77B /* Resources */,
 				F920632A55DE77E7AFAC57D5 /* [CP] Copy Pods Resources */,
-				5420CAB220000B03008DF79F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -894,19 +901,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5420CAB220000B03008DF79F /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/ResourceKit/ResourceKit\"";
-		};
 		5432DF611FFB9F290067789A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -973,6 +967,7 @@
 				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -985,6 +980,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1106,6 +1102,7 @@
 				54DE74771FFB596F0075B77B /* LoginViewController.swift in Sources */,
 				54DE747A1FFB596F0075B77B /* ProfileTableViewCell.swift in Sources */,
 				54DE74761FFB596F0075B77B /* TimelineRouter.swift in Sources */,
+				5424318C20001EED00B56E90 /* StoryBoards.swift in Sources */,
 				54DE74751FFB596F0075B77B /* RootRouter.swift in Sources */,
 				54DE74721FFB596F0075B77B /* TimelineInteractor.swift in Sources */,
 				54DE747E1FFB596F0075B77B /* TimelineViewController.swift in Sources */,
@@ -1113,7 +1110,6 @@
 				54DE74741FFB596F0075B77B /* LoginRouter.swift in Sources */,
 				54DE747C1FFB596F0075B77B /* TweetTableViewCell.swift in Sources */,
 				Q6H5SW86S8V5WWVJ4SLFO36C /* UserTimelineInteractor.swift in Sources */,
-				5420CAB420000DC7008DF79F /* Resource.generated.swift in Sources */,
 				6OXG3H29LZYFX2WY3HTS05AH /* UserTimelinePresenter.swift in Sources */,
 				K6F6PADR836B55F1GBPGO52R /* UserTimelineRouter.swift in Sources */,
 				6AIZ6T9TMP8ESAE4QD64MXHI /* UserTimelineViewController.swift in Sources */,
