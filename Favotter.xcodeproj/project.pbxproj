@@ -250,6 +250,14 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		5424318D20061B1600B56E90 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				54DE74621FFB596F0075B77B /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		5432DF711FFCF52D0067789A /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +278,7 @@
 		5432DF731FFCF5810067789A /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				5424318D20061B1600B56E90 /* Router */,
 				5432DF741FFCF58D0067789A /* View */,
 			);
 			path = Login;
@@ -376,6 +385,7 @@
 		54DE745A1FFB596F0075B77B /* FavotterModules */ = {
 			isa = PBXGroup;
 			children = (
+				54DE74631FFB596F0075B77B /* RootRouter.swift */,
 				5424318A20001EC400B56E90 /* Generated */,
 				5432DF731FFCF5810067789A /* Login */,
 				54DE748D1FFB5CF60075B77B /* Timeline */,
@@ -405,8 +415,6 @@
 		54DE74611FFB596F0075B77B /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				54DE74621FFB596F0075B77B /* LoginRouter.swift */,
-				54DE74631FFB596F0075B77B /* RootRouter.swift */,
 				54DE74641FFB596F0075B77B /* TimelineRouter.swift */,
 			);
 			path = Router;
