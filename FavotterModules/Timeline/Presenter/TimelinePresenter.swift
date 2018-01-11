@@ -23,6 +23,7 @@ protocol TimelinePresentation: class {
     func viewDidLoad()
     func pullToRefresh()
     func didSelectTweet(with user: User)
+    func reachedBottom()
 }
 
 class TimelinePresenter: TimelinePresentation {
@@ -65,6 +66,11 @@ class TimelinePresenter: TimelinePresentation {
     
     func didSelectTweet(with user: User) {
         router.pushUserProfileView(user)
+    }
+    
+    func reachedBottom() {
+        print("additionalrequest")
+        // TODO: max_idに最後のツイートのidを渡してコール
     }
 }
 

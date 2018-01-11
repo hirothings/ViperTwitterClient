@@ -11,6 +11,7 @@
 		23178DAFFF0C9376F1FF5D27 /* Pods_FavotterTarget_FavotterStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236E3855CEBDD40CC2FE613B /* Pods_FavotterTarget_FavotterStyle.framework */; };
 		5424318C20001EED00B56E90 /* StoryBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5424318B20001EED00B56E90 /* StoryBoards.swift */; };
 		5432DF6D1FFCEAF20067789A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5432DF6C1FFCEAF20067789A /* Assets.xcassets */; };
+		54DD11A92007C7B80053A3D1 /* UIScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD11A82007C7B80053A3D1 /* UIScrollView+Rx.swift */; };
 		54DE739F1FFB58220075B77B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE73701FFB58220075B77B /* AppDelegate.swift */; };
 		54DE73A11FFB58220075B77B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DE73721FFB58220075B77B /* LaunchScreen.storyboard */; };
 		54DE73C91FFB58420075B77B /* FavotterModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73C21FFB58420075B77B /* FavotterModel.framework */; };
@@ -126,6 +127,7 @@
 		5432DF6C1FFCEAF20067789A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54884C8D1FF6C657007DBA43 /* Favotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Favotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54884CA11FF6C657007DBA43 /* FavotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54DD11A82007C7B80053A3D1 /* UIScrollView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Rx.swift"; sourceTree = "<group>"; };
 		54DE73701FFB58220075B77B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54DE73731FFB58220075B77B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54DE739E1FFB58220075B77B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -461,6 +463,7 @@
 			children = (
 				54DE74851FFB59890075B77B /* FavotterUtill.h */,
 				54DE74861FFB59890075B77B /* Info.plist */,
+				54DD11A82007C7B80053A3D1 /* UIScrollView+Rx.swift */,
 			);
 			path = FavotterUtill;
 			sourceTree = "<group>";
@@ -754,6 +757,7 @@
 					};
 					54DE73F41FFB58860075B77B = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1135,6 +1139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54DD11A92007C7B80053A3D1 /* UIScrollView+Rx.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1497,6 +1502,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 51EA557E5C1758A66718A6EE /* Pods-FavotterTarget-FavotterUtill.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1510,6 +1516,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterUtill;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1521,6 +1528,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 59D588DA32DF5912A730495C /* Pods-FavotterTarget-FavotterUtill.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

@@ -10,6 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import FavotterModel
+import FavotterUtill
 
 protocol TimelineView: class {
     var presenter: TimelinePresenter! { get set }
@@ -29,6 +30,7 @@ class TimelineViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        setupRx()
         presenter.viewDidLoad()
     }
 
@@ -44,9 +46,16 @@ class TimelineViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.addSubview(refreshControl)
-        
+    }
+    
+    private func setupRx() {
         refreshControl.rx.controlEvent(.valueChanged)
             .subscribe(onNext: { [weak self] _ in self?.presenter.pullToRefresh() })
+            .disposed(by: bag)
+        
+        tableView.rx.reachedBottom
+            .asObservable()
+            .subscribe(onNext: { [weak self] _ in self?.presenter.reachedBottom() })
             .disposed(by: bag)
     }
 }
