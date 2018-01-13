@@ -17,13 +17,22 @@ public final class TwitterAPI {
             return baseURL + "/statuses/home_timeline.json"
         }
         public var parameters: [AnyHashable: Any]? {
-            return ["user_id": userID]
+            var param: [AnyHashable: Any] = [
+                "user_id": userID,
+                "count": "20"
+            ]
+            if let maxID = maxID {
+                param["max_id"] = "\(maxID - 1)"
+            }
+            return param
         }
         
         private let userID: String
+        private let maxID: Int64?
 
-        public init(userID: String) {
+        public init(userID: String, maxID: Int64?) {
             self.userID = userID
+            self.maxID = maxID
         }
     }
     
