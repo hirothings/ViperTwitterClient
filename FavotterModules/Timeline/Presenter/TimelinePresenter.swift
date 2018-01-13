@@ -32,6 +32,8 @@ class TimelinePresenter: TimelinePresentation {
     private let interactor: TimelineUsecase
     private let userID: String
     private let store = TWTRTwitter.sharedInstance().sessionStore
+    private var tweets: [Tweet] = []
+    private var isLoading = false
 
     required init(
         view: TimelineView?,
@@ -42,16 +44,6 @@ class TimelinePresenter: TimelinePresentation {
         self.router = router
         self.interactor = interactor
         self.userID = store.session()?.userID ?? ""
-    }
-    
-    var tweets: [Tweet] = [] {
-        didSet {
-            if tweets.isEmpty {
-                view?.showNoContentView()
-            } else {
-                view?.showTimeline(tweets: tweets)
-            }
-        }
     }
     
     private let bag = DisposeBag()
@@ -69,16 +61,34 @@ class TimelinePresenter: TimelinePresentation {
     }
     
     func reachedBottom() {
-        print("additionalrequest")
-        // TODO: max_idに最後のツイートのidを渡してコール
+        guard let lastID = tweets.last?.id else { return }
+        if isLoading { return }
+        interactor.addTweets(userID: userID, maxID: lastID)
+        isLoading = true
     }
 }
 
 extension TimelinePresenter: TimelineInteractorOutput {
     func tweetsFetched(_ tweets: [Tweet]) {
-        self.tweets = tweets
+        isLoading = false
+        if tweets.isEmpty {
+            view?.showNoContentView()
+        } else {
+            self.tweets = tweets
+            view?.showTimeline(tweets: tweets)
+        }
+    }
+    
+    func tweetsAdded(_ tweets: [Tweet]) {
+        isLoading = false
+        if tweets.isEmpty {
+            return
+        }
+        self.tweets += tweets
+        view?.updateTimeline(tweets: self.tweets)
     }
     
     func tweetsFetchFailed() {
+        isLoading = false
     }
 }

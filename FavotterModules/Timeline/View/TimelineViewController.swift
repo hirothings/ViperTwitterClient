@@ -16,6 +16,7 @@ protocol TimelineView: class {
     var presenter: TimelinePresenter! { get set }
     func showNoContentView()
     func showTimeline(tweets: [Tweet])
+    func updateTimeline(tweets: [Tweet])
 }
 
 class TimelineViewController: UIViewController {
@@ -69,6 +70,14 @@ extension TimelineViewController: TimelineView {
         self.tweets = tweets
         tableView.reloadData()
         refreshControl.endRefreshing()
+    }
+    
+    func updateTimeline(tweets: [Tweet]) {
+        let indexPath = Array(self.tweets.count..<tweets.count).map { IndexPath(row: $0, section: 0) }
+        tableView.beginUpdates()
+        self.tweets = tweets
+        tableView.insertRows(at: indexPath, with: .none)
+        tableView.endUpdates()
     }
 }
 
