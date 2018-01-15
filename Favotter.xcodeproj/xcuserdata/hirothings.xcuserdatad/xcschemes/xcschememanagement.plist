@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Favotter.xcscheme</key>
+		<key>Favotter.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>13</integer>
@@ -19,22 +19,22 @@
 			<key>orderHint</key>
 			<integer>17</integer>
 		</dict>
-		<key>FavotterModel.xcscheme</key>
+		<key>FavotterModel.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>14</integer>
 		</dict>
-		<key>FavotterModules.xcscheme</key>
+		<key>FavotterModules.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>15</integer>
 		</dict>
-		<key>FavotterStyle.xcscheme</key>
+		<key>FavotterStyle.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>16</integer>
 		</dict>
-		<key>FavotterUtill.xcscheme</key>
+		<key>FavotterUtill.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>17</integer>
