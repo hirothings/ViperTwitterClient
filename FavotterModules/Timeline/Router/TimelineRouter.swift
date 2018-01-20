@@ -35,9 +35,6 @@ class TimelineRouter: TimelineWireframe {
         let presenter = TimelinePresenter(view: view, router: router, interactor: interactor)
         
         view.presenter = presenter
-        
-        // interactorはpresenterを参照する関係でイニシャライザで値渡しできない
-        interactor.output = presenter
 
         let nav = UINavigationController(rootViewController: view)
         return nav
