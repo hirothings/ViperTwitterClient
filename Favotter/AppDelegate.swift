@@ -24,4 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         router.showRootScreen()
         return true
     }
+
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any] = [:]) -> Bool {
+        return TWTRTwitter.sharedInstance().application(app, open: url, options: options)
+    }
 }
