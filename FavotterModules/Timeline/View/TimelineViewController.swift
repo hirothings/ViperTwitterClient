@@ -76,7 +76,9 @@ extension TimelineViewController: TimelineView {
         let indexPath = Array(self.tweets.count..<tweets.count).map { IndexPath(row: $0, section: 0) }
         tableView.beginUpdates()
         self.tweets = tweets
-        tableView.insertRows(at: indexPath, with: .none)
+        UIView.performWithoutAnimation {
+            tableView.insertRows(at: indexPath, with: .bottom)
+        }
         tableView.endUpdates()
     }
 }
