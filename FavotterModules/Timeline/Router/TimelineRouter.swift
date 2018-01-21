@@ -12,7 +12,7 @@ import FavotterModel
 protocol TimelineWireframe {
     weak var viewController: UIViewController? { get set }
     
-    init(viewController: UIViewController)
+    init(viewController: UIViewController?)
     
     func pushUserProfileView(_ user: User)
     static func assembleModule(userID: String) -> UIViewController
@@ -21,7 +21,7 @@ protocol TimelineWireframe {
 class TimelineRouter: TimelineWireframe {
     weak var viewController: UIViewController?
     
-    required init(viewController: UIViewController) {
+    required init(viewController: UIViewController?) {
         self.viewController = viewController
     }
 
