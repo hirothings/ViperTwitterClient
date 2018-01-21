@@ -15,6 +15,14 @@ public struct Tweet: Codable {
     public let retweetCount: Int
     public let favCount: Int
     
+    public init(id: Int64, text: String, user: User, retweetCount: Int, favCount: Int) {
+        self.id = id
+        self.text = text
+        self.user = user
+        self.retweetCount = retweetCount
+        self.favCount = favCount
+    }
+    
     private enum CodingKeys: String, CodingKey {
         case id
         case text

@@ -17,6 +17,24 @@ public struct User: Codable {
     public let friendsCount: Int
     public let followersCount: Int
     
+    public init(
+        name: String,
+        screenName: String,
+        description: String,
+        profileImageURL: String,
+        profileBGImageURL: String?,
+        friendsCount: Int,
+        followersCount: Int
+        ) {
+        self.name = name
+        self.screenName = screenName
+        self.description = description
+        self.profileImageURL = profileImageURL
+        self.profileBGImageURL = profileBGImageURL
+        self.friendsCount = friendsCount
+        self.followersCount = followersCount
+    }
+    
     private enum CodingKeys: String, CodingKey {
         case name
         case screenName = "screen_name"
