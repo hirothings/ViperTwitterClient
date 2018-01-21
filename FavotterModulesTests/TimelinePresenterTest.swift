@@ -24,12 +24,12 @@ enum TweetMock {
         case .none:
             return []
         case .initialTweets:
-            return Array(1..<20).map {
+            return Array(0..<20).map {
                 let user = User(name: "ユーザー\($0)", screenName: "test_\($0)", description: "", profileImageURL: "https://test\($0).com", profileBGImageURL: "https://test\($0).com", friendsCount: $0, followersCount: $0)
                 return Tweet(id: Int64($0), text: "こんにちは！\($0)", user: user, retweetCount: $0, favCount: $0)
             }
         case .additionalTweets:
-            return Array(1..<20).map {
+            return Array(0..<18).map {
                 let user = User(name: "追加ユーザー\($0)", screenName: "test_\($0)", description: "", profileImageURL: "https://test\($0).com", profileBGImageURL: "https://test\($0).com", friendsCount: $0, followersCount: $0)
                 return Tweet(id: Int64($0), text: "追加ユーザーです。こんにちは！\($0)", user: user, retweetCount: $0, favCount: $0)
             }
@@ -89,7 +89,7 @@ class TimelinePresenterTest: XCTestCase {
         super.tearDown()
     }
     
-    /// Tweet0件の場合、0件表示viewが表示されること
+    /// Tweet0件の場合、0件表示メソッドがコールされていること
     func testFetchNone() {
         // setup mock
         stub.mock = TweetMock.none
@@ -98,6 +98,16 @@ class TimelinePresenterTest: XCTestCase {
         // then
         XCTAssertEqual(false, spy.noContentViewIsHidden)
     }
+    
+    /// Tweetを追加ロードした際、追加の差分がviewに正常に渡されていること
+    func testAddedTweets() {
+        stub.mock = TweetMock.initialTweets
+        presenter.viewDidLoad()
+        XCTAssertEqual(20, spy.tweets.count)
+        
+        stub.mock = TweetMock.additionalTweets
+        presenter.reachedBottom()
+        XCTAssertEqual(18, spy.tweetsDiffCount)
     }
     
     func testPerformanceExample() {
