@@ -50,10 +50,19 @@ class TimelineUseCaseStub: TimelineUsecase {
 }
 
 class TimelinePresenterTest: XCTestCase {
+    var presenter: TimelinePresentation!
+    let view = StoryboardScene.TimelineViewController.initialScene.instantiate()
+    lazy var router = TimelineRouter(viewController: view)
+    let stub = TimelineUseCaseStub()
+    let userID: String = "602524897" // @hirothings
+    let store = TWTRTwitter.sharedInstance().sessionStore
+    var tweets: [Tweet] = []
+    var isLoading = false
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        self.presenter = TimelinePresenter(view: view, router: router, interactor: stub)
+        view.presenter = self.presenter
     }
     
     override func tearDown() {
@@ -61,9 +70,14 @@ class TimelinePresenterTest: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    /// Tweet0件の場合、0件表示viewが表示されること
+    func testFetchNone() {
+        // setup mock
+        stub.mock = TweetMock.none
+        // when
+        presenter.viewDidLoad()
+        // then
+        XCTAssertEqual(false, view.noContentView.isHidden)
     }
     
     func testPerformanceExample() {
