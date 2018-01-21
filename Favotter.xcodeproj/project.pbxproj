@@ -11,6 +11,9 @@
 		23178DAFFF0C9376F1FF5D27 /* Pods_FavotterTarget_FavotterStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236E3855CEBDD40CC2FE613B /* Pods_FavotterTarget_FavotterStyle.framework */; };
 		5424318C20001EED00B56E90 /* StoryBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5424318B20001EED00B56E90 /* StoryBoards.swift */; };
 		5432DF6D1FFCEAF20067789A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5432DF6C1FFCEAF20067789A /* Assets.xcassets */; };
+		54D7547D2013175E0015A1D7 /* FavotterModulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D7547C2013175E0015A1D7 /* FavotterModulesTests.swift */; };
+		54D7547F2013175E0015A1D7 /* FavotterModules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73D31FFB586A0075B77B /* FavotterModules.framework */; };
+		54D7548720131A120015A1D7 /* TimelinePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D7548620131A120015A1D7 /* TimelinePresenterTest.swift */; };
 		54DD11A92007C7B80053A3D1 /* UIScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD11A82007C7B80053A3D1 /* UIScrollView+Rx.swift */; };
 		54DE739F1FFB58220075B77B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE73701FFB58220075B77B /* AppDelegate.swift */; };
 		54DE73A11FFB58220075B77B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DE73721FFB58220075B77B /* LaunchScreen.storyboard */; };
@@ -52,6 +55,7 @@
 		54DE748F1FFB73D90075B77B /* UserTimelineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DE748E1FFB73D90075B77B /* UserTimelineViewController.storyboard */; };
 		6AIZ6T9TMP8ESAE4QD64MXHI /* UserTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7O58G0L4MMQ670EVO3SNFIFD /* UserTimelineViewController.swift */; };
 		6OXG3H29LZYFX2WY3HTS05AH /* UserTimelinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = WK5CXQRJZPMFOSNJZPIMFI59 /* UserTimelinePresenter.swift */; };
+		8BAF67513784ACFF9699E4F0 /* Pods_FavotterTarget_FavotterModulesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF674841685FDEFF74ED501A /* Pods_FavotterTarget_FavotterModulesTests.framework */; };
 		AC50889B06D281AF37282BFD /* Pods_FavotterTarget_FavotterModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9A55559C37CB41C35C84989 /* Pods_FavotterTarget_FavotterModel.framework */; };
 		C6AF371706933DFFB1ED91E3 /* Pods_FavotterTarget_FavotterUtill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55299CE6D0F526F4C2665157 /* Pods_FavotterTarget_FavotterUtill.framework */; };
 		EFC5F892A080A63371ADFD3F /* Pods_FavotterTarget_FavotterModules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5542D37DDD550C38D9E20F99 /* Pods_FavotterTarget_FavotterModules.framework */; };
@@ -66,6 +70,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 54884C8C1FF6C657007DBA43;
 			remoteInfo = Favotter;
+		};
+		54D754802013175E0015A1D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54884C851FF6C657007DBA43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54DE73D21FFB586A0075B77B;
+			remoteInfo = FavotterModules;
 		};
 		54DE73C71FFB58420075B77B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -120,6 +131,7 @@
 		236E3855CEBDD40CC2FE613B /* Pods_FavotterTarget_FavotterStyle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterStyle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D069335900EEB449E225D01 /* Pods-FavotterTarget-FavotterModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterModel/Pods-FavotterTarget-FavotterModel.release.xcconfig"; sourceTree = "<group>"; };
 		33B63EE7883ABED48E444F3F /* Pods-FavotterTarget-FavotterView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterView.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterView/Pods-FavotterTarget-FavotterView.release.xcconfig"; sourceTree = "<group>"; };
+		42C827169D87718EA3A629BE /* Pods-FavotterTarget-FavotterModulesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterModulesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterModulesTests/Pods-FavotterTarget-FavotterModulesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		43E179BE177475BB9793DA92 /* Pods-FavotterTarget-FavotterModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterModel/Pods-FavotterTarget-FavotterModel.debug.xcconfig"; sourceTree = "<group>"; };
 		4A10093A5F8BED4336E0F415 /* Pods-FavotterTarget-FavotterStyle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterStyle.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterStyle/Pods-FavotterTarget-FavotterStyle.release.xcconfig"; sourceTree = "<group>"; };
 		51EA557E5C1758A66718A6EE /* Pods-FavotterTarget-FavotterUtill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterUtill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterUtill/Pods-FavotterTarget-FavotterUtill.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +139,10 @@
 		5432DF6C1FFCEAF20067789A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54884C8D1FF6C657007DBA43 /* Favotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Favotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54884CA11FF6C657007DBA43 /* FavotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D7547A2013175E0015A1D7 /* FavotterModulesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavotterModulesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D7547C2013175E0015A1D7 /* FavotterModulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavotterModulesTests.swift; sourceTree = "<group>"; };
+		54D7547E2013175E0015A1D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54D7548620131A120015A1D7 /* TimelinePresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinePresenterTest.swift; sourceTree = "<group>"; };
 		54DD11A82007C7B80053A3D1 /* UIScrollView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Rx.swift"; sourceTree = "<group>"; };
 		54DE73701FFB58220075B77B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54DE73731FFB58220075B77B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -177,11 +193,13 @@
 		7O58G0L4MMQ670EVO3SNFIFD /* UserTimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTimelineViewController.swift; sourceTree = "<group>"; };
 		81B2C58C03EF7D3981BDABE4 /* Pods_FavotterTarget_Favotter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_Favotter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		830DBA3AFE077F7C3511FD83 /* Pods-FavotterTarget-FavotterDomain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterDomain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterDomain/Pods-FavotterTarget-FavotterDomain.debug.xcconfig"; sourceTree = "<group>"; };
+		AF674841685FDEFF74ED501A /* Pods_FavotterTarget_FavotterModulesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterModulesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A55559C37CB41C35C84989 /* Pods_FavotterTarget_FavotterModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6848A08B83236774B63D78E /* Pods-FavotterTarget-FavotterDomain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterDomain.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterDomain/Pods-FavotterTarget-FavotterDomain.release.xcconfig"; sourceTree = "<group>"; };
 		CF2793D357D346145520B026 /* Pods-FavotterTarget-FavotterAPIClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterAPIClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterAPIClient/Pods-FavotterTarget-FavotterAPIClient.release.xcconfig"; sourceTree = "<group>"; };
 		F3CC60EB6C66D626534A962A /* Pods_FavotterTarget_FavotterDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F461200200D9A9C524C73732 /* Pods_FavotterTarget_FavotterView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F66A32B67E3A9A42B2C48FBE /* Pods-FavotterTarget-FavotterModulesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterModulesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterModulesTests/Pods-FavotterTarget-FavotterModulesTests.release.xcconfig"; sourceTree = "<group>"; };
 		F8AEE799E0DF13E1F17AC6E5 /* Pods_FavotterTarget_FavotterAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2376E94D6F36461F6EC86D /* Pods-FavotterTarget-Favotter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-Favotter.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-Favotter/Pods-FavotterTarget-Favotter.release.xcconfig"; sourceTree = "<group>"; };
 		I18O7613EL17S5SZND0XELEU /* UserTimelineRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTimelineRouter.swift; sourceTree = "<group>"; };
@@ -206,6 +224,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D754772013175E0015A1D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D7547F2013175E0015A1D7 /* FavotterModules.framework in Frameworks */,
+				8BAF67513784ACFF9699E4F0 /* Pods_FavotterTarget_FavotterModulesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +340,7 @@
 				54DE747F1FFB597F0075B77B /* FavotterStyle */,
 				54DE74041FFB59170075B77B /* FavotterTests */,
 				54DE74011FFB59170075B77B /* FavotterUITests */,
+				54D7547B2013175E0015A1D7 /* FavotterModulesTests */,
 				54884C8E1FF6C657007DBA43 /* Products */,
 				FE7EF99465BC481C62272450 /* Pods */,
 				C364946A864D55DC0A22FE1E /* Frameworks */,
@@ -328,8 +356,19 @@
 				54DE73D31FFB586A0075B77B /* FavotterModules.framework */,
 				54DE73E41FFB58790075B77B /* FavotterStyle.framework */,
 				54DE73F51FFB58860075B77B /* FavotterUtill.framework */,
+				54D7547A2013175E0015A1D7 /* FavotterModulesTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		54D7547B2013175E0015A1D7 /* FavotterModulesTests */ = {
+			isa = PBXGroup;
+			children = (
+				54D7547C2013175E0015A1D7 /* FavotterModulesTests.swift */,
+				54D7548620131A120015A1D7 /* TimelinePresenterTest.swift */,
+				54D7547E2013175E0015A1D7 /* Info.plist */,
+			);
+			path = FavotterModulesTests;
 			sourceTree = "<group>";
 		};
 		54DE736F1FFB58220075B77B /* Favotter */ = {
@@ -517,6 +556,7 @@
 				F461200200D9A9C524C73732 /* Pods_FavotterTarget_FavotterView.framework */,
 				F3CC60EB6C66D626534A962A /* Pods_FavotterTarget_FavotterDomain.framework */,
 				5542D37DDD550C38D9E20F99 /* Pods_FavotterTarget_FavotterModules.framework */,
+				AF674841685FDEFF74ED501A /* Pods_FavotterTarget_FavotterModulesTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -540,6 +580,8 @@
 				147F8BC87BECB95F611C4BEA /* Pods-FavotterTarget-FavotterModules.release.xcconfig */,
 				6DAE188A408B625FA59C5C18 /* Pods-FavotterTarget-Favotter.debug.xcconfig */,
 				FE2376E94D6F36461F6EC86D /* Pods-FavotterTarget-Favotter.release.xcconfig */,
+				42C827169D87718EA3A629BE /* Pods-FavotterTarget-FavotterModulesTests.debug.xcconfig */,
+				F66A32B67E3A9A42B2C48FBE /* Pods-FavotterTarget-FavotterModulesTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -644,6 +686,27 @@
 			productReference = 54884CA11FF6C657007DBA43 /* FavotterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		54D754792013175E0015A1D7 /* FavotterModulesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54D754842013175E0015A1D7 /* Build configuration list for PBXNativeTarget "FavotterModulesTests" */;
+			buildPhases = (
+				9F51569E646A48A15CAE2F86 /* [CP] Check Pods Manifest.lock */,
+				54D754762013175E0015A1D7 /* Sources */,
+				54D754772013175E0015A1D7 /* Frameworks */,
+				54D754782013175E0015A1D7 /* Resources */,
+				ABCBC4B42A8A1F75B0C50BDC /* [CP] Embed Pods Frameworks */,
+				8398F0BEFC84A82645488089 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54D754812013175E0015A1D7 /* PBXTargetDependency */,
+			);
+			name = FavotterModulesTests;
+			productName = FavotterModulesTests;
+			productReference = 54D7547A2013175E0015A1D7 /* FavotterModulesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		54DE73C11FFB58420075B77B /* FavotterModel */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54DE73CB1FFB58420075B77B /* Build configuration list for PBXNativeTarget "FavotterModel" */;
@@ -730,7 +793,7 @@
 		54884C851FF6C657007DBA43 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0910;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = hirothings;
 				TargetAttributes = {
@@ -742,6 +805,10 @@
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 54884C8C1FF6C657007DBA43;
+					};
+					54D754792013175E0015A1D7 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
 					};
 					54DE73C11FFB58420075B77B = {
 						CreatedOnToolsVersion = 9.1;
@@ -781,6 +848,7 @@
 				54DE73D21FFB586A0075B77B /* FavotterModules */,
 				54DE73E31FFB58790075B77B /* FavotterStyle */,
 				54DE73F41FFB58860075B77B /* FavotterUtill */,
+				54D754792013175E0015A1D7 /* FavotterModulesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -798,6 +866,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		54884C9F1FF6C657007DBA43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D754782013175E0015A1D7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -945,6 +1020,25 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FavotterTarget-FavotterUtill/Pods-FavotterTarget-FavotterUtill-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8398F0BEFC84A82645488089 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FavotterTarget-FavotterModulesTests/Pods-FavotterTarget-FavotterModulesTests-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FavotterTarget-FavotterModulesTests/Pods-FavotterTarget-FavotterModulesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		950E40582A9AA9D60FAB3129 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -962,6 +1056,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FavotterTarget-FavotterStyle/Pods-FavotterTarget-FavotterStyle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F51569E646A48A15CAE2F86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FavotterTarget-FavotterModulesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABCBC4B42A8A1F75B0C50BDC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FavotterTarget-FavotterModulesTests/Pods-FavotterTarget-FavotterModulesTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
+				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FavotterTarget-FavotterModulesTests/Pods-FavotterTarget-FavotterModulesTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AF03BAD0481D98E44EFB3465 /* [CP] Embed Pods Frameworks */ = {
@@ -1094,6 +1242,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54D754762013175E0015A1D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D7548720131A120015A1D7 /* TimelinePresenterTest.swift in Sources */,
+				54D7547D2013175E0015A1D7 /* FavotterModulesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54DE73BD1FFB58420075B77B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1150,6 +1307,11 @@
 			isa = PBXTargetDependency;
 			target = 54884C8C1FF6C657007DBA43 /* Favotter */;
 			targetProxy = 54884CA21FF6C657007DBA43 /* PBXContainerItemProxy */;
+		};
+		54D754812013175E0015A1D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54DE73D21FFB586A0075B77B /* FavotterModules */;
+			targetProxy = 54D754802013175E0015A1D7 /* PBXContainerItemProxy */;
 		};
 		54DE73C81FFB58420075B77B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1353,6 +1515,38 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Favotter;
+			};
+			name = Release;
+		};
+		54D754822013175E0015A1D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42C827169D87718EA3A629BE /* Pods-FavotterTarget-FavotterModulesTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G6788ACX5G;
+				INFOPLIST_FILE = FavotterModulesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterModulesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54D754832013175E0015A1D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F66A32B67E3A9A42B2C48FBE /* Pods-FavotterTarget-FavotterModulesTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G6788ACX5G;
+				INFOPLIST_FILE = FavotterModulesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterModulesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -1580,6 +1774,15 @@
 			buildConfigurations = (
 				54884CAE1FF6C657007DBA43 /* Debug */,
 				54884CAF1FF6C657007DBA43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54D754842013175E0015A1D7 /* Build configuration list for PBXNativeTarget "FavotterModulesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D754822013175E0015A1D7 /* Debug */,
+				54D754832013175E0015A1D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

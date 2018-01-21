@@ -31,4 +31,7 @@ abstract_target 'FavotterTarget' do
 
   target 'FavotterUtill' do
   end
+
+  target 'FavotterModulesTests' do
+  end
 end
