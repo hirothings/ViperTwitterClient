@@ -13,16 +13,16 @@ import FavotterModel
 import FavotterUtill
 
 protocol TimelineView: class {
-    var presenter: TimelinePresenter! { get set }
+    var presenter: TimelinePresentation! { get set }
     func showNoContentView()
     func showTimeline(tweets: [Tweet])
-    func updateTimeline(tweets: [Tweet])
+    func updateTimeline(tweets: [Tweet], tweetsDiff: CountableRange<Int>)
 }
 
 class TimelineViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
-    var presenter: TimelinePresenter!
+    var presenter: TimelinePresentation!
     var tweets: [Tweet] = []
     
     private let refreshControl = UIRefreshControl()
@@ -72,8 +72,8 @@ extension TimelineViewController: TimelineView {
         refreshControl.endRefreshing()
     }
     
-    func updateTimeline(tweets: [Tweet]) {
-        let indexPath = Array(self.tweets.count..<tweets.count).map { IndexPath(row: $0, section: 0) }
+    func updateTimeline(tweets: [Tweet], tweetsDiff: CountableRange<Int>) {
+        let indexPath = Array(tweetsDiff).map { IndexPath(row: $0, section: 0) }
         tableView.beginUpdates()
         self.tweets = tweets
         UIView.performWithoutAnimation {
