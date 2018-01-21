@@ -49,10 +49,29 @@ class TimelineUseCaseStub: TimelineUsecase {
     }
 }
 
+class TimelineViewSpy: TimelineView {
+    var presenter: TimelinePresentation!
+    var tweets: [Tweet] = []
+    var tweetsDiffCount: Int = 0
+    var noContentViewIsHidden = true
+    
+    func showNoContentView() {
+        noContentViewIsHidden = false
+    }
+    
+    func showTimeline(tweets: [Tweet]) {
+        self.tweets = tweets
+    }
+    
+    func updateTimeline(tweets: [Tweet], tweetsDiff: CountableRange<Int>) {
+        self.tweetsDiffCount = tweetsDiff.count
+    }
+}
+
 class TimelinePresenterTest: XCTestCase {
     var presenter: TimelinePresentation!
-    let view = StoryboardScene.TimelineViewController.initialScene.instantiate()
-    lazy var router = TimelineRouter(viewController: view)
+    let spy = TimelineViewSpy()
+    lazy var router = TimelineRouter(viewController: nil)
     let stub = TimelineUseCaseStub()
     let userID: String = "602524897" // @hirothings
     let store = TWTRTwitter.sharedInstance().sessionStore
@@ -61,8 +80,8 @@ class TimelinePresenterTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        self.presenter = TimelinePresenter(view: view, router: router, interactor: stub)
-        view.presenter = self.presenter
+        self.presenter = TimelinePresenter(view: spy, router: router, interactor: stub)
+        spy.presenter = self.presenter
     }
     
     override func tearDown() {
@@ -77,7 +96,8 @@ class TimelinePresenterTest: XCTestCase {
         // when
         presenter.viewDidLoad()
         // then
-        XCTAssertEqual(false, view.noContentView.isHidden)
+        XCTAssertEqual(false, spy.noContentViewIsHidden)
+    }
     }
     
     func testPerformanceExample() {
