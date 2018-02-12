@@ -46,7 +46,7 @@ class TimelineViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.addSubview(refreshControl)
+        tableView.refreshControl = refreshControl
     }
     
     private func setupRx() {
