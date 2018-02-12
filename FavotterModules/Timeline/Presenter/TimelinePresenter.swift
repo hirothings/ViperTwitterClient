@@ -12,7 +12,7 @@ import FavotterModel
 import TwitterKit
 
 protocol TimelinePresentation: class {
-    weak var view: TimelineView? { get }
+    var view: TimelineView? { get }
     
     init(
         view: TimelineView?,
@@ -33,7 +33,7 @@ protocol TimelineInteractorOutput: class {
 }
 
 class TimelinePresenter: TimelinePresentation {
-    weak var view: TimelineView?
+    var view: TimelineView?
     private let router: TimelineWireframe
     private let interactor: TimelineUsecase
     private let userID: String

@@ -11,6 +11,8 @@
 		23178DAFFF0C9376F1FF5D27 /* Pods_FavotterTarget_FavotterStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236E3855CEBDD40CC2FE613B /* Pods_FavotterTarget_FavotterStyle.framework */; };
 		5424318C20001EED00B56E90 /* StoryBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5424318B20001EED00B56E90 /* StoryBoards.swift */; };
 		5432DF6D1FFCEAF20067789A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5432DF6C1FFCEAF20067789A /* Assets.xcassets */; };
+		5433C70620316E9B0077CFC2 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5433C70520316E9B0077CFC2 /* LoginPresenter.swift */; };
+		5433C708203173060077CFC2 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5433C707203173060077CFC2 /* ErrorView.swift */; };
 		54D7547D2013175E0015A1D7 /* FavotterModulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D7547C2013175E0015A1D7 /* FavotterModulesTests.swift */; };
 		54D7547F2013175E0015A1D7 /* FavotterModules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73D31FFB586A0075B77B /* FavotterModules.framework */; };
 		54D7548720131A120015A1D7 /* TimelinePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D7548620131A120015A1D7 /* TimelinePresenterTest.swift */; };
@@ -137,6 +139,8 @@
 		51EA557E5C1758A66718A6EE /* Pods-FavotterTarget-FavotterUtill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterUtill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterUtill/Pods-FavotterTarget-FavotterUtill.debug.xcconfig"; sourceTree = "<group>"; };
 		5424318B20001EED00B56E90 /* StoryBoards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoards.swift; sourceTree = "<group>"; };
 		5432DF6C1FFCEAF20067789A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5433C70520316E9B0077CFC2 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		5433C707203173060077CFC2 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		54884C8D1FF6C657007DBA43 /* Favotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Favotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54884CA11FF6C657007DBA43 /* FavotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D7547A2013175E0015A1D7 /* FavotterModulesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavotterModulesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -307,6 +311,7 @@
 		5432DF731FFCF5810067789A /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				5433C70420316E830077CFC2 /* Presenter */,
 				5424318D20061B1600B56E90 /* Router */,
 				5432DF741FFCF58D0067789A /* View */,
 			);
@@ -328,6 +333,14 @@
 				54DE74681FFB596F0075B77B /* LoginViewController.storyboard */,
 			);
 			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		5433C70420316E830077CFC2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5433C70520316E9B0077CFC2 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		54884C841FF6C657007DBA43 = {
@@ -433,6 +446,7 @@
 				54DE745B1FFB596F0075B77B /* FavotterModules.h */,
 				54DE745C1FFB596F0075B77B /* Info.plist */,
 				AWSVVHTUZHZ6APAS3UC44W7L /* UserTimeline */,
+				5433C707203173060077CFC2 /* ErrorView.swift */,
 			);
 			path = FavotterModules;
 			sourceTree = "<group>";
@@ -1277,11 +1291,13 @@
 				54DE747E1FFB596F0075B77B /* TimelineViewController.swift in Sources */,
 				54DE74731FFB596F0075B77B /* TimelinePresenter.swift in Sources */,
 				54DE74741FFB596F0075B77B /* LoginRouter.swift in Sources */,
+				5433C70620316E9B0077CFC2 /* LoginPresenter.swift in Sources */,
 				54DE747C1FFB596F0075B77B /* TweetTableViewCell.swift in Sources */,
 				Q6H5SW86S8V5WWVJ4SLFO36C /* UserTimelineInteractor.swift in Sources */,
 				6OXG3H29LZYFX2WY3HTS05AH /* UserTimelinePresenter.swift in Sources */,
 				K6F6PADR836B55F1GBPGO52R /* UserTimelineRouter.swift in Sources */,
 				6AIZ6T9TMP8ESAE4QD64MXHI /* UserTimelineViewController.swift in Sources */,
+				5433C708203173060077CFC2 /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

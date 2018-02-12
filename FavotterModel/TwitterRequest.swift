@@ -22,7 +22,6 @@ extension TwitterRequest {
     }
     
     public func response(data: Data) throws -> Response {
-        let res = try JSONDecoder().decode(Response.self, from: data)
-        return res
+        return try JSONDecoder().decode(Response.self, from: data)
     }
 }

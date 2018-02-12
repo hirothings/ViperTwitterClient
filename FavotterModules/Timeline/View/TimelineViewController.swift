@@ -13,7 +13,6 @@ import FavotterModel
 import FavotterUtill
 
 protocol TimelineView: class {
-    var presenter: TimelinePresentation! { get set }
     func showNoContentView()
     func showTimeline(tweets: [Tweet])
     func updateTimeline(tweets: [Tweet], tweetsDiff: CountableRange<Int>)
