@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol LoginRouterWireframe {
+protocol LoginRouterWireframe: class {
     weak var viewController: UIViewController? { get set }
     func pushTimelineView(userID: String)
     static func assembleModule() -> UIViewController

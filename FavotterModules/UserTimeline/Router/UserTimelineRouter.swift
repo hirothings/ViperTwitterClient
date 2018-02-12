@@ -9,7 +9,7 @@
 import UIKit
 import FavotterModel
 
-protocol UserTimelineWireframe {
+protocol UserTimelineWireframe: class {
     weak var viewController: UIViewController? { get set }
     
     init(viewController: UIViewController)

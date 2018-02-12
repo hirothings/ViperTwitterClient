@@ -88,7 +88,7 @@ extension UserTimelineViewController: UITableViewDataSource {
             return cell
         case .timeline:
             let cell: TweetTableViewCell = tableView.dequeueReusableCell(for: indexPath)
-            cell.tweet = self.tweets[indexPath.row]
+            cell.setupTweet(tweets[indexPath.row])
             return cell
         }
     }

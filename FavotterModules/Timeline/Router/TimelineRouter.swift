@@ -9,8 +9,8 @@
 import UIKit
 import FavotterModel
 
-protocol TimelineWireframe {
-    weak var viewController: UIViewController? { get set }
+protocol TimelineWireframe: class {
+    var viewController: UIViewController? { get set }
     
     init(viewController: UIViewController?)
     
@@ -19,7 +19,7 @@ protocol TimelineWireframe {
 }
 
 class TimelineRouter: TimelineWireframe {
-    weak var viewController: UIViewController?
+    var viewController: UIViewController?
     
     required init(viewController: UIViewController?) {
         self.viewController = viewController

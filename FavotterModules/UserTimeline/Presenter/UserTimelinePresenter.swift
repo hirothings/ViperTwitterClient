@@ -9,7 +9,7 @@
 import Foundation
 import FavotterModel
 
-protocol UserTimelinePresentation {
+protocol UserTimelinePresentation: class {
     init(
         view: UserTimelineView,
         router: UserTimelineWireframe,

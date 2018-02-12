@@ -9,7 +9,7 @@
 import Foundation
 import TwitterKit
 
-protocol RootWireframe {
+protocol RootWireframe: class {
     func showRootScreen()
 }
 
