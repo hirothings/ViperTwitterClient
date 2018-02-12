@@ -8,23 +8,33 @@
 
 import Foundation
 
-protocol LoginRouterWireframe: class {
-    weak var viewController: UIViewController? { get set }
-    func pushTimelineView(userID: String)
+protocol LoginWireframe: class {
+    var viewController: UIViewController? { get set }
+    
+    init(viewController: UIViewController?)
+
+    func showTimelineView(userID: String)
     static func assembleModule() -> UIViewController
 }
 
-class LoginRouter: LoginRouterWireframe {
-    weak var viewController: UIViewController?
+class LoginRouter: LoginWireframe {
+    var viewController: UIViewController?
+    
+    required init(viewController: UIViewController?) {
+        self.viewController = viewController
+    }
     
     static func assembleModule() -> UIViewController {
         let view = StoryboardScene.LoginViewController.initialScene.instantiate()
-        let nav = UINavigationController(rootViewController: view)
-        // TODO: Use Presenter
+        let router = LoginRouter(viewController: view)
+        let presenter = LoginPresenter(view: view, router: router)
+        view.presenter = presenter
         
-        return nav
+        return view
     }
     
-    func pushTimelineView(userID: String) {
+    func showTimelineView(userID: String) {
+        let timelineVC = TimelineRouter.assembleModule(userID: userID)
+        UIApplication.shared.keyWindow?.rootViewController = timelineVC
     }
 }

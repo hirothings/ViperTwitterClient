@@ -9,18 +9,24 @@
 import UIKit
 import TwitterKit
 
-class LoginViewController: UIViewController {
+protocol LoginView: ErrorView {}
+
+class LoginViewController: UIViewController, LoginView {
+    var presenter: LoginPresentation!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let loginButton = TWTRLogInButton { (session, error) in
+        let loginButton = TWTRLogInButton { [weak self] (session, error) in
             guard let session = session else {
-                print(error)
+                self?.showError(message: "ログインに失敗しました")
                 return
             }
-            let timelineVC = TimelineRouter.assembleModule(userID: session.userID)
-            let nvc = UINavigationController(rootViewController: timelineVC)
-            self.present(nvc, animated: true, completion: nil)
+            if let error = error {
+                // TODO: error処理
+                self?.showError(message: error.localizedDescription)
+                return
+            }
+            self?.presenter.succeedLogin(userID: session.userID)
         }
         
         loginButton.center = self.view.center
