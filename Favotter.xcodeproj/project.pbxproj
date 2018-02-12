@@ -343,6 +343,22 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		5433C70920317CB20077CFC2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5433C70A20317CBF0077CFC2 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5433C70A20317CBF0077CFC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5433C707203173060077CFC2 /* ErrorView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		54884C841FF6C657007DBA43 = {
 			isa = PBXGroup;
 			children = (
@@ -439,6 +455,7 @@
 		54DE745A1FFB596F0075B77B /* FavotterModules */ = {
 			isa = PBXGroup;
 			children = (
+				5433C70920317CB20077CFC2 /* Common */,
 				54DE74631FFB596F0075B77B /* RootRouter.swift */,
 				5424318A20001EC400B56E90 /* Generated */,
 				5432DF731FFCF5810067789A /* Login */,
@@ -446,7 +463,6 @@
 				54DE745B1FFB596F0075B77B /* FavotterModules.h */,
 				54DE745C1FFB596F0075B77B /* Info.plist */,
 				AWSVVHTUZHZ6APAS3UC44W7L /* UserTimeline */,
-				5433C707203173060077CFC2 /* ErrorView.swift */,
 			);
 			path = FavotterModules;
 			sourceTree = "<group>";
