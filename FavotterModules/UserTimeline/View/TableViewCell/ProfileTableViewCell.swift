@@ -22,31 +22,23 @@ class ProfileTableViewCell: UITableViewCell, NibReusable {
     @IBOutlet weak var friendsCountLabel: UILabel!
     @IBOutlet weak var followerCountLabel: UILabel!
     
-    var user: User! {
-        didSet {
-            if let url = URL(string: user.profileImageURL) {
-                Manager.shared.loadImage(with: url, into: profileImageView)
-            }
-            if let urlStr = user.profileBGImageURL, let url = URL(string: urlStr) {
-                Manager.shared.loadImage(with: url, into: profileBGImageView)
-            }
-            nameLabel.text = user.name
-            screenNameLabel.text = "@\(user.screenName)"
-            descriptionLabel.text = user.description
-            friendsCountLabel.text = "\(user.friendsCount) フォロー"
-            followerCountLabel.text = "\(user.followersCount) フォロワー"
-        }
-    }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         descriptionLabel.numberOfLines = 0
-        descriptionLabel.sizeToFit()
         descriptionLabel.lineBreakMode = .byWordWrapping
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    
+    func setupProfile(with user: User) {
+        if let url = URL(string: user.profileImageURL) {
+            Manager.shared.loadImage(with: url, into: profileImageView)
+        }
+        if let urlStr = user.profileBGImageURL, let url = URL(string: urlStr) {
+            Manager.shared.loadImage(with: url, into: profileBGImageView)
+        }
+        nameLabel.text = user.name
+        screenNameLabel.text = "@\(user.screenName)"
+        descriptionLabel.text = user.description
+        friendsCountLabel.text = "\(user.friendsCount) フォロー"
+        followerCountLabel.text = "\(user.followersCount) フォロワー"
     }
-
 }

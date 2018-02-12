@@ -21,29 +21,21 @@ class TweetTableViewCell: UITableViewCell, NibReusable {
     @IBOutlet weak var retweetCount: UILabel!
     @IBOutlet weak var fabCount: UILabel!
     
-    // TODO: Force Unwrap以外の手段ないか？delayかdefferか..
-    var tweet: Tweet! {
-        didSet {
-            if let url = URL(string: tweet.user.profileImageURL) {
-                Manager.shared.loadImage(with: url, into: profileImageView)
-            }
-            nameLabel.text = tweet.user.name
-            screenNameLabel.text = "@\(tweet.user.screenName)"
-            tweetLabel.text = tweet.text
-            retweetCount.text = "\(tweet.retweetCount)"
-            fabCount.text = "\(tweet.favCount)"
-        }
-    }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         tweetLabel.numberOfLines = 0
         tweetLabel.sizeToFit()
         tweetLabel.lineBreakMode = .byWordWrapping
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    
+    func setupTweet(_ tweet: Tweet) {
+        if let url = URL(string: tweet.user.profileImageURL) {
+            Manager.shared.loadImage(with: url, into: profileImageView)
+        }
+        nameLabel.text = tweet.user.name
+        screenNameLabel.text = "@\(tweet.user.screenName)"
+        tweetLabel.text = tweet.text
+        retweetCount.text = "\(tweet.retweetCount)"
+        fabCount.text = "\(tweet.favCount)"
     }
-
 }
