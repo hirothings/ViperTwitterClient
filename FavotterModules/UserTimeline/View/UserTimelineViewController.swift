@@ -84,7 +84,7 @@ extension UserTimelineViewController: UITableViewDataSource {
         switch section {
         case .profile:
             let cell: ProfileTableViewCell = tableView.dequeueReusableCell(for: indexPath)
-            cell.user = self.user
+            cell.setupProfile(with: user)
             return cell
         case .timeline:
             let cell: TweetTableViewCell = tableView.dequeueReusableCell(for: indexPath)
