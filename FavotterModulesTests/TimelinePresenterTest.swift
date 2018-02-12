@@ -71,7 +71,7 @@ class TimelineViewSpy: TimelineView {
 class TimelinePresenterTest: XCTestCase {
     var presenter: TimelinePresentation!
     let spy = TimelineViewSpy()
-    lazy var router = TimelineRouter()
+    lazy var router = TimelineRouter(viewController: nil)
     let stub = TimelineUseCaseStub()
     let userID: String = "602524897" // @hirothings
     let store = TWTRTwitter.sharedInstance().sessionStore
