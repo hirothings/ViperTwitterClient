@@ -10,9 +10,7 @@ import UIKit
 import FavotterModel
 
 protocol TimelineWireframe {
-    weak var viewController: UIViewController? { get set }
-    
-    init(viewController: UIViewController?)
+    var viewController: UIViewController? { get set }
     
     func pushUserProfileView(_ user: User)
     static func assembleModule(userID: String) -> UIViewController
@@ -20,16 +18,12 @@ protocol TimelineWireframe {
 
 class TimelineRouter: TimelineWireframe {
     weak var viewController: UIViewController?
-    
-    required init(viewController: UIViewController?) {
-        self.viewController = viewController
-    }
 
     // memo: ここでモック化できる
     static func assembleModule(userID: String) -> UIViewController {
         let view = StoryboardScene.TimelineViewController.initialScene.instantiate()
         let interactor = TimelineInteractor()
-        let router = TimelineRouter(viewController: view)
+        let router = TimelineRouter()
         
         // memo: Presenterは依存関係が多いので、イニシャライザで参照渡す。
         let presenter = TimelinePresenter(view: view, router: router, interactor: interactor)
