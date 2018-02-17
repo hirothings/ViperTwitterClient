@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0555809A06D96E548ABA656D /* Pods_FavotterTarget_Favotter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B2C58C03EF7D3981BDABE4 /* Pods_FavotterTarget_Favotter.framework */; };
-		23178DAFFF0C9376F1FF5D27 /* Pods_FavotterTarget_FavotterStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 236E3855CEBDD40CC2FE613B /* Pods_FavotterTarget_FavotterStyle.framework */; };
 		5424318C20001EED00B56E90 /* StoryBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5424318B20001EED00B56E90 /* StoryBoards.swift */; };
 		5432DF6D1FFCEAF20067789A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5432DF6C1FFCEAF20067789A /* Assets.xcassets */; };
 		5433C70620316E9B0077CFC2 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5433C70520316E9B0077CFC2 /* LoginPresenter.swift */; };
@@ -16,6 +15,7 @@
 		5433C70C20317E880077CFC2 /* KeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5433C70B20317E870077CFC2 /* KeyManager.swift */; };
 		5433C70F203183330077CFC2 /* key.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5433C70E203183330077CFC2 /* key.plist */; };
 		546FACE02037F8F800E02F40 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 5432DF6C1FFCEAF20067789A /* Assets.xcassets */; };
+		546FACE22038058200E02F40 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546FACE12038058200E02F40 /* Media.swift */; };
 		54D7547D2013175E0015A1D7 /* FavotterModulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D7547C2013175E0015A1D7 /* FavotterModulesTests.swift */; };
 		54D7547F2013175E0015A1D7 /* FavotterModules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73D31FFB586A0075B77B /* FavotterModules.framework */; };
 		54D7548720131A120015A1D7 /* TimelinePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D7548620131A120015A1D7 /* TimelinePresenterTest.swift */; };
@@ -26,8 +26,6 @@
 		54DE73CA1FFB58420075B77B /* FavotterModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73C21FFB58420075B77B /* FavotterModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		54DE73DA1FFB586A0075B77B /* FavotterModules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73D31FFB586A0075B77B /* FavotterModules.framework */; };
 		54DE73DB1FFB586A0075B77B /* FavotterModules.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73D31FFB586A0075B77B /* FavotterModules.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		54DE73EB1FFB58790075B77B /* FavotterStyle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73E41FFB58790075B77B /* FavotterStyle.framework */; };
-		54DE73EC1FFB58790075B77B /* FavotterStyle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73E41FFB58790075B77B /* FavotterStyle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		54DE73FC1FFB58860075B77B /* FavotterUtill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73F51FFB58860075B77B /* FavotterUtill.framework */; };
 		54DE73FD1FFB58860075B77B /* FavotterUtill.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73F51FFB58860075B77B /* FavotterUtill.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		54DE74081FFB59170075B77B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54DE74031FFB59170075B77B /* Info.plist */; };
@@ -53,7 +51,6 @@
 		54DE747C1FFB596F0075B77B /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE746D1FFB596F0075B77B /* TweetTableViewCell.swift */; };
 		54DE747D1FFB596F0075B77B /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54DE746E1FFB596F0075B77B /* TweetTableViewCell.xib */; };
 		54DE747E1FFB596F0075B77B /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE746F1FFB596F0075B77B /* TimelineViewController.swift */; };
-		54DE74821FFB597F0075B77B /* FavotterStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 54DE74801FFB597F0075B77B /* FavotterStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54DE74871FFB598A0075B77B /* FavotterUtill.h in Headers */ = {isa = PBXBuildFile; fileRef = 54DE74851FFB59890075B77B /* FavotterUtill.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54DE74891FFB5C240075B77B /* FavotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74021FFB59170075B77B /* FavotterUITests.swift */; };
 		54DE748C1FFB5C650075B77B /* FavotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74051FFB59170075B77B /* FavotterTests.swift */; };
@@ -97,13 +94,6 @@
 			remoteGlobalIDString = 54DE73D21FFB586A0075B77B;
 			remoteInfo = FavotterModules;
 		};
-		54DE73E91FFB58790075B77B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 54884C851FF6C657007DBA43 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 54DE73E31FFB58790075B77B;
-			remoteInfo = FavotterStyle;
-		};
 		54DE73FA1FFB58860075B77B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 54884C851FF6C657007DBA43 /* Project object */;
@@ -122,7 +112,6 @@
 			files = (
 				54DE73FD1FFB58860075B77B /* FavotterUtill.framework in Embed Frameworks */,
 				54DE73CA1FFB58420075B77B /* FavotterModel.framework in Embed Frameworks */,
-				54DE73EC1FFB58790075B77B /* FavotterStyle.framework in Embed Frameworks */,
 				54DE73DB1FFB586A0075B77B /* FavotterModules.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -146,6 +135,7 @@
 		5433C707203173060077CFC2 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		5433C70B20317E870077CFC2 /* KeyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyManager.swift; sourceTree = "<group>"; };
 		5433C70E203183330077CFC2 /* key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = key.plist; sourceTree = "<group>"; };
+		546FACE12038058200E02F40 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		54884C8D1FF6C657007DBA43 /* Favotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Favotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54884CA11FF6C657007DBA43 /* FavotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D7547A2013175E0015A1D7 /* FavotterModulesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavotterModulesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,7 +148,6 @@
 		54DE739E1FFB58220075B77B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54DE73C21FFB58420075B77B /* FavotterModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FavotterModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54DE73D31FFB586A0075B77B /* FavotterModules.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FavotterModules.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		54DE73E41FFB58790075B77B /* FavotterStyle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FavotterStyle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54DE73F51FFB58860075B77B /* FavotterUtill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FavotterUtill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54DE74021FFB59170075B77B /* FavotterUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavotterUITests.swift; sourceTree = "<group>"; };
 		54DE74031FFB59170075B77B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -187,8 +176,6 @@
 		54DE746D1FFB596F0075B77B /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 		54DE746E1FFB596F0075B77B /* TweetTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
 		54DE746F1FFB596F0075B77B /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
-		54DE74801FFB597F0075B77B /* FavotterStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavotterStyle.h; sourceTree = "<group>"; };
-		54DE74811FFB597F0075B77B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54DE74851FFB59890075B77B /* FavotterUtill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavotterUtill.h; sourceTree = "<group>"; };
 		54DE74861FFB59890075B77B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54DE748E1FFB73D90075B77B /* UserTimelineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserTimelineViewController.storyboard; sourceTree = "<group>"; };
@@ -224,7 +211,6 @@
 				54DE73DA1FFB586A0075B77B /* FavotterModules.framework in Frameworks */,
 				54DE73FC1FFB58860075B77B /* FavotterUtill.framework in Frameworks */,
 				54DE73C91FFB58420075B77B /* FavotterModel.framework in Frameworks */,
-				54DE73EB1FFB58790075B77B /* FavotterStyle.framework in Frameworks */,
 				0555809A06D96E548ABA656D /* Pods_FavotterTarget_Favotter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,14 +244,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFC5F892A080A63371ADFD3F /* Pods_FavotterTarget_FavotterModules.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54DE73E01FFB58790075B77B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				23178DAFFF0C9376F1FF5D27 /* Pods_FavotterTarget_FavotterStyle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +357,6 @@
 				54DE745A1FFB596F0075B77B /* FavotterModules */,
 				54DE74481FFB59640075B77B /* FavotterModel */,
 				54DE74841FFB59890075B77B /* FavotterUtill */,
-				54DE747F1FFB597F0075B77B /* FavotterStyle */,
 				54DE74041FFB59170075B77B /* FavotterTests */,
 				54DE74011FFB59170075B77B /* FavotterUITests */,
 				54D7547B2013175E0015A1D7 /* FavotterModulesTests */,
@@ -396,7 +373,6 @@
 				54884CA11FF6C657007DBA43 /* FavotterUITests.xctest */,
 				54DE73C21FFB58420075B77B /* FavotterModel.framework */,
 				54DE73D31FFB586A0075B77B /* FavotterModules.framework */,
-				54DE73E41FFB58790075B77B /* FavotterStyle.framework */,
 				54DE73F51FFB58860075B77B /* FavotterUtill.framework */,
 				54D7547A2013175E0015A1D7 /* FavotterModulesTests.xctest */,
 			);
@@ -461,6 +437,7 @@
 			children = (
 				54DE744B1FFB59640075B77B /* Tweet.swift */,
 				54DE744C1FFB59640075B77B /* User.swift */,
+				546FACE12038058200E02F40 /* Media.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -530,15 +507,6 @@
 				54DE746E1FFB596F0075B77B /* TweetTableViewCell.xib */,
 			);
 			path = TableViewCell;
-			sourceTree = "<group>";
-		};
-		54DE747F1FFB597F0075B77B /* FavotterStyle */ = {
-			isa = PBXGroup;
-			children = (
-				54DE74801FFB597F0075B77B /* FavotterStyle.h */,
-				54DE74811FFB597F0075B77B /* Info.plist */,
-			);
-			path = FavotterStyle;
 			sourceTree = "<group>";
 		};
 		54DE74841FFB59890075B77B /* FavotterUtill */ = {
@@ -668,14 +636,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		54DE73E11FFB58790075B77B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				54DE74821FFB597F0075B77B /* FavotterStyle.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		54DE73F21FFB58860075B77B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -705,7 +665,6 @@
 			dependencies = (
 				54DE73C81FFB58420075B77B /* PBXTargetDependency */,
 				54DE73D91FFB586A0075B77B /* PBXTargetDependency */,
-				54DE73EA1FFB58790075B77B /* PBXTargetDependency */,
 				54DE73FB1FFB58860075B77B /* PBXTargetDependency */,
 			);
 			name = Favotter;
@@ -792,26 +751,6 @@
 			productReference = 54DE73D31FFB586A0075B77B /* FavotterModules.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		54DE73E31FFB58790075B77B /* FavotterStyle */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 54DE73ED1FFB58790075B77B /* Build configuration list for PBXNativeTarget "FavotterStyle" */;
-			buildPhases = (
-				4DB9C8BEDF2E691FC985E307 /* [CP] Check Pods Manifest.lock */,
-				54DE73DF1FFB58790075B77B /* Sources */,
-				54DE73E01FFB58790075B77B /* Frameworks */,
-				54DE73E11FFB58790075B77B /* Headers */,
-				54DE73E21FFB58790075B77B /* Resources */,
-				950E40582A9AA9D60FAB3129 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FavotterStyle;
-			productName = FavotterStyle;
-			productReference = 54DE73E41FFB58790075B77B /* FavotterStyle.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		54DE73F41FFB58860075B77B /* FavotterUtill */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54DE73FE1FFB58860075B77B /* Build configuration list for PBXNativeTarget "FavotterUtill" */;
@@ -863,10 +802,6 @@
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
-					54DE73E31FFB58790075B77B = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-					};
 					54DE73F41FFB58860075B77B = {
 						CreatedOnToolsVersion = 9.1;
 						LastSwiftMigration = 0910;
@@ -891,7 +826,6 @@
 				54884CA01FF6C657007DBA43 /* FavotterUITests */,
 				54DE73C11FFB58420075B77B /* FavotterModel */,
 				54DE73D21FFB586A0075B77B /* FavotterModules */,
-				54DE73E31FFB58790075B77B /* FavotterStyle */,
 				54DE73F41FFB58860075B77B /* FavotterUtill */,
 				54D754792013175E0015A1D7 /* FavotterModulesTests */,
 			);
@@ -941,13 +875,6 @@
 				54DE748F1FFB73D90075B77B /* UserTimelineViewController.storyboard in Resources */,
 				54DE747B1FFB596F0075B77B /* ProfileTableViewCell.xib in Resources */,
 				54DE74781FFB596F0075B77B /* LoginViewController.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54DE73E21FFB58790075B77B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1016,24 +943,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4DB9C8BEDF2E691FC985E307 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FavotterTarget-FavotterStyle-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5432DF611FFB9F290067789A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1083,25 +992,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FavotterTarget-FavotterModulesTests/Pods-FavotterTarget-FavotterModulesTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		950E40582A9AA9D60FAB3129 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FavotterTarget-FavotterStyle/Pods-FavotterTarget-FavotterStyle-resources.sh",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FavotterTarget-FavotterStyle/Pods-FavotterTarget-FavotterStyle-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9F51569E646A48A15CAE2F86 /* [CP] Check Pods Manifest.lock */ = {
@@ -1303,6 +1193,7 @@
 			files = (
 				54DE74571FFB59640075B77B /* TwitterAPI.swift in Sources */,
 				54DE74521FFB59640075B77B /* APIClient.swift in Sources */,
+				546FACE22038058200E02F40 /* Media.swift in Sources */,
 				54DE74531FFB59640075B77B /* Tweet.swift in Sources */,
 				54DE74581FFB59640075B77B /* TwitterAPIError.swift in Sources */,
 				54DE74541FFB59640075B77B /* User.swift in Sources */,
@@ -1331,13 +1222,6 @@
 				K6F6PADR836B55F1GBPGO52R /* UserTimelineRouter.swift in Sources */,
 				6AIZ6T9TMP8ESAE4QD64MXHI /* UserTimelineViewController.swift in Sources */,
 				5433C708203173060077CFC2 /* ErrorView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54DE73DF1FFB58790075B77B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1372,11 +1256,6 @@
 			isa = PBXTargetDependency;
 			target = 54DE73D21FFB586A0075B77B /* FavotterModules */;
 			targetProxy = 54DE73D81FFB586A0075B77B /* PBXContainerItemProxy */;
-		};
-		54DE73EA1FFB58790075B77B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 54DE73E31FFB58790075B77B /* FavotterStyle */;
-			targetProxy = 54DE73E91FFB58790075B77B /* PBXContainerItemProxy */;
 		};
 		54DE73FB1FFB58860075B77B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1699,54 +1578,6 @@
 			};
 			name = Release;
 		};
-		54DE73EE1FFB58790075B77B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F17ECDC40492E4588C809C6 /* Pods-FavotterTarget-FavotterStyle.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FavotterStyle/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterStyle;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		54DE73EF1FFB58790075B77B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A10093A5F8BED4336E0F415 /* Pods-FavotterTarget-FavotterStyle.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = FavotterStyle/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hirothings.FavotterStyle;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		54DE73FF1FFB58860075B77B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 51EA557E5C1758A66718A6EE /* Pods-FavotterTarget-FavotterUtill.debug.xcconfig */;
@@ -1851,15 +1682,6 @@
 			buildConfigurations = (
 				54DE73DD1FFB586A0075B77B /* Debug */,
 				54DE73DE1FFB586A0075B77B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		54DE73ED1FFB58790075B77B /* Build configuration list for PBXNativeTarget "FavotterStyle" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				54DE73EE1FFB58790075B77B /* Debug */,
-				54DE73EF1FFB58790075B77B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
