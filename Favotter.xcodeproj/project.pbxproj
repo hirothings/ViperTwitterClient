@@ -15,6 +15,7 @@
 		5433C708203173060077CFC2 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5433C707203173060077CFC2 /* ErrorView.swift */; };
 		5433C70C20317E880077CFC2 /* KeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5433C70B20317E870077CFC2 /* KeyManager.swift */; };
 		5433C70F203183330077CFC2 /* key.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5433C70E203183330077CFC2 /* key.plist */; };
+		546FACE02037F8F800E02F40 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 5432DF6C1FFCEAF20067789A /* Assets.xcassets */; };
 		54D7547D2013175E0015A1D7 /* FavotterModulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D7547C2013175E0015A1D7 /* FavotterModulesTests.swift */; };
 		54D7547F2013175E0015A1D7 /* FavotterModules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73D31FFB586A0075B77B /* FavotterModules.framework */; };
 		54D7548720131A120015A1D7 /* TimelinePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D7548620131A120015A1D7 /* TimelinePresenterTest.swift */; };
@@ -415,7 +416,6 @@
 		54DE736F1FFB58220075B77B /* Favotter */ = {
 			isa = PBXGroup;
 			children = (
-				5432DF6C1FFCEAF20067789A /* Assets.xcassets */,
 				54DE73701FFB58220075B77B /* AppDelegate.swift */,
 				54DE73721FFB58220075B77B /* LaunchScreen.storyboard */,
 				54DE739E1FFB58220075B77B /* Info.plist */,
@@ -468,6 +468,7 @@
 		54DE745A1FFB596F0075B77B /* FavotterModules */ = {
 			isa = PBXGroup;
 			children = (
+				5432DF6C1FFCEAF20067789A /* Assets.xcassets */,
 				5433C70920317CB20077CFC2 /* Common */,
 				54DE74631FFB596F0075B77B /* RootRouter.swift */,
 				5424318A20001EC400B56E90 /* Generated */,
@@ -1313,6 +1314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				546FACE02037F8F800E02F40 /* Assets.xcassets in Sources */,
 				54DE74771FFB596F0075B77B /* LoginViewController.swift in Sources */,
 				54DE747A1FFB596F0075B77B /* ProfileTableViewCell.swift in Sources */,
 				54DE74761FFB596F0075B77B /* TimelineRouter.swift in Sources */,
