@@ -9,6 +9,7 @@
 import UIKit
 import TwitterKit
 import FavotterModules
+import FavotterUtill
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +18,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        TWTRTwitter.sharedInstance().start(withConsumerKey: "OIJZqrAxKlUSfx8pWtLZOOWua", consumerSecret: "NGkhWlHDGJmE3WvH96ma4W9807XD4H5g0gYsvEI4QcWEUx3kgx")
+        do {
+            let key = try KeyManager()
+            TWTRTwitter.sharedInstance().start(
+                withConsumerKey: key.consumerKey,
+                consumerSecret: key.consumerSeacret
+            )
+        } catch KeyManagerError.loadFileFailed {
+            assertionFailure("Failed to load key.plist")
+        } catch KeyManagerError.parseFailed {
+            assertionFailure("Failed to parse key.plist")
+        } catch {
+            assertionFailure()
+        }
         
         window = UIWindow(frame: UIScreen.main.bounds)
         let router = RootRouter(window: self.window!)

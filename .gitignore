@@ -67,5 +67,5 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 
-# Resource Kit
-Resource.generated.swift
+# Project
+key.plist

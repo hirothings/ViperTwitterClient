@@ -13,6 +13,8 @@
 		5432DF6D1FFCEAF20067789A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5432DF6C1FFCEAF20067789A /* Assets.xcassets */; };
 		5433C70620316E9B0077CFC2 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5433C70520316E9B0077CFC2 /* LoginPresenter.swift */; };
 		5433C708203173060077CFC2 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5433C707203173060077CFC2 /* ErrorView.swift */; };
+		5433C70C20317E880077CFC2 /* KeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5433C70B20317E870077CFC2 /* KeyManager.swift */; };
+		5433C70F203183330077CFC2 /* key.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5433C70E203183330077CFC2 /* key.plist */; };
 		54D7547D2013175E0015A1D7 /* FavotterModulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D7547C2013175E0015A1D7 /* FavotterModulesTests.swift */; };
 		54D7547F2013175E0015A1D7 /* FavotterModules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73D31FFB586A0075B77B /* FavotterModules.framework */; };
 		54D7548720131A120015A1D7 /* TimelinePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D7548620131A120015A1D7 /* TimelinePresenterTest.swift */; };
@@ -141,6 +143,8 @@
 		5432DF6C1FFCEAF20067789A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5433C70520316E9B0077CFC2 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		5433C707203173060077CFC2 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		5433C70B20317E870077CFC2 /* KeyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyManager.swift; sourceTree = "<group>"; };
+		5433C70E203183330077CFC2 /* key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = key.plist; sourceTree = "<group>"; };
 		54884C8D1FF6C657007DBA43 /* Favotter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Favotter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54884CA11FF6C657007DBA43 /* FavotterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavotterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D7547A2013175E0015A1D7 /* FavotterModulesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FavotterModulesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -359,6 +363,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		5433C70D20317E900077CFC2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				54DD11A82007C7B80053A3D1 /* UIScrollView+Rx.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		54884C841FF6C657007DBA43 = {
 			isa = PBXGroup;
 			children = (
@@ -407,6 +419,7 @@
 				54DE73701FFB58220075B77B /* AppDelegate.swift */,
 				54DE73721FFB58220075B77B /* LaunchScreen.storyboard */,
 				54DE739E1FFB58220075B77B /* Info.plist */,
+				5433C70E203183330077CFC2 /* key.plist */,
 			);
 			path = Favotter;
 			sourceTree = "<group>";
@@ -530,9 +543,10 @@
 		54DE74841FFB59890075B77B /* FavotterUtill */ = {
 			isa = PBXGroup;
 			children = (
+				5433C70D20317E900077CFC2 /* Extensions */,
+				5433C70B20317E870077CFC2 /* KeyManager.swift */,
 				54DE74851FFB59890075B77B /* FavotterUtill.h */,
 				54DE74861FFB59890075B77B /* Info.plist */,
-				54DD11A82007C7B80053A3D1 /* UIScrollView+Rx.swift */,
 			);
 			path = FavotterUtill;
 			sourceTree = "<group>";
@@ -892,6 +906,7 @@
 				54DE73A11FFB58220075B77B /* LaunchScreen.storyboard in Resources */,
 				5432DF6D1FFCEAF20067789A /* Assets.xcassets in Resources */,
 				54DE740A1FFB59170075B77B /* Info.plist in Resources */,
+				5433C70F203183330077CFC2 /* key.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1329,6 +1344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54DD11A92007C7B80053A3D1 /* UIScrollView+Rx.swift in Sources */,
+				5433C70C20317E880077CFC2 /* KeyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
