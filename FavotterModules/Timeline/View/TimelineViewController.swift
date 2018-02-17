@@ -20,6 +20,7 @@ protocol TimelineView: class {
 
 class TimelineViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var noDataLabel: UILabel!
     
     var presenter: TimelinePresentation!
     var tweets: [Tweet] = []
@@ -46,6 +47,7 @@ class TimelineViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.refreshControl = refreshControl
+        noDataLabel.isHidden = true
     }
     
     private func setupRx() {
@@ -62,11 +64,13 @@ class TimelineViewController: UIViewController {
 
 extension TimelineViewController: TimelineView {
     func showNoContentView() {
-        // TODO:
+        refreshControl.endRefreshing()
+        noDataLabel.isHidden = false
     }
     
     func showTimeline(tweets: [Tweet]) {
         self.tweets = tweets
+        noDataLabel.isHidden = true
         tableView.reloadData()
         refreshControl.endRefreshing()
     }
