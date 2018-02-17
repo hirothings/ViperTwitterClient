@@ -14,6 +14,9 @@ protocol ErrorView: class {
 
 extension ErrorView where Self: UIViewController {
     func showError(message: String) {
-        // TODO: Show error on self view
+        let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
     }
 }
