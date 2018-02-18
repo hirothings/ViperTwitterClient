@@ -49,11 +49,13 @@ class UserTimelinePresenter: UserTimelinePresentation {
     }
 }
 
-extension UserTimelinePresenter: UserTimelineInteractorOutput {
+extension UserTimelinePresenter: UserTimelineInteractorOutput, ErrorHandler {
     func tweetsFetched(_ tweets: [Tweet]) {
         self.tweets = tweets
     }
     
-    func tweetsFetchFailed() {
+    func tweetsFetchFailed(_ error: Error) {
+        let message = handleErrorMessage(error: error)
+        view?.showError(message: message)
     }
 }

@@ -9,7 +9,7 @@
 import UIKit
 import TwitterKit
 
-protocol LoginView: ErrorView {}
+protocol LoginView: ErrorableView {}
 
 class LoginViewController: UIViewController, LoginView {
     var presenter: LoginPresentation!
@@ -21,9 +21,8 @@ class LoginViewController: UIViewController, LoginView {
                 self?.showError(message: "ログインに失敗しました")
                 return
             }
-            if let error = error {
-                // TODO: error処理
-                self?.showError(message: error.localizedDescription)
+            if let _ = error {
+                self?.showError(message: "ログインに失敗しました")
                 return
             }
             self?.presenter.succeedLogin(userID: session.userID)

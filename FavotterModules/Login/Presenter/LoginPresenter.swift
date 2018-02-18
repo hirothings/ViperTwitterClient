@@ -10,14 +10,13 @@ import Foundation
 
 protocol LoginPresentation: class {
     func succeedLogin(userID: String)
-    func failedLogin(with error: Error)
     init(
         view: LoginView?,
         router: LoginWireframe
     )
 }
 
-class LoginPresenter: LoginPresentation {
+class LoginPresenter: LoginPresentation, ErrorHandler {
     private let view: LoginView?
     private let router: LoginWireframe
     
@@ -28,10 +27,5 @@ class LoginPresenter: LoginPresentation {
     
     func succeedLogin(userID: String) {
         router.showTimelineView(userID: userID)
-    }
-    
-    func failedLogin(with error: Error) {
-        // TODO: エラー処理
-        view?.showError(message: error.localizedDescription)
     }
 }

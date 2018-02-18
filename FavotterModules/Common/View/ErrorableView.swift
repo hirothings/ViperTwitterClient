@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ErrorView: class {
+protocol ErroableView: class {
     func showError(message: String)
 }
 

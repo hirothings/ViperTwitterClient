@@ -9,7 +9,7 @@
 import UIKit
 import FavotterModel
 
-protocol UserTimelineView: class {
+protocol UserTimelineView: ErrorableView {
     func showNoContentView()
     func showTimeline(tweets: [Tweet])
 }
@@ -26,7 +26,6 @@ class UserTimelineViewController: UIViewController {
         }
     }
 
-    // TODO: Use Enumrable Enum
     private let sectionCount: Int = 2
     
     enum Section: Int {

@@ -29,7 +29,7 @@ protocol TimelinePresentation: class {
 protocol TimelineInteractorOutput: class {
     func tweetsFetched(_ tweets: [Tweet])
     func tweetsAdded(_ tweets: [Tweet])
-    func tweetsFetchFailed()
+    func tweetsFetchFailed(_ error: Error)
 }
 
 class TimelinePresenter: TimelinePresentation {
@@ -76,7 +76,7 @@ class TimelinePresenter: TimelinePresentation {
                     self?.tweetsAdded(tweets)
                 },
                 onError: { [weak self] error in
-                    self?.tweetsFetchFailed()
+                    self?.tweetsFetchFailed(error)
                 }
             )
             .disposed(by: bag)
@@ -89,14 +89,14 @@ class TimelinePresenter: TimelinePresentation {
                     self?.tweetsFetched(tweets)
                 },
                 onError: { [weak self] error in
-                    self?.tweetsFetchFailed()
+                    self?.tweetsFetchFailed(error)
                 }
             )
             .disposed(by: bag)
     }
 }
 
-extension TimelinePresenter: TimelineInteractorOutput {
+extension TimelinePresenter: TimelineInteractorOutput, ErrorHandler {    
     func tweetsFetched(_ tweets: [Tweet]) {
         isLoading = false
         if tweets.isEmpty {
@@ -118,7 +118,9 @@ extension TimelinePresenter: TimelineInteractorOutput {
         view?.updateTimeline(tweets: self.tweets, tweetsDiff: tweetCountDiff)
     }
     
-    func tweetsFetchFailed() {
+    func tweetsFetchFailed(_ error: Error) {
         isLoading = false
+        let message = handleErrorMessage(error: error)
+        view?.showError(message: message)
     }
 }

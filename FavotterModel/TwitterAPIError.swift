@@ -24,7 +24,7 @@ public enum TwitterAPIError: Error {
         }
     }
     
-    func message() -> String {
+    public func message() -> String {
         switch self {
         case .authError:
             return "認証エラーが発生しました。ログインから再度お試しください"

@@ -12,7 +12,7 @@ import RxCocoa
 import FavotterModel
 import FavotterUtill
 
-protocol TimelineView: class {
+protocol TimelineView: ErrorableView {
     func showNoContentView()
     func showTimeline(tweets: [Tweet])
     func updateTimeline(tweets: [Tweet], tweetsDiff: CountableRange<Int>)

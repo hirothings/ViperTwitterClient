@@ -11,17 +11,17 @@ import RxSwift
 import FavotterModel
 
 protocol UserTimelineUsecase: class {
-    weak var output: UserTimelineInteractorOutput! { get }
+    var output: UserTimelineInteractorOutput! { get }
     func fetch(with screenName: String)
 }
 
 protocol UserTimelineInteractorOutput: class {
     func tweetsFetched(_ tweets: [Tweet])
-    func tweetsFetchFailed()
+    func tweetsFetchFailed(_ error: Error)
 }
 
 class UserTimelineInteractor: UserTimelineUsecase {
-    weak var output: UserTimelineInteractorOutput!
+    var output: UserTimelineInteractorOutput!
     private let bag = DisposeBag()
     
     func fetch(with screenName: String) {
@@ -32,8 +32,8 @@ class UserTimelineInteractor: UserTimelineUsecase {
                 onNext: { [weak self] (tweets: [Tweet]) in
                     self?.output.tweetsFetched(tweets)
                 },
-                onError: { [weak self] _ in
-                    self?.output.tweetsFetchFailed()
+                onError: { [weak self] error in
+                    self?.output.tweetsFetchFailed(error)
                 }
             )
             .disposed(by: bag)

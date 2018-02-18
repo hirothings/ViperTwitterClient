@@ -29,11 +29,17 @@ public class APIClient {
         return Observable.create({ (observer: AnyObserver<Request.Response>) -> Disposable in
             let task: Progress = client.sendTwitterRequest(twRequest) { (response, data, error) in
                 guard let data = data else {
-                    observer.onError(TwitterAPIError.undefindError)
+                    if let error = error {
+                        let nsError = error as NSError
+                        observer.onError(TwitterAPIError(error: nsError))
+                    } else {
+                        observer.onError(TwitterAPIError.undefindError)
+                    }
                     return
                 }
                 if let error = error {
-                    observer.onError(error)
+                    let nsError = error as NSError
+                    observer.onError(TwitterAPIError(error: nsError))
                     return
                 }
                 do {
