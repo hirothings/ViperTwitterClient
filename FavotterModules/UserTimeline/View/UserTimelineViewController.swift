@@ -8,11 +8,7 @@
 
 import UIKit
 import FavotterModel
-
-protocol UserTimelineView: ErrorableView {
-    func showNoContentView()
-    func showTimeline(tweets: [Tweet])
-}
+import RxSwift
 
 class UserTimelineViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
@@ -27,6 +23,7 @@ class UserTimelineViewController: UIViewController {
     }
 
     private let sectionCount: Int = 2
+    private let bag = DisposeBag()
     
     enum Section: Int {
         case profile
@@ -36,6 +33,7 @@ class UserTimelineViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        setupRx()
     }
     
     private func setupView() {
@@ -49,15 +47,37 @@ class UserTimelineViewController: UIViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
     }
+    
+    private func setupRx() {
+        tableView.rx.reachedBottom
+            .asObservable()
+            .subscribe(onNext: { [weak self] _ in
+                guard let weakSelf = self else { return }
+                weakSelf.presenter.reachedBottom(user: weakSelf.user)
+            })
+            .disposed(by: bag)
+    }
 }
 
-extension UserTimelineViewController: UserTimelineView {
+extension UserTimelineViewController: TimelineView {
     func showNoContentView() {
     }
     
     func showTimeline(tweets: [Tweet]) {
         self.tweets = tweets
         tableView.reloadData()
+    }
+    
+    func updateTimeline(tweets: [Tweet], tweetsDiff: CountableRange<Int>) {
+        let indexPath = Array(tweetsDiff).map { IndexPath(row: $0, section: 1) }
+
+        
+        tableView.beginUpdates()
+        self.tweets = tweets
+        UIView.performWithoutAnimation {
+            tableView.insertRows(at: indexPath, with: .none)
+        }
+        tableView.endUpdates()
     }
 }
 

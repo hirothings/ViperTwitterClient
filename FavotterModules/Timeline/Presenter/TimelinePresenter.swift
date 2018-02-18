@@ -26,20 +26,14 @@ protocol TimelinePresentation: class {
     func reachedBottom()
 }
 
-protocol TimelineInteractorOutput: class {
-    func tweetsFetched(_ tweets: [Tweet])
-    func tweetsAdded(_ tweets: [Tweet])
-    func tweetsFetchFailed(_ error: Error)
-}
-
 class TimelinePresenter: TimelinePresentation {
     var view: TimelineView?
+    var tweets: [Tweet] = []
+    var isLoading = false
     private let router: TimelineWireframe
     private let interactor: TimelineUsecase
     private let userID: String
     private let store = TWTRTwitter.sharedInstance().sessionStore
-    private var tweets: [Tweet] = []
-    private var isLoading = false
 
     required init(
         view: TimelineView?,
@@ -78,31 +72,4 @@ class TimelinePresenter: TimelinePresentation {
     }
 }
 
-extension TimelinePresenter: TimelineInteractorOutput, ErrorHandler {    
-    func tweetsFetched(_ tweets: [Tweet]) {
-        isLoading = false
-        if tweets.isEmpty {
-            view?.showNoContentView()
-        } else {
-            self.tweets = tweets
-            view?.showTimeline(tweets: tweets)
-        }
-    }
-    
-    func tweetsAdded(_ tweets: [Tweet]) {
-        isLoading = false
-        if tweets.isEmpty {
-            return
-        }
-        let prevTweets = self.tweets
-        self.tweets += tweets
-        let tweetCountDiff = prevTweets.count..<self.tweets.count
-        view?.updateTimeline(tweets: self.tweets, tweetsDiff: tweetCountDiff)
-    }
-    
-    func tweetsFetchFailed(_ error: Error) {
-        isLoading = false
-        let message = handleErrorMessage(error: error)
-        view?.showError(message: message)
-    }
-}
+extension TimelinePresenter: TimelineInteractorOutput {}

@@ -11,7 +11,7 @@ import FavotterModel
 
 protocol UserTimelinePresentation: class {
     init(
-        view: UserTimelineView,
+        view: TimelineView,
         router: UserTimelineWireframe,
         interactor: UserTimelineUsecase
     )
@@ -20,22 +20,14 @@ protocol UserTimelinePresentation: class {
 }
 
 class UserTimelinePresenter: UserTimelinePresentation {
-    private weak var view: UserTimelineView?
+    var view: TimelineView?
+    var tweets: [Tweet] = []
+    var isLoading = false
     private let router: UserTimelineWireframe
     private let interactor: UserTimelineUsecase
     
-    var tweets: [Tweet] = [] {
-        didSet {
-            if tweets.isEmpty {
-                view?.showNoContentView()
-            } else {
-                view?.showTimeline(tweets: tweets)
-            }
-        }
-    }
-    
     required init(
-        view: UserTimelineView,
+        view: TimelineView,
         router: UserTimelineWireframe,
         interactor: UserTimelineUsecase
         ) {
@@ -47,15 +39,13 @@ class UserTimelinePresenter: UserTimelinePresentation {
     func fetchUserTimeline(user: User) {
         interactor.fetch(with: user.screenName)
     }
+    
+    func reachedBottom(user: User) {
+        guard let lastID = tweets.last?.id else { return }
+        if isLoading { return }
+        isLoading = true
+        interactor.addTweets(screenName: user.screenName, maxID: lastID)
+    }
 }
 
-extension UserTimelinePresenter: UserTimelineInteractorOutput, ErrorHandler {
-    func tweetsFetched(_ tweets: [Tweet]) {
-        self.tweets = tweets
-    }
-    
-    func tweetsFetchFailed(_ error: Error) {
-        let message = handleErrorMessage(error: error)
-        view?.showError(message: message)
-    }
-}
+extension UserTimelinePresenter: TimelineInteractorOutput {}
