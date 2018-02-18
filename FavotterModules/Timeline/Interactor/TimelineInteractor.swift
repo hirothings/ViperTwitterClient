@@ -11,21 +11,41 @@ import RxSwift
 import FavotterModel
 
 protocol TimelineUsecase: class {
-    func fetch(with userID: String) -> Observable<[Tweet]>
-    func addTweets(userID: String, maxID: Int64) -> Observable<[Tweet]>
+    var output: TimelineInteractorOutput! { get }
+    func fetch(with userID: String)
+    func addTweets(userID: String, maxID: Int64)
 }
 
 class TimelineInteractor: TimelineUsecase {
+    var output: TimelineInteractorOutput!
     private let bag = DisposeBag()
     private let client = APIClient()
 
-    func fetch(with userID: String) -> Observable<[Tweet]> {
+    func fetch(with userID: String) {
         let request = TwitterAPI.HomeTimeline(userID: userID, maxID: nil)
-        return client.call(request: request)
+        client.call(request: request)
+            .subscribe(
+                onNext: { [weak self] (tweets: [Tweet]) in
+                    self?.output.tweetsFetched(tweets)
+                },
+                onError: { [weak self] error in
+                    self?.output.tweetsFetchFailed(error)
+                }
+            )
+            .disposed(by: bag)
     }
     
-    func addTweets(userID: String, maxID: Int64) -> Observable<[Tweet]> {
+    func addTweets(userID: String, maxID: Int64) {
         let request = TwitterAPI.HomeTimeline(userID: userID, maxID: maxID)
-        return client.call(request: request)
+        client.call(request: request)
+            .subscribe(
+                onNext: { [weak self] (tweets: [Tweet]) in
+                    self?.output.tweetsAdded(tweets)
+                },
+                onError: { [weak self] error in
+                    self?.output.tweetsFetchFailed(error)
+                }
+            )
+            .disposed(by: bag)
     }
 }

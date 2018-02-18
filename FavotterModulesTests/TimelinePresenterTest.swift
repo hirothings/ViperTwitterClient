@@ -18,7 +18,7 @@ enum TweetMock {
     case initialTweets
     case additionalTweets
     // memo: 画像付きのツイートなどパターンはここに追加していく(UITestでも使えそう)
-    
+    // JSONを用意しても良い
     func generate() -> [Tweet] {
         switch self {
         case .none:
@@ -26,12 +26,12 @@ enum TweetMock {
         case .initialTweets:
             return Array(0..<20).map {
                 let user = User(name: "ユーザー\($0)", screenName: "test_\($0)", description: "", profileImageURL: "https://test\($0).com", profileBGImageURL: "https://test\($0).com", friendsCount: $0, followersCount: $0)
-                return Tweet(id: Int64($0), text: "こんにちは！\($0)", user: user, retweetCount: $0, favCount: $0)
+                return Tweet(id: Int64($0), text: "こんにちは！\($0)", user: user, retweetCount: $0, favCount: $0, media: nil)
             }
         case .additionalTweets:
             return Array(0..<18).map {
                 let user = User(name: "追加ユーザー\($0)", screenName: "test_\($0)", description: "", profileImageURL: "https://test\($0).com", profileBGImageURL: "https://test\($0).com", friendsCount: $0, followersCount: $0)
-                return Tweet(id: Int64($0), text: "追加ユーザーです。こんにちは！\($0)", user: user, retweetCount: $0, favCount: $0)
+                return Tweet(id: Int64($0), text: "追加ユーザーです。こんにちは！\($0)", user: user, retweetCount: $0, favCount: $0, media: nil)
             }
         }
     }
@@ -39,24 +39,44 @@ enum TweetMock {
 
 class TimelineUseCaseStub: TimelineUsecase {
     var mock: TweetMock!
+    var output: TimelineInteractorOutput!
+    private let bag = DisposeBag()
     
-    func fetch(with userID: String) -> Observable<[Tweet]> {
-        return Observable.just(mock.generate())
+    func fetch(with userID: String) {
+        Observable.just(mock.generate())
+            .subscribe(
+                onNext: { [weak self] (tweets: [Tweet]) in
+                    self?.output.tweetsFetched(tweets)
+                },
+                onError: { [weak self] error in
+                    self?.output.tweetsFetchFailed(error)
+                }
+            )
+            .disposed(by: bag)
     }
     
-    func addTweets(userID: String, maxID: Int64) -> Observable<[Tweet]> {
-        return Observable.just(mock.generate())
+    func addTweets(userID: String, maxID: Int64) {
+        Observable.just(mock.generate())
+            .subscribe(
+                onNext: { [weak self] (tweets: [Tweet]) in
+                    self?.output.tweetsAdded(tweets)
+                },
+                onError: { [weak self] error in
+                    self?.output.tweetsFetchFailed(error)
+                }
+            )
+            .disposed(by: bag)
     }
 }
 
-class TimelineViewSpy: TimelineView {
+class TimelineViewSpy: UIViewController, TimelineView {
     var presenter: TimelinePresentation!
     var tweets: [Tweet] = []
     var tweetsDiffCount: Int = 0
-    var noContentViewIsHidden = true
+    var calledFanctions: [String] = []
     
     func showNoContentView() {
-        noContentViewIsHidden = false
+        calledFanctions.append(#function)
     }
     
     func showTimeline(tweets: [Tweet]) {
@@ -69,7 +89,7 @@ class TimelineViewSpy: TimelineView {
 }
 
 class TimelinePresenterTest: XCTestCase {
-    var presenter: TimelinePresentation!
+    var presenter: TimelinePresenter!
     let spy = TimelineViewSpy()
     lazy var router = TimelineRouter(viewController: nil)
     let stub = TimelineUseCaseStub()
@@ -80,8 +100,9 @@ class TimelinePresenterTest: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        self.presenter = TimelinePresenter(view: spy, router: router, interactor: stub)
-        spy.presenter = self.presenter
+        presenter = TimelinePresenter(view: spy, router: router, interactor: stub)
+        spy.presenter = presenter
+        stub.output = presenter
     }
     
     override func tearDown() {
@@ -96,7 +117,8 @@ class TimelinePresenterTest: XCTestCase {
         // when
         presenter.viewDidLoad()
         // then
-        XCTAssertEqual(false, spy.noContentViewIsHidden)
+        print(spy.calledFanctions)
+        XCTAssertEqual(spy.calledFanctions.filter { $0 == "showNoContentView()" }.count, 1)
     }
     
     /// Tweetを追加ロードした際、追加の差分がviewに正常に渡されていること

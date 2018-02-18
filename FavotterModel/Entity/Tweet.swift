@@ -30,6 +30,15 @@ public struct Tweet: Codable {
             media = nil
         }
     }
+    
+    public init(id: Int64, text: String, user: User, retweetCount: Int, favCount: Int, media: [Media]?) {
+        self.id = id
+        self.text = text
+        self.user = user
+        self.retweetCount = retweetCount
+        self.favCount = favCount
+        self.media = media
+    }
 
     public func encode(to encoder: Encoder) throws {
         var container = encoder.container(keyedBy: CodingKeys.self)

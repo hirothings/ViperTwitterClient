@@ -35,6 +35,7 @@ class TimelineRouter: TimelineWireframe {
         let presenter = TimelinePresenter(view: view, router: router, interactor: interactor)
         
         view.presenter = presenter
+        interactor.output = presenter
 
         let nav = UINavigationController(rootViewController: view)
         return nav

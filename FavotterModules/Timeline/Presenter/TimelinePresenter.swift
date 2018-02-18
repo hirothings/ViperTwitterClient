@@ -71,28 +71,10 @@ class TimelinePresenter: TimelinePresentation {
         if isLoading { return }
         isLoading = true
         interactor.addTweets(userID: userID, maxID: lastID)
-            .subscribe(
-                onNext: { [weak self] (tweets: [Tweet]) in
-                    self?.tweetsAdded(tweets)
-                },
-                onError: { [weak self] error in
-                    self?.tweetsFetchFailed(error)
-                }
-            )
-            .disposed(by: bag)
     }
     
     private func fetchTweets(_ userID: String) {
         interactor.fetch(with: userID)
-            .subscribe(
-                onNext: { [weak self] (tweets: [Tweet]) in
-                    self?.tweetsFetched(tweets)
-                },
-                onError: { [weak self] error in
-                    self?.tweetsFetchFailed(error)
-                }
-            )
-            .disposed(by: bag)
     }
 }
 
