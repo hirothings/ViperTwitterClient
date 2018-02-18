@@ -1,5 +1,5 @@
 //
-//  ErrorView.swift
+//  ErrorableView.swift
 //  FavotterModules
 //
 //  Created by hirothings on 2018/02/12.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-protocol ErroableView: class {
+protocol ErrorableView: class {
     func showError(message: String)
 }
 
-extension ErrorView where Self: UIViewController {
+extension ErrorableView where Self: UIViewController {
     func showError(message: String) {
         let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
