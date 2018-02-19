@@ -15,7 +15,7 @@ import FavotterUtill
 protocol TimelineView: ErrorableView {
     func showNoContentView()
     func showTimeline(tweets: [Tweet])
-    func updateTimeline(tweets: [Tweet], tweetsDiff: CountableRange<Int>)
+    func updateTimeline(tweets: [Tweet])
 }
 
 class TimelineViewController: UIViewController {
@@ -75,14 +75,9 @@ extension TimelineViewController: TimelineView {
         refreshControl.endRefreshing()
     }
     
-    func updateTimeline(tweets: [Tweet], tweetsDiff: CountableRange<Int>) {
-        let indexPath = Array(tweetsDiff).map { IndexPath(row: $0, section: 0) }
-        tableView.beginUpdates()
+    func updateTimeline(tweets: [Tweet]) {
         self.tweets = tweets
-        UIView.performWithoutAnimation {
-            tableView.insertRows(at: indexPath, with: .bottom)
-        }
-        tableView.endUpdates()
+        tableView.reloadData()
     }
 }
 

@@ -68,16 +68,9 @@ extension UserTimelineViewController: TimelineView {
         tableView.reloadData()
     }
     
-    func updateTimeline(tweets: [Tweet], tweetsDiff: CountableRange<Int>) {
-        let indexPath = Array(tweetsDiff).map { IndexPath(row: $0, section: 1) }
-
-        
-        tableView.beginUpdates()
+    func updateTimeline(tweets: [Tweet]) {
         self.tweets = tweets
-        UIView.performWithoutAnimation {
-            tableView.insertRows(at: indexPath, with: .none)
-        }
-        tableView.endUpdates()
+        tableView.reloadData()
     }
 }
 

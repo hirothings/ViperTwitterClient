@@ -34,10 +34,8 @@ extension TimelineInteractorOutput {
         if tweets.isEmpty {
             return
         }
-        let prevTweets = self.tweets
         self.tweets += tweets
-        let tweetCountDiff = prevTweets.count..<self.tweets.count
-        view?.updateTimeline(tweets: self.tweets, tweetsDiff: tweetCountDiff)
+        view?.updateTimeline(tweets: self.tweets)
     }
     
     mutating func tweetsFetchFailed(_ error: Error) {
