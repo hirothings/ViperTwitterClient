@@ -19,7 +19,7 @@ public struct KeyManager {
     
     public init() throws {
         guard
-            let dict: [String: Any] = try parsePlist("key"),
+            let dict: [String: Any] = try parsePlist("Key"),
             let consumerKey = dict["consumerKey"] as? String,
             let consumerSeacret = dict["consumerSeacret"] as? String
         else {

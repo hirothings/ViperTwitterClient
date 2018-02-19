@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		0555809A06D96E548ABA656D /* Pods_FavotterTarget_Favotter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B2C58C03EF7D3981BDABE4 /* Pods_FavotterTarget_Favotter.framework */; };
+		40275437203A9D9800F67036 /* Key.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40275436203A9D9800F67036 /* Key.plist */; };
 		5424318C20001EED00B56E90 /* StoryBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5424318B20001EED00B56E90 /* StoryBoards.swift */; };
 		5432DF6D1FFCEAF20067789A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5432DF6C1FFCEAF20067789A /* Assets.xcassets */; };
 		5433C70620316E9B0077CFC2 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5433C70520316E9B0077CFC2 /* LoginPresenter.swift */; };
 		5433C708203173060077CFC2 /* ErrorableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5433C707203173060077CFC2 /* ErrorableView.swift */; };
 		5433C70C20317E880077CFC2 /* KeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5433C70B20317E870077CFC2 /* KeyManager.swift */; };
-		5433C70F203183330077CFC2 /* key.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5433C70E203183330077CFC2 /* key.plist */; };
 		546FACE02037F8F800E02F40 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 5432DF6C1FFCEAF20067789A /* Assets.xcassets */; };
 		546FACE22038058200E02F40 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546FACE12038058200E02F40 /* Media.swift */; };
 		546FACE7203833EC00E02F40 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546FACE6203833EC00E02F40 /* ErrorHandler.swift */; };
@@ -126,6 +126,7 @@
 		236E3855CEBDD40CC2FE613B /* Pods_FavotterTarget_FavotterStyle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterStyle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D069335900EEB449E225D01 /* Pods-FavotterTarget-FavotterModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterModel.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterModel/Pods-FavotterTarget-FavotterModel.release.xcconfig"; sourceTree = "<group>"; };
 		33B63EE7883ABED48E444F3F /* Pods-FavotterTarget-FavotterView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterView.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterView/Pods-FavotterTarget-FavotterView.release.xcconfig"; sourceTree = "<group>"; };
+		40275436203A9D9800F67036 /* Key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Key.plist; sourceTree = "<group>"; };
 		42C827169D87718EA3A629BE /* Pods-FavotterTarget-FavotterModulesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterModulesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterModulesTests/Pods-FavotterTarget-FavotterModulesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		43E179BE177475BB9793DA92 /* Pods-FavotterTarget-FavotterModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterModel/Pods-FavotterTarget-FavotterModel.debug.xcconfig"; sourceTree = "<group>"; };
 		4A10093A5F8BED4336E0F415 /* Pods-FavotterTarget-FavotterStyle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterStyle.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterStyle/Pods-FavotterTarget-FavotterStyle.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,7 +136,6 @@
 		5433C70520316E9B0077CFC2 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		5433C707203173060077CFC2 /* ErrorableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorableView.swift; sourceTree = "<group>"; };
 		5433C70B20317E870077CFC2 /* KeyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyManager.swift; sourceTree = "<group>"; };
-		5433C70E203183330077CFC2 /* key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = key.plist; sourceTree = "<group>"; };
 		546FACE12038058200E02F40 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		546FACE6203833EC00E02F40 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		546FACE82039492A00E02F40 /* TimelineInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineInteractorOutput.swift; sourceTree = "<group>"; };
@@ -406,7 +406,7 @@
 				54DE73701FFB58220075B77B /* AppDelegate.swift */,
 				54DE73721FFB58220075B77B /* LaunchScreen.storyboard */,
 				54DE739E1FFB58220075B77B /* Info.plist */,
-				5433C70E203183330077CFC2 /* key.plist */,
+				40275436203A9D9800F67036 /* Key.plist */,
 			);
 			path = Favotter;
 			sourceTree = "<group>";
@@ -850,9 +850,9 @@
 			files = (
 				54DE74081FFB59170075B77B /* Info.plist in Resources */,
 				54DE73A11FFB58220075B77B /* LaunchScreen.storyboard in Resources */,
+				40275437203A9D9800F67036 /* Key.plist in Resources */,
 				5432DF6D1FFCEAF20067789A /* Assets.xcassets in Resources */,
 				54DE740A1FFB59170075B77B /* Info.plist in Resources */,
-				5433C70F203183330077CFC2 /* key.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
