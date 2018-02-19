@@ -23,9 +23,6 @@ abstract_target 'FavotterTarget' do
     pod 'Reusable'
   end
 
-  target 'FavotterStyle' do
-  end
-
   target 'FavotterModel' do
   end
 
