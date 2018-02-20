@@ -1,34 +1,33 @@
 def common_frameworks
   pod 'RxSwift',    '~> 4.0'
-  pod 'Action'
-  pod 'RealmSwift'
+  pod 'RxCocoa'
   pod 'LicensePlist'
   pod 'TwitterKit'
   pod 'SwiftLint'
 end
 
-abstract_target 'FavotterTarget' do
+abstract_target 'PodsTarget' do
   platform :ios, '11.0'
   use_frameworks!
 
   common_frameworks
 
-  target 'Favotter' do
+  target 'ViperTwitterClient' do
   end
 
-  target 'FavotterModules' do
+  target 'ViperTwitterClientModules' do
     pod 'SnapKit', '~> 4.0.0'
     pod 'Nuke', '~> 5.0'
     pod 'SwiftGen'
     pod 'Reusable'
   end
 
-  target 'FavotterModel' do
+  target 'ViperTwitterClientModel' do
   end
 
-  target 'FavotterUtill' do
+  target 'ViperTwitterClientUtill' do
   end
 
-  target 'FavotterModulesTests' do
+  target 'ViperTwitterClientModulesTests' do
   end
 end

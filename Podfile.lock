@@ -1,14 +1,6 @@
 PODS:
-  - Action (3.5.0):
-    - RxCocoa (~> 4.0)
-    - RxSwift (~> 4.0)
   - LicensePlist (1.8.0)
   - Nuke (5.2)
-  - Realm (3.0.2):
-    - Realm/Headers (= 3.0.2)
-  - Realm/Headers (3.0.2)
-  - RealmSwift (3.0.2):
-    - Realm (= 3.0.2)
   - Reusable (4.0.0):
     - Reusable/Storyboard (= 4.0.0)
     - Reusable/View (= 4.0.0)
@@ -25,11 +17,10 @@ PODS:
     - TwitterCore (>= 3.1.0)
 
 DEPENDENCIES:
-  - Action
   - LicensePlist
   - Nuke (~> 5.0)
-  - RealmSwift
   - Reusable
+  - RxCocoa
   - RxSwift (~> 4.0)
   - SnapKit (~> 4.0.0)
   - SwiftGen
@@ -37,11 +28,8 @@ DEPENDENCIES:
   - TwitterKit
 
 SPEC CHECKSUMS:
-  Action: d60087ebce41b969d1afdad01e2fa1372a82f26e
   LicensePlist: 192f7c5525da52cbbaf8243b15e71cb2a3486ce2
   Nuke: 5f420c4637415f979c83afb35e73176dd03232d9
-  Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
-  RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
   Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
@@ -51,6 +39,6 @@ SPEC CHECKSUMS:
   TwitterCore: 644d59e75abccb26cf0a9050d2c4dea0e5412241
   TwitterKit: a2e60ddcedbf54091eac6f27685ca7a87681e1d7
 
-PODFILE CHECKSUM: 4dfa988b53f45c49d46e4d61b51a460cd8c2b9a0
+PODFILE CHECKSUM: 91c75b394a02c526303d0473645bf5d026478ed9
 
 COCOAPODS: 1.3.1
