@@ -3,6 +3,7 @@ disabled_rules:
   - vertical_whitespace
   - type_name
   - identifier_name
+  - unused_optional_binding
 excluded: # paths to ignore during linting. Takes precedence over `included`.
   - Carthage
   - Pods
