@@ -15,17 +15,17 @@ protocol UserTimelinePresentation: class {
         router: UserTimelineWireframe,
         interactor: UserTimelineUsecase
     )
-    
+
     func fetchUserTimeline(user: User)
 }
 
 class UserTimelinePresenter: UserTimelinePresentation {
-    var view: TimelineView?
+    weak var view: TimelineView?
     var tweets: [Tweet] = []
     var isLoading = false
     private let router: UserTimelineWireframe
     private let interactor: UserTimelineUsecase
-    
+
     required init(
         view: TimelineView,
         router: UserTimelineWireframe,
@@ -35,11 +35,11 @@ class UserTimelinePresenter: UserTimelinePresentation {
         self.router = router
         self.interactor = interactor
     }
-    
+
     func fetchUserTimeline(user: User) {
         interactor.fetch(with: user.screenName)
     }
-    
+
     func reachedBottom(user: User) {
         guard let lastID = tweets.last?.id else { return }
         if isLoading { return }

@@ -13,13 +13,13 @@ import TwitterKit
 
 protocol TimelinePresentation: class {
     var view: TimelineView? { get }
-    
+
     init(
         view: TimelineView?,
         router: TimelineWireframe,
         interactor: TimelineUsecase
     )
-    
+
     func viewDidLoad()
     func pullToRefresh()
     func didSelectTweet(with user: User)
@@ -27,7 +27,7 @@ protocol TimelinePresentation: class {
 }
 
 class TimelinePresenter: TimelinePresentation {
-    var view: TimelineView?
+    weak var view: TimelineView?
     var tweets: [Tweet] = []
     var isLoading = false
     private let router: TimelineWireframe
@@ -45,28 +45,28 @@ class TimelinePresenter: TimelinePresentation {
         self.interactor = interactor
         self.userID = store.session()?.userID ?? ""
     }
-    
+
     private let bag = DisposeBag()
-    
+
     func viewDidLoad() {
         fetchTweets(userID)
     }
-    
+
     func pullToRefresh() {
         fetchTweets(userID)
     }
-    
+
     func didSelectTweet(with user: User) {
         router.pushUserProfileView(user)
     }
-    
+
     func reachedBottom() {
         guard let lastID = tweets.last?.id else { return }
         if isLoading { return }
         isLoading = true
         interactor.addTweets(userID: userID, maxID: lastID)
     }
-    
+
     private func fetchTweets(_ userID: String) {
         interactor.fetch(with: userID)
     }

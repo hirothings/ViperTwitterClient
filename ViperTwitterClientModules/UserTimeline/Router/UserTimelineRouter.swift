@@ -10,8 +10,8 @@ import UIKit
 import ViperTwitterClientModel
 
 protocol UserTimelineWireframe: class {
-    weak var viewController: UIViewController? { get set }
-    
+    var viewController: UIViewController? { get set }
+
     init(viewController: UIViewController)
 
     static func assembleModule(user: User) -> UIViewController
@@ -20,7 +20,7 @@ protocol UserTimelineWireframe: class {
 
 class UserTimelineRouter: UserTimelineWireframe {
     weak var viewController: UIViewController?
-    
+
     required init(viewController: UIViewController) {
         self.viewController = viewController
     }
@@ -29,13 +29,13 @@ class UserTimelineRouter: UserTimelineWireframe {
         let view = StoryboardScene.UserTimelineViewController.initialScene.instantiate()
         let interactor = UserTimelineInteractor()
         let router = UserTimelineRouter(viewController: view)
-        
+
         let presenter = UserTimelinePresenter(view: view, router: router, interactor: interactor)
-        
+
         view.presenter = presenter
         view.user = user
         interactor.output = presenter
-        
+
         return view
     }
 }

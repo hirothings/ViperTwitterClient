@@ -1,6 +1,6 @@
 //
 //  __PREFIX__Interactor.swift
-//  Favotter
+//  ViperTwitterClient
 //
 //  Created by __USERNAME__ on __DATE__.
 //  Copyright © __YEAR__ __USERNAME__. All rights reserved.
@@ -9,7 +9,7 @@
 import Foundation
 
 protocol __PREFIX__Usecase: class {
-    weak var output: __PREFIX__InteractorOutput! { get }
+    var output: __PREFIX__InteractorOutput! { get }
 }
 
 protocol __PREFIX__InteractorOutput: class {

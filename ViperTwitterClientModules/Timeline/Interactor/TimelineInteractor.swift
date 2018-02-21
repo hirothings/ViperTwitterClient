@@ -17,7 +17,7 @@ protocol TimelineUsecase: class {
 }
 
 class TimelineInteractor: TimelineUsecase {
-    var output: TimelineInteractorOutput!
+    weak var output: TimelineInteractorOutput!
     private let bag = DisposeBag()
     private let client = APIClient()
 
@@ -34,7 +34,7 @@ class TimelineInteractor: TimelineUsecase {
             )
             .disposed(by: bag)
     }
-    
+
     func addTweets(userID: String, maxID: Int64) {
         let request = TwitterAPI.HomeTimeline(userID: userID, maxID: maxID)
         client.call(request: request)

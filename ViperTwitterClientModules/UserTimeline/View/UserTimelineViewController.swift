@@ -12,8 +12,8 @@ import RxSwift
 
 class UserTimelineViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    
-    var presenter: UserTimelinePresenter!
+
+    weak var presenter: UserTimelinePresenter!
     var tweets: [Tweet] = []
     var user: User! {
         didSet {
@@ -24,18 +24,18 @@ class UserTimelineViewController: UIViewController {
 
     private let sectionCount: Int = 2
     private let bag = DisposeBag()
-    
+
     enum Section: Int {
         case profile
         case timeline
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
         setupRx()
     }
-    
+
     private func setupView() {
         tableView.register(cellType: TweetTableViewCell.self)
         tableView.register(cellType: ProfileTableViewCell.self)
@@ -43,11 +43,11 @@ class UserTimelineViewController: UIViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.separatorInset = UIEdgeInsets.zero
         tableView.tableFooterView = UIView(frame: CGRect.zero)
-        
+
         self.tableView.delegate = self
         self.tableView.dataSource = self
     }
-    
+
     private func setupRx() {
         tableView.rx.reachedBottom
             .asObservable()
@@ -62,12 +62,12 @@ class UserTimelineViewController: UIViewController {
 extension UserTimelineViewController: TimelineView {
     func showNoContentView() {
     }
-    
+
     func showTimeline(tweets: [Tweet]) {
         self.tweets = tweets
         tableView.reloadData()
     }
-    
+
     func updateTimeline(tweets: [Tweet]) {
         self.tweets = tweets
         tableView.reloadData()
@@ -78,10 +78,10 @@ extension UserTimelineViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return sectionCount
     }
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         let section = Section(rawValue: section)!
-        
+
         switch section {
         case .profile:
             return 1
@@ -89,10 +89,10 @@ extension UserTimelineViewController: UITableViewDataSource {
             return tweets.count
         }
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let section = Section(rawValue: indexPath.section)!
-        
+
         switch section {
         case .profile:
             let cell: ProfileTableViewCell = tableView.dequeueReusableCell(for: indexPath)
@@ -107,5 +107,5 @@ extension UserTimelineViewController: UITableViewDataSource {
 }
 
 extension UserTimelineViewController: UITableViewDelegate {
-    
+
 }

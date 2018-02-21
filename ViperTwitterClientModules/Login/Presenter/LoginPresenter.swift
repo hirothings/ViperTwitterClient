@@ -17,14 +17,14 @@ protocol LoginPresentation: class {
 }
 
 class LoginPresenter: LoginPresentation, ErrorHandler {
-    private let view: LoginView?
+    private weak let view: LoginView?
     private let router: LoginWireframe
-    
+
     required init(view: LoginView?, router: LoginWireframe) {
         self.view = view
         self.router = router
     }
-    
+
     func succeedLogin(userID: String) {
         router.showTimelineView(userID: userID)
     }
