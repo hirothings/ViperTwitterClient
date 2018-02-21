@@ -13,13 +13,13 @@ protocol TimelineInteractorOutput: ErrorHandler {
     var view: TimelineView? { get }
     var tweets: [Tweet] { get set }
     var isLoading: Bool { get set }
-    mutating func tweetsFetched(_ tweets: [Tweet])
-    mutating func tweetsAdded(_ tweets: [Tweet])
-    mutating func tweetsFetchFailed(_ error: Error)
+    func tweetsFetched(_ tweets: [Tweet])
+    func tweetsAdded(_ tweets: [Tweet])
+    func tweetsFetchFailed(_ error: Error)
 }
 
 extension TimelineInteractorOutput {
-    mutating func tweetsFetched(_ tweets: [Tweet]) {
+    func tweetsFetched(_ tweets: [Tweet]) {
         isLoading = false
         if tweets.isEmpty {
             view?.showNoContentView()
@@ -29,7 +29,7 @@ extension TimelineInteractorOutput {
         }
     }
     
-    mutating func tweetsAdded(_ tweets: [Tweet]) {
+    func tweetsAdded(_ tweets: [Tweet]) {
         isLoading = false
         if tweets.isEmpty {
             return
@@ -38,7 +38,7 @@ extension TimelineInteractorOutput {
         view?.updateTimeline(tweets: self.tweets)
     }
     
-    mutating func tweetsFetchFailed(_ error: Error) {
+    func tweetsFetchFailed(_ error: Error) {
         isLoading = false
         let message = handleErrorMessage(error: error)
         view?.showError(message: message)

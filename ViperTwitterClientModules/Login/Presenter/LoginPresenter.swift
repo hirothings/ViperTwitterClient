@@ -17,7 +17,7 @@ protocol LoginPresentation: class {
 }
 
 class LoginPresenter: LoginPresentation, ErrorHandler {
-    private weak let view: LoginView?
+    private weak var view: LoginView?
     private let router: LoginWireframe
 
     required init(view: LoginView?, router: LoginWireframe) {
