@@ -3,6 +3,13 @@ Twitter client app for VIPER design pattern implementation
 
 ![tw](https://user-images.githubusercontent.com/5630896/36472755-109df17e-1736-11e8-87b8-32fcaf3a1ed0.png)
 
+### Implementation
+* Routing with login status
+* Additional Loading
+* Error Handling
+* Unit Test (Presenter Layer)
+* Use Code Generator
+
 ## What is VIPER?
 ![](https://s3.amazonaws.com/ckl-website-static/wp-content/uploads/2016/04/viper_architecture-2000x720.jpg)
 > Source: [iOS Project Architecture: Using VIPER](https://cheesecakelabs.com/blog/ios-project-architecture-using-viper/)
