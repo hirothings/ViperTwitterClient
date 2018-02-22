@@ -20,7 +20,7 @@ class TimelineViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var noDataLabel: UILabel!
 
-    weak var presenter: TimelinePresentation!
+    var presenter: TimelinePresentation!
     var tweets: [Tweet] = []
 
     private let refreshControl = UIRefreshControl()

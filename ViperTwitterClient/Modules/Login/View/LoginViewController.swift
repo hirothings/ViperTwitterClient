@@ -12,7 +12,7 @@ import TwitterKit
 protocol LoginView: ErrorableView {}
 
 class LoginViewController: UIViewController, LoginView {
-    weak var presenter: LoginPresentation!
+    var presenter: LoginPresentation!
 
     override func viewDidLoad() {
         super.viewDidLoad()

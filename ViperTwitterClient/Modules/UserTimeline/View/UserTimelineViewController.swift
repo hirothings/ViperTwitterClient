@@ -12,7 +12,7 @@ import RxSwift
 class UserTimelineViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
-    weak var presenter: UserTimelinePresenter!
+    var presenter: UserTimelinePresenter!
     var tweets: [Tweet] = []
     var user: User! {
         didSet {

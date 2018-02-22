@@ -11,7 +11,7 @@ import UIKit
 protocol __PREFIX__View: class {}
 
 class __PREFIX__ViewController: UIViewController {
-    weak var presenter: __PREFIX__Presenter!
+    var presenter: __PREFIX__Presenter!
 
     override func viewDidLoad() {
         super.viewDidLoad()
