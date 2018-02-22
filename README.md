@@ -29,8 +29,11 @@ bundle install --path vendor/bundle
 bundle exec pod install 
 ```
 
-3. Set your app's Consumer Key and Consumer Seacret to `./ViperTwitterClient/Key.plist.`
+3. Set your app's Consumer Key and Consumer Seacret to `./ViperTwitterClient/Key.plist`
 ![](https://user-images.githubusercontent.com/5630896/36472375-013c1d74-1735-11e8-9c0c-37be4513c70d.png)
+
+4. Set URLScheme (twitterkit-[Consumer Key])
+![](https://user-images.githubusercontent.com/5630896/36520170-cf3d739c-17d2-11e8-915a-c64704a7a702.png)
 
 ## Requirements
 * Xcode9
