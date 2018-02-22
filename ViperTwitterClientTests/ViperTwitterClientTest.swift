@@ -1,15 +1,14 @@
 //
-//  ViperTwitterClientTests.swift
-//  ViperTwitterClientTests
+//  ViperTwitterClientTest.swift
+//  ViperTwitterClientTest
 //
-//  Created by hirothings on 2017/12/19.
-//  Copyright © 2017年 hirothings. All rights reserved.
+//  Created by hirothings on 2018/02/22.
+//  Copyright © 2018年 hirothings. All rights reserved.
 //
 
 import XCTest
-@testable import ViperTwitterClient
 
-class ViperTwitterClientTests: XCTestCase {
+class ViperTwitterClientTest: XCTestCase {
     
     override func setUp() {
         super.setUp()

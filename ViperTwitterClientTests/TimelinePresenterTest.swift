@@ -1,6 +1,6 @@
 //
 //  TimelinePresenterTest.swift
-//  ViperTwitterClientModulesTests
+//  ViperTwitterClientTests
 //
 //  Created by hirothings on 2018/01/20.
 //  Copyright © 2018年 hirothings. All rights reserved.

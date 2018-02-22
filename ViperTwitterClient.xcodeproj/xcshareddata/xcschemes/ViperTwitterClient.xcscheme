@@ -39,6 +39,16 @@
                ReferencedContainer = "container:ViperTwitterClient.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "54579EB2203E55E700C4630F"
+               BuildableName = "ViperTwitterClientTests.xctest"
+               BlueprintName = "ViperTwitterClientTests"
+               ReferencedContainer = "container:ViperTwitterClient.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

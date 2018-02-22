@@ -1,5 +1,5 @@
-output_dir: ./FavotterModules/Generated
+output_dir: ./ViperTwitterClient/Modules/Generated
 storyboards:
   templateName: swift4
-  paths: ./FavotterModules/
+  paths: ./ViperTwitterClient/
   output: StoryBoards.swift

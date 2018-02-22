@@ -8,8 +8,6 @@
 
 import UIKit
 import TwitterKit
-import ViperTwitterClientModules
-import ViperTwitterClientUtill
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

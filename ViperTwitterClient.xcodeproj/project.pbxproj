@@ -7,101 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E0E3B72ED8197B29CC13FDC /* Pods_PodsTarget_ViperTwitterClientModulesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C520C79E7CF6F1F4FBDD57CB /* Pods_PodsTarget_ViperTwitterClientModulesTests.framework */; };
-		1F5772C0577384169B7A7E77 /* Pods_PodsTarget_ViperTwitterClientModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D803CDBA9B13156EEDEDD499 /* Pods_PodsTarget_ViperTwitterClientModel.framework */; };
-		41DE0B967CF99F96CACDAB20 /* Pods_PodsTarget_ViperTwitterClientUtill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46CA8725F319E126AE49CA53 /* Pods_PodsTarget_ViperTwitterClientUtill.framework */; };
-		4BF3570C2F0407B6E53B6E51 /* Pods_PodsTarget_ViperTwitterClientModules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F04F1A59FD0632EC789089F /* Pods_PodsTarget_ViperTwitterClientModules.framework */; };
-		5424318C20001EED00B56E90 /* StoryBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5424318B20001EED00B56E90 /* StoryBoards.swift */; };
 		5432DF6D1FFCEAF20067789A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5432DF6C1FFCEAF20067789A /* Assets.xcassets */; };
-		5433C70620316E9B0077CFC2 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5433C70520316E9B0077CFC2 /* LoginPresenter.swift */; };
-		5433C708203173060077CFC2 /* ErrorableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5433C707203173060077CFC2 /* ErrorableView.swift */; };
-		5433C70C20317E880077CFC2 /* KeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5433C70B20317E870077CFC2 /* KeyManager.swift */; };
 		5433C70F203183330077CFC2 /* Key.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5433C70E203183330077CFC2 /* Key.plist */; };
-		546FACE02037F8F800E02F40 /* Assets.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 5432DF6C1FFCEAF20067789A /* Assets.xcassets */; };
-		546FACE22038058200E02F40 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546FACE12038058200E02F40 /* Media.swift */; };
-		546FACE7203833EC00E02F40 /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546FACE6203833EC00E02F40 /* ErrorHandler.swift */; };
-		546FACE92039492A00E02F40 /* TimelineInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546FACE82039492A00E02F40 /* TimelineInteractorOutput.swift */; };
-		54D7547F2013175E0015A1D7 /* ViperTwitterClientModules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73D31FFB586A0075B77B /* ViperTwitterClientModules.framework */; };
-		54D7548720131A120015A1D7 /* TimelinePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D7548620131A120015A1D7 /* TimelinePresenterTest.swift */; };
-		54DD11A92007C7B80053A3D1 /* UIScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD11A82007C7B80053A3D1 /* UIScrollView+Rx.swift */; };
+		54579EB6203E55E700C4630F /* ViperTwitterClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54579EB5203E55E700C4630F /* ViperTwitterClientTest.swift */; };
+		54579EBD203E55F600C4630F /* TimelinePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D7548620131A120015A1D7 /* TimelinePresenterTest.swift */; };
+		54579EBF203E5A0100C4630F /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546FACE6203833EC00E02F40 /* ErrorHandler.swift */; };
+		54579EC0203E5A0100C4630F /* TimelineInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546FACE82039492A00E02F40 /* TimelineInteractorOutput.swift */; };
+		54579EC1203E5A0100C4630F /* ErrorableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5433C707203173060077CFC2 /* ErrorableView.swift */; };
+		54579EC2203E5A0100C4630F /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74631FFB596F0075B77B /* RootRouter.swift */; };
+		54579EC4203E5A0100C4630F /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5433C70520316E9B0077CFC2 /* LoginPresenter.swift */; };
+		54579EC5203E5A0100C4630F /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74621FFB596F0075B77B /* LoginRouter.swift */; };
+		54579EC6203E5A0100C4630F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74661FFB596F0075B77B /* LoginViewController.swift */; };
+		54579EC7203E5A0100C4630F /* TimelineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE745E1FFB596F0075B77B /* TimelineInteractor.swift */; };
+		54579EC8203E5A0100C4630F /* TimelinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74601FFB596F0075B77B /* TimelinePresenter.swift */; };
+		54579EC9203E5A0100C4630F /* TimelineRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74641FFB596F0075B77B /* TimelineRouter.swift */; };
+		54579ECA203E5A0100C4630F /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE746D1FFB596F0075B77B /* TweetTableViewCell.swift */; };
+		54579ECB203E5A0100C4630F /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE746F1FFB596F0075B77B /* TimelineViewController.swift */; };
+		54579ECC203E5A0100C4630F /* UserTimelineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = U366JEZRUHQTEZJWOYO00VD6 /* UserTimelineInteractor.swift */; };
+		54579ECD203E5A0100C4630F /* UserTimelinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = WK5CXQRJZPMFOSNJZPIMFI59 /* UserTimelinePresenter.swift */; };
+		54579ECE203E5A0100C4630F /* UserTimelineRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = I18O7613EL17S5SZND0XELEU /* UserTimelineRouter.swift */; };
+		54579ECF203E5A0100C4630F /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE746B1FFB596F0075B77B /* ProfileTableViewCell.swift */; };
+		54579ED0203E5A0100C4630F /* UserTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7O58G0L4MMQ670EVO3SNFIFD /* UserTimelineViewController.swift */; };
+		54579ED1203E5A0100C4630F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74491FFB59640075B77B /* APIClient.swift */; };
+		54579ED2203E5A0100C4630F /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE744B1FFB59640075B77B /* Tweet.swift */; };
+		54579ED3203E5A0100C4630F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE744C1FFB59640075B77B /* User.swift */; };
+		54579ED4203E5A0100C4630F /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546FACE12038058200E02F40 /* Media.swift */; };
+		54579ED5203E5A0100C4630F /* TwitterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE744F1FFB59640075B77B /* TwitterAPI.swift */; };
+		54579ED6203E5A0100C4630F /* TwitterAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74501FFB59640075B77B /* TwitterAPIError.swift */; };
+		54579ED7203E5A0100C4630F /* TwitterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74511FFB59640075B77B /* TwitterRequest.swift */; };
+		54579ED8203E5A0100C4630F /* UIScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD11A82007C7B80053A3D1 /* UIScrollView+Rx.swift */; };
+		54579ED9203E5A0100C4630F /* KeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5433C70B20317E870077CFC2 /* KeyManager.swift */; };
+		54579EDB203E5A3400C4630F /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DE74681FFB596F0075B77B /* LoginViewController.storyboard */; };
+		54579EDC203E5A3400C4630F /* TimelineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DE74691FFB596F0075B77B /* TimelineViewController.storyboard */; };
+		54579EDD203E5A3400C4630F /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54DE746E1FFB596F0075B77B /* TweetTableViewCell.xib */; };
+		54579EDE203E5A3400C4630F /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54DE746C1FFB596F0075B77B /* ProfileTableViewCell.xib */; };
+		54579EDF203E5A3400C4630F /* UserTimelineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DE748E1FFB73D90075B77B /* UserTimelineViewController.storyboard */; };
+		54579EE1203E5B2000C4630F /* StoryBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54579EE0203E5B2000C4630F /* StoryBoards.swift */; };
 		54DE739F1FFB58220075B77B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE73701FFB58220075B77B /* AppDelegate.swift */; };
 		54DE73A11FFB58220075B77B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DE73721FFB58220075B77B /* LaunchScreen.storyboard */; };
-		54DE73C91FFB58420075B77B /* ViperTwitterClientModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73C21FFB58420075B77B /* ViperTwitterClientModel.framework */; };
-		54DE73CA1FFB58420075B77B /* ViperTwitterClientModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73C21FFB58420075B77B /* ViperTwitterClientModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		54DE73DA1FFB586A0075B77B /* ViperTwitterClientModules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73D31FFB586A0075B77B /* ViperTwitterClientModules.framework */; };
-		54DE73DB1FFB586A0075B77B /* ViperTwitterClientModules.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73D31FFB586A0075B77B /* ViperTwitterClientModules.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		54DE73FC1FFB58860075B77B /* ViperTwitterClientUtill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73F51FFB58860075B77B /* ViperTwitterClientUtill.framework */; };
-		54DE73FD1FFB58860075B77B /* ViperTwitterClientUtill.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54DE73F51FFB58860075B77B /* ViperTwitterClientUtill.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		54DE74081FFB59170075B77B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54DE74031FFB59170075B77B /* Info.plist */; };
-		54DE740A1FFB59170075B77B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54DE74061FFB59170075B77B /* Info.plist */; };
-		54DE74521FFB59640075B77B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74491FFB59640075B77B /* APIClient.swift */; };
-		54DE74531FFB59640075B77B /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE744B1FFB59640075B77B /* Tweet.swift */; };
-		54DE74541FFB59640075B77B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE744C1FFB59640075B77B /* User.swift */; };
-		54DE74551FFB59640075B77B /* FavotterModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 54DE744D1FFB59640075B77B /* FavotterModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54DE74571FFB59640075B77B /* TwitterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE744F1FFB59640075B77B /* TwitterAPI.swift */; };
-		54DE74581FFB59640075B77B /* TwitterAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74501FFB59640075B77B /* TwitterAPIError.swift */; };
-		54DE74591FFB59640075B77B /* TwitterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74511FFB59640075B77B /* TwitterRequest.swift */; };
-		54DE74701FFB596F0075B77B /* FavotterModules.h in Headers */ = {isa = PBXBuildFile; fileRef = 54DE745B1FFB596F0075B77B /* FavotterModules.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54DE74721FFB596F0075B77B /* TimelineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE745E1FFB596F0075B77B /* TimelineInteractor.swift */; };
-		54DE74731FFB596F0075B77B /* TimelinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74601FFB596F0075B77B /* TimelinePresenter.swift */; };
-		54DE74741FFB596F0075B77B /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74621FFB596F0075B77B /* LoginRouter.swift */; };
-		54DE74751FFB596F0075B77B /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74631FFB596F0075B77B /* RootRouter.swift */; };
-		54DE74761FFB596F0075B77B /* TimelineRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74641FFB596F0075B77B /* TimelineRouter.swift */; };
-		54DE74771FFB596F0075B77B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74661FFB596F0075B77B /* LoginViewController.swift */; };
-		54DE74781FFB596F0075B77B /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DE74681FFB596F0075B77B /* LoginViewController.storyboard */; };
-		54DE74791FFB596F0075B77B /* TimelineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DE74691FFB596F0075B77B /* TimelineViewController.storyboard */; };
-		54DE747A1FFB596F0075B77B /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE746B1FFB596F0075B77B /* ProfileTableViewCell.swift */; };
-		54DE747B1FFB596F0075B77B /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54DE746C1FFB596F0075B77B /* ProfileTableViewCell.xib */; };
-		54DE747C1FFB596F0075B77B /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE746D1FFB596F0075B77B /* TweetTableViewCell.swift */; };
-		54DE747D1FFB596F0075B77B /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54DE746E1FFB596F0075B77B /* TweetTableViewCell.xib */; };
-		54DE747E1FFB596F0075B77B /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE746F1FFB596F0075B77B /* TimelineViewController.swift */; };
-		54DE74871FFB598A0075B77B /* FavotterUtill.h in Headers */ = {isa = PBXBuildFile; fileRef = 54DE74851FFB59890075B77B /* FavotterUtill.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54DE74891FFB5C240075B77B /* FavotterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74021FFB59170075B77B /* FavotterUITests.swift */; };
-		54DE748C1FFB5C650075B77B /* FavotterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74051FFB59170075B77B /* FavotterTests.swift */; };
-		54DE748F1FFB73D90075B77B /* UserTimelineViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54DE748E1FFB73D90075B77B /* UserTimelineViewController.storyboard */; };
-		6AIZ6T9TMP8ESAE4QD64MXHI /* UserTimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7O58G0L4MMQ670EVO3SNFIFD /* UserTimelineViewController.swift */; };
-		6OXG3H29LZYFX2WY3HTS05AH /* UserTimelinePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = WK5CXQRJZPMFOSNJZPIMFI59 /* UserTimelinePresenter.swift */; };
-		8BAF67513784ACFF9699E4F0 /* Pods_FavotterTarget_FavotterModulesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF674841685FDEFF74ED501A /* Pods_FavotterTarget_FavotterModulesTests.framework */; };
-		C26747DB0152941A1852E535 /* Pods_PodsTarget_ViperTwitterClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08289DC455E917F62C6E6D78 /* Pods_PodsTarget_ViperTwitterClient.framework */; };
-		K6F6PADR836B55F1GBPGO52R /* UserTimelineRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = I18O7613EL17S5SZND0XELEU /* UserTimelineRouter.swift */; };
-		Q6H5SW86S8V5WWVJ4SLFO36C /* UserTimelineInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = U366JEZRUHQTEZJWOYO00VD6 /* UserTimelineInteractor.swift */; };
+		54DE74891FFB5C240075B77B /* ViperTwitterClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DE74021FFB59170075B77B /* ViperTwitterClientUITests.swift */; };
+		C313E3E77349D1A0EC364C31 /* Pods_ViperTwitterClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B90DD9959A3BA67C26BB49 /* Pods_ViperTwitterClient.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		54579EB8203E55E700C4630F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54884C851FF6C657007DBA43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54884C8C1FF6C657007DBA43;
+			remoteInfo = ViperTwitterClient;
+		};
 		54884CA21FF6C657007DBA43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 54884C851FF6C657007DBA43 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 54884C8C1FF6C657007DBA43;
 			remoteInfo = Favotter;
-		};
-		54D754802013175E0015A1D7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 54884C851FF6C657007DBA43 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 54DE73D21FFB586A0075B77B;
-			remoteInfo = FavotterModules;
-		};
-		54DE73C71FFB58420075B77B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 54884C851FF6C657007DBA43 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 54DE73C11FFB58420075B77B;
-			remoteInfo = FavotterModel;
-		};
-		54DE73D81FFB586A0075B77B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 54884C851FF6C657007DBA43 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 54DE73D21FFB586A0075B77B;
-			remoteInfo = FavotterModules;
-		};
-		54DE73FA1FFB58860075B77B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 54884C851FF6C657007DBA43 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 54DE73F41FFB58860075B77B;
-			remoteInfo = FavotterUtill;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -112,9 +74,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				54DE73FD1FFB58860075B77B /* ViperTwitterClientUtill.framework in Embed Frameworks */,
-				54DE73CA1FFB58420075B77B /* ViperTwitterClientModel.framework in Embed Frameworks */,
-				54DE73DB1FFB586A0075B77B /* ViperTwitterClientModules.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,41 +94,33 @@
 		46CA8725F319E126AE49CA53 /* Pods_PodsTarget_ViperTwitterClientUtill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PodsTarget_ViperTwitterClientUtill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A10093A5F8BED4336E0F415 /* Pods-FavotterTarget-FavotterStyle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterStyle.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterStyle/Pods-FavotterTarget-FavotterStyle.release.xcconfig"; sourceTree = "<group>"; };
 		51EA557E5C1758A66718A6EE /* Pods-FavotterTarget-FavotterUtill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterUtill.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterUtill/Pods-FavotterTarget-FavotterUtill.debug.xcconfig"; sourceTree = "<group>"; };
-		5424318B20001EED00B56E90 /* StoryBoards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoards.swift; sourceTree = "<group>"; };
 		5432DF6C1FFCEAF20067789A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5433C70520316E9B0077CFC2 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		5433C707203173060077CFC2 /* ErrorableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorableView.swift; sourceTree = "<group>"; };
 		5433C70B20317E870077CFC2 /* KeyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyManager.swift; sourceTree = "<group>"; };
 		5433C70E203183330077CFC2 /* Key.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Key.plist; sourceTree = "<group>"; };
+		54579EB3203E55E700C4630F /* ViperTwitterClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperTwitterClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54579EB5203E55E700C4630F /* ViperTwitterClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperTwitterClientTest.swift; sourceTree = "<group>"; };
+		54579EB7203E55E700C4630F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54579EE0203E5B2000C4630F /* StoryBoards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoards.swift; sourceTree = "<group>"; };
 		546FACE12038058200E02F40 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		546FACE6203833EC00E02F40 /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		546FACE82039492A00E02F40 /* TimelineInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineInteractorOutput.swift; sourceTree = "<group>"; };
 		54884C8D1FF6C657007DBA43 /* ViperTwitterClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperTwitterClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54884CA11FF6C657007DBA43 /* ViperTwitterClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperTwitterClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		54D7547A2013175E0015A1D7 /* ViperTwitterClientModulesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperTwitterClientModulesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		54D7547E2013175E0015A1D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54D7548620131A120015A1D7 /* TimelinePresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinePresenterTest.swift; sourceTree = "<group>"; };
 		54DD11A82007C7B80053A3D1 /* UIScrollView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Rx.swift"; sourceTree = "<group>"; };
 		54DE73701FFB58220075B77B /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54DE73731FFB58220075B77B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54DE739E1FFB58220075B77B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54DE73C21FFB58420075B77B /* ViperTwitterClientModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViperTwitterClientModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		54DE73D31FFB586A0075B77B /* ViperTwitterClientModules.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViperTwitterClientModules.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		54DE73F51FFB58860075B77B /* ViperTwitterClientUtill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViperTwitterClientUtill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		54DE74021FFB59170075B77B /* FavotterUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavotterUITests.swift; sourceTree = "<group>"; };
+		54DE74021FFB59170075B77B /* ViperTwitterClientUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViperTwitterClientUITests.swift; sourceTree = "<group>"; };
 		54DE74031FFB59170075B77B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		54DE74051FFB59170075B77B /* FavotterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavotterTests.swift; sourceTree = "<group>"; };
-		54DE74061FFB59170075B77B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54DE74491FFB59640075B77B /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		54DE744B1FFB59640075B77B /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		54DE744C1FFB59640075B77B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		54DE744D1FFB59640075B77B /* FavotterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavotterModel.h; sourceTree = "<group>"; };
-		54DE744E1FFB59640075B77B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54DE744F1FFB59640075B77B /* TwitterAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAPI.swift; sourceTree = "<group>"; };
 		54DE74501FFB59640075B77B /* TwitterAPIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterAPIError.swift; sourceTree = "<group>"; };
 		54DE74511FFB59640075B77B /* TwitterRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterRequest.swift; sourceTree = "<group>"; };
-		54DE745B1FFB596F0075B77B /* FavotterModules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavotterModules.h; sourceTree = "<group>"; };
-		54DE745C1FFB596F0075B77B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54DE745E1FFB596F0075B77B /* TimelineInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineInteractor.swift; sourceTree = "<group>"; };
 		54DE74601FFB596F0075B77B /* TimelinePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelinePresenter.swift; sourceTree = "<group>"; };
 		54DE74621FFB596F0075B77B /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
@@ -183,8 +134,6 @@
 		54DE746D1FFB596F0075B77B /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetTableViewCell.swift; sourceTree = "<group>"; };
 		54DE746E1FFB596F0075B77B /* TweetTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TweetTableViewCell.xib; sourceTree = "<group>"; };
 		54DE746F1FFB596F0075B77B /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
-		54DE74851FFB59890075B77B /* FavotterUtill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavotterUtill.h; sourceTree = "<group>"; };
-		54DE74861FFB59890075B77B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54DE748E1FFB73D90075B77B /* UserTimelineViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserTimelineViewController.storyboard; sourceTree = "<group>"; };
 		55299CE6D0F526F4C2665157 /* Pods_FavotterTarget_FavotterUtill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterUtill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5542D37DDD550C38D9E20F99 /* Pods_FavotterTarget_FavotterModules.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterModules.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,7 +148,9 @@
 		81B2C58C03EF7D3981BDABE4 /* Pods_FavotterTarget_Favotter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_Favotter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		830DBA3AFE077F7C3511FD83 /* Pods-FavotterTarget-FavotterDomain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterDomain.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterDomain/Pods-FavotterTarget-FavotterDomain.debug.xcconfig"; sourceTree = "<group>"; };
 		837F8E70CC08D471EF083164 /* Pods-PodsTarget-ViperTwitterClientModules.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodsTarget-ViperTwitterClientModules.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodsTarget-ViperTwitterClientModules/Pods-PodsTarget-ViperTwitterClientModules.debug.xcconfig"; sourceTree = "<group>"; };
+		89369074EEF95C6FA71ECA05 /* Pods-ViperTwitterClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperTwitterClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperTwitterClient/Pods-ViperTwitterClient.debug.xcconfig"; sourceTree = "<group>"; };
 		9D9B73026B5EDE75BC8EDA80 /* Pods-PodsTarget-ViperTwitterClientUtill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodsTarget-ViperTwitterClientUtill.release.xcconfig"; path = "Pods/Target Support Files/Pods-PodsTarget-ViperTwitterClientUtill/Pods-PodsTarget-ViperTwitterClientUtill.release.xcconfig"; sourceTree = "<group>"; };
+		A5B90DD9959A3BA67C26BB49 /* Pods_ViperTwitterClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperTwitterClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF674841685FDEFF74ED501A /* Pods_FavotterTarget_FavotterModulesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterModulesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B5199546F5199DB9D4DD2F /* Pods-PodsTarget-ViperTwitterClientModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodsTarget-ViperTwitterClientModel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodsTarget-ViperTwitterClientModel/Pods-PodsTarget-ViperTwitterClientModel.debug.xcconfig"; sourceTree = "<group>"; };
 		B1E6BF7E21B9D80503B0A469 /* Pods-PodsTarget-ViperTwitterClientModulesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodsTarget-ViperTwitterClientModulesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PodsTarget-ViperTwitterClientModulesTests/Pods-PodsTarget-ViperTwitterClientModulesTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -216,20 +167,25 @@
 		F66A32B67E3A9A42B2C48FBE /* Pods-FavotterTarget-FavotterModulesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-FavotterModulesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-FavotterModulesTests/Pods-FavotterTarget-FavotterModulesTests.release.xcconfig"; sourceTree = "<group>"; };
 		F8AEE799E0DF13E1F17AC6E5 /* Pods_FavotterTarget_FavotterAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FavotterTarget_FavotterAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE2376E94D6F36461F6EC86D /* Pods-FavotterTarget-Favotter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FavotterTarget-Favotter.release.xcconfig"; path = "Pods/Target Support Files/Pods-FavotterTarget-Favotter/Pods-FavotterTarget-Favotter.release.xcconfig"; sourceTree = "<group>"; };
+		FFEA8DE9DF2BC87C2EDFB10A /* Pods-ViperTwitterClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperTwitterClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperTwitterClient/Pods-ViperTwitterClient.release.xcconfig"; sourceTree = "<group>"; };
 		I18O7613EL17S5SZND0XELEU /* UserTimelineRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTimelineRouter.swift; sourceTree = "<group>"; };
 		U366JEZRUHQTEZJWOYO00VD6 /* UserTimelineInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTimelineInteractor.swift; sourceTree = "<group>"; };
 		WK5CXQRJZPMFOSNJZPIMFI59 /* UserTimelinePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTimelinePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		54579EB0203E55E700C4630F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54884C8A1FF6C657007DBA43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54DE73DA1FFB586A0075B77B /* ViperTwitterClientModules.framework in Frameworks */,
-				54DE73FC1FFB58860075B77B /* ViperTwitterClientUtill.framework in Frameworks */,
-				54DE73C91FFB58420075B77B /* ViperTwitterClientModel.framework in Frameworks */,
-				C26747DB0152941A1852E535 /* Pods_PodsTarget_ViperTwitterClient.framework in Frameworks */,
+				C313E3E77349D1A0EC364C31 /* Pods_ViperTwitterClient.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,47 +196,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		54D754772013175E0015A1D7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				54D7547F2013175E0015A1D7 /* ViperTwitterClientModules.framework in Frameworks */,
-				8BAF67513784ACFF9699E4F0 /* Pods_FavotterTarget_FavotterModulesTests.framework in Frameworks */,
-				1E0E3B72ED8197B29CC13FDC /* Pods_PodsTarget_ViperTwitterClientModulesTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54DE73BE1FFB58420075B77B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1F5772C0577384169B7A7E77 /* Pods_PodsTarget_ViperTwitterClientModel.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54DE73CF1FFB586A0075B77B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4BF3570C2F0407B6E53B6E51 /* Pods_PodsTarget_ViperTwitterClientModules.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54DE73F11FFB58860075B77B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				41DE0B967CF99F96CACDAB20 /* Pods_PodsTarget_ViperTwitterClientUtill.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		5424318A20001EC400B56E90 /* Generated */ = {
 			isa = PBXGroup;
 			children = (
-				5424318B20001EED00B56E90 /* StoryBoards.swift */,
+				54579EE0203E5B2000C4630F /* StoryBoards.swift */,
 			);
 			path = Generated;
 			sourceTree = "<group>";
@@ -370,6 +292,31 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		54579EB4203E55E700C4630F /* ViperTwitterClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				54D7548620131A120015A1D7 /* TimelinePresenterTest.swift */,
+				54579EB5203E55E700C4630F /* ViperTwitterClientTest.swift */,
+				54579EB7203E55E700C4630F /* Info.plist */,
+			);
+			path = ViperTwitterClientTests;
+			sourceTree = "<group>";
+		};
+		54579EBE203E57CF00C4630F /* ViperTwitterClient */ = {
+			isa = PBXGroup;
+			children = (
+				5432DF6C1FFCEAF20067789A /* Assets.xcassets */,
+				54DE73701FFB58220075B77B /* AppDelegate.swift */,
+				54DE73721FFB58220075B77B /* LaunchScreen.storyboard */,
+				54DE739E1FFB58220075B77B /* Info.plist */,
+				5433C70E203183330077CFC2 /* Key.plist */,
+				54DE745A1FFB596F0075B77B /* Modules */,
+				54DE74481FFB59640075B77B /* Model */,
+				54DE74841FFB59890075B77B /* Utill */,
+			);
+			path = ViperTwitterClient;
+			sourceTree = "<group>";
+		};
 		546FACE52038336000E02F40 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,13 +329,9 @@
 		54884C841FF6C657007DBA43 = {
 			isa = PBXGroup;
 			children = (
-				54DE736F1FFB58220075B77B /* ViperTwitterClient */,
-				54DE745A1FFB596F0075B77B /* ViperTwitterClientModules */,
-				54DE74481FFB59640075B77B /* ViperTwitterClientModel */,
-				54DE74841FFB59890075B77B /* ViperTwitterClientUtill */,
-				54DE74041FFB59170075B77B /* ViperTwitterClientTests */,
+				54579EBE203E57CF00C4630F /* ViperTwitterClient */,
 				54DE74011FFB59170075B77B /* ViperTwitterClientUITests */,
-				54D7547B2013175E0015A1D7 /* ViperTwitterClientModulesTests */,
+				54579EB4203E55E700C4630F /* ViperTwitterClientTests */,
 				54884C8E1FF6C657007DBA43 /* Products */,
 				FE7EF99465BC481C62272450 /* Pods */,
 				C364946A864D55DC0A22FE1E /* Frameworks */,
@@ -400,64 +343,30 @@
 			children = (
 				54884C8D1FF6C657007DBA43 /* ViperTwitterClient.app */,
 				54884CA11FF6C657007DBA43 /* ViperTwitterClientUITests.xctest */,
-				54DE73C21FFB58420075B77B /* ViperTwitterClientModel.framework */,
-				54DE73D31FFB586A0075B77B /* ViperTwitterClientModules.framework */,
-				54DE73F51FFB58860075B77B /* ViperTwitterClientUtill.framework */,
-				54D7547A2013175E0015A1D7 /* ViperTwitterClientModulesTests.xctest */,
+				54579EB3203E55E700C4630F /* ViperTwitterClientTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		54D7547B2013175E0015A1D7 /* ViperTwitterClientModulesTests */ = {
-			isa = PBXGroup;
-			children = (
-				54D7548620131A120015A1D7 /* TimelinePresenterTest.swift */,
-				54D7547E2013175E0015A1D7 /* Info.plist */,
-			);
-			path = ViperTwitterClientModulesTests;
-			sourceTree = "<group>";
-		};
-		54DE736F1FFB58220075B77B /* ViperTwitterClient */ = {
-			isa = PBXGroup;
-			children = (
-				54DE73701FFB58220075B77B /* AppDelegate.swift */,
-				54DE73721FFB58220075B77B /* LaunchScreen.storyboard */,
-				54DE739E1FFB58220075B77B /* Info.plist */,
-				5433C70E203183330077CFC2 /* Key.plist */,
-			);
-			path = ViperTwitterClient;
 			sourceTree = "<group>";
 		};
 		54DE74011FFB59170075B77B /* ViperTwitterClientUITests */ = {
 			isa = PBXGroup;
 			children = (
-				54DE74021FFB59170075B77B /* FavotterUITests.swift */,
+				54DE74021FFB59170075B77B /* ViperTwitterClientUITests.swift */,
 				54DE74031FFB59170075B77B /* Info.plist */,
 			);
 			path = ViperTwitterClientUITests;
 			sourceTree = "<group>";
 		};
-		54DE74041FFB59170075B77B /* ViperTwitterClientTests */ = {
-			isa = PBXGroup;
-			children = (
-				54DE74051FFB59170075B77B /* FavotterTests.swift */,
-				54DE74061FFB59170075B77B /* Info.plist */,
-			);
-			path = ViperTwitterClientTests;
-			sourceTree = "<group>";
-		};
-		54DE74481FFB59640075B77B /* ViperTwitterClientModel */ = {
+		54DE74481FFB59640075B77B /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				54DE74491FFB59640075B77B /* APIClient.swift */,
 				54DE744A1FFB59640075B77B /* Entity */,
-				54DE744D1FFB59640075B77B /* FavotterModel.h */,
-				54DE744E1FFB59640075B77B /* Info.plist */,
 				54DE744F1FFB59640075B77B /* TwitterAPI.swift */,
 				54DE74501FFB59640075B77B /* TwitterAPIError.swift */,
 				54DE74511FFB59640075B77B /* TwitterRequest.swift */,
 			);
-			path = ViperTwitterClientModel;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		54DE744A1FFB59640075B77B /* Entity */ = {
@@ -470,20 +379,17 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
-		54DE745A1FFB596F0075B77B /* ViperTwitterClientModules */ = {
+		54DE745A1FFB596F0075B77B /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				5432DF6C1FFCEAF20067789A /* Assets.xcassets */,
 				5433C70920317CB20077CFC2 /* Contract */,
 				54DE74631FFB596F0075B77B /* RootRouter.swift */,
 				5424318A20001EC400B56E90 /* Generated */,
 				5432DF731FFCF5810067789A /* Login */,
 				54DE748D1FFB5CF60075B77B /* Timeline */,
-				54DE745B1FFB596F0075B77B /* FavotterModules.h */,
-				54DE745C1FFB596F0075B77B /* Info.plist */,
 				AWSVVHTUZHZ6APAS3UC44W7L /* UserTimeline */,
 			);
-			path = ViperTwitterClientModules;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		54DE745D1FFB596F0075B77B /* Interactor */ = {
@@ -537,15 +443,13 @@
 			path = TableViewCell;
 			sourceTree = "<group>";
 		};
-		54DE74841FFB59890075B77B /* ViperTwitterClientUtill */ = {
+		54DE74841FFB59890075B77B /* Utill */ = {
 			isa = PBXGroup;
 			children = (
 				5433C70D20317E900077CFC2 /* Extensions */,
 				5433C70B20317E870077CFC2 /* KeyManager.swift */,
-				54DE74851FFB59890075B77B /* FavotterUtill.h */,
-				54DE74861FFB59890075B77B /* Info.plist */,
 			);
-			path = ViperTwitterClientUtill;
+			path = Utill;
 			sourceTree = "<group>";
 		};
 		54DE748D1FFB5CF60075B77B /* Timeline */ = {
@@ -603,6 +507,7 @@
 				0F04F1A59FD0632EC789089F /* Pods_PodsTarget_ViperTwitterClientModules.framework */,
 				C520C79E7CF6F1F4FBDD57CB /* Pods_PodsTarget_ViperTwitterClientModulesTests.framework */,
 				46CA8725F319E126AE49CA53 /* Pods_PodsTarget_ViperTwitterClientUtill.framework */,
+				A5B90DD9959A3BA67C26BB49 /* Pods_ViperTwitterClient.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -638,6 +543,8 @@
 				2CD2354B8DFDD22644D6885C /* Pods-PodsTarget-ViperTwitterClientModulesTests.release.xcconfig */,
 				6D1BFE27C34C6C6D00A887E7 /* Pods-PodsTarget-ViperTwitterClientUtill.debug.xcconfig */,
 				9D9B73026B5EDE75BC8EDA80 /* Pods-PodsTarget-ViperTwitterClientUtill.release.xcconfig */,
+				89369074EEF95C6FA71ECA05 /* Pods-ViperTwitterClient.debug.xcconfig */,
+				FFEA8DE9DF2BC87C2EDFB10A /* Pods-ViperTwitterClient.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -662,34 +569,25 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		54DE73BF1FFB58420075B77B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				54DE74551FFB59640075B77B /* FavotterModel.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54DE73D01FFB586A0075B77B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				54DE74701FFB596F0075B77B /* FavotterModules.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54DE73F21FFB58860075B77B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				54DE74871FFB598A0075B77B /* FavotterUtill.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
+		54579EB2203E55E700C4630F /* ViperTwitterClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54579EBA203E55E700C4630F /* Build configuration list for PBXNativeTarget "ViperTwitterClientTests" */;
+			buildPhases = (
+				54579EAF203E55E700C4630F /* Sources */,
+				54579EB0203E55E700C4630F /* Frameworks */,
+				54579EB1203E55E700C4630F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54579EB9203E55E700C4630F /* PBXTargetDependency */,
+			);
+			name = ViperTwitterClientTests;
+			productName = ViperTwitterClientTest;
+			productReference = 54579EB3203E55E700C4630F /* ViperTwitterClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		54884C8C1FF6C657007DBA43 /* ViperTwitterClient */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54884CAA1FF6C657007DBA43 /* Build configuration list for PBXNativeTarget "ViperTwitterClient" */;
@@ -706,9 +604,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				54DE73C81FFB58420075B77B /* PBXTargetDependency */,
-				54DE73D91FFB586A0075B77B /* PBXTargetDependency */,
-				54DE73FB1FFB58860075B77B /* PBXTargetDependency */,
 			);
 			name = ViperTwitterClient;
 			productName = Favotter;
@@ -733,87 +628,6 @@
 			productReference = 54884CA11FF6C657007DBA43 /* ViperTwitterClientUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		54D754792013175E0015A1D7 /* ViperTwitterClientModulesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 54D754842013175E0015A1D7 /* Build configuration list for PBXNativeTarget "ViperTwitterClientModulesTests" */;
-			buildPhases = (
-				9F51569E646A48A15CAE2F86 /* [CP] Check Pods Manifest.lock */,
-				54D754762013175E0015A1D7 /* Sources */,
-				54D754772013175E0015A1D7 /* Frameworks */,
-				54D754782013175E0015A1D7 /* Resources */,
-				ABCBC4B42A8A1F75B0C50BDC /* [CP] Embed Pods Frameworks */,
-				8398F0BEFC84A82645488089 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				54D754812013175E0015A1D7 /* PBXTargetDependency */,
-			);
-			name = ViperTwitterClientModulesTests;
-			productName = FavotterModulesTests;
-			productReference = 54D7547A2013175E0015A1D7 /* ViperTwitterClientModulesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		54DE73C11FFB58420075B77B /* ViperTwitterClientModel */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 54DE73CB1FFB58420075B77B /* Build configuration list for PBXNativeTarget "ViperTwitterClientModel" */;
-			buildPhases = (
-				E3FA06EE205CE9B419243C8C /* [CP] Check Pods Manifest.lock */,
-				54DE73BD1FFB58420075B77B /* Sources */,
-				54DE73BE1FFB58420075B77B /* Frameworks */,
-				54DE73BF1FFB58420075B77B /* Headers */,
-				54DE73C01FFB58420075B77B /* Resources */,
-				19FFE9BAC93E9731DFF6125B /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ViperTwitterClientModel;
-			productName = FavotterModel;
-			productReference = 54DE73C21FFB58420075B77B /* ViperTwitterClientModel.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		54DE73D21FFB586A0075B77B /* ViperTwitterClientModules */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 54DE73DC1FFB586A0075B77B /* Build configuration list for PBXNativeTarget "ViperTwitterClientModules" */;
-			buildPhases = (
-				1BB8173B1F0936C98F826109 /* [CP] Check Pods Manifest.lock */,
-				54DE73CE1FFB586A0075B77B /* Sources */,
-				54DE73CF1FFB586A0075B77B /* Frameworks */,
-				54DE73D01FFB586A0075B77B /* Headers */,
-				54DE73D11FFB586A0075B77B /* Resources */,
-				F920632A55DE77E7AFAC57D5 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ViperTwitterClientModules;
-			productName = FavotterModules;
-			productReference = 54DE73D31FFB586A0075B77B /* ViperTwitterClientModules.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		54DE73F41FFB58860075B77B /* ViperTwitterClientUtill */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 54DE73FE1FFB58860075B77B /* Build configuration list for PBXNativeTarget "ViperTwitterClientUtill" */;
-			buildPhases = (
-				361EABAD7B4B8FD66A88BB82 /* [CP] Check Pods Manifest.lock */,
-				54DE73F01FFB58860075B77B /* Sources */,
-				54DE73F11FFB58860075B77B /* Frameworks */,
-				54DE73F21FFB58860075B77B /* Headers */,
-				54DE73F31FFB58860075B77B /* Resources */,
-				6328E65E97FC848605A4F0EC /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ViperTwitterClientUtill;
-			productName = FavotterUtill;
-			productReference = 54DE73F51FFB58860075B77B /* ViperTwitterClientUtill.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -824,6 +638,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = hirothings;
 				TargetAttributes = {
+					54579EB2203E55E700C4630F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 54884C8C1FF6C657007DBA43;
+					};
 					54884C8C1FF6C657007DBA43 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
@@ -832,23 +651,6 @@
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 54884C8C1FF6C657007DBA43;
-					};
-					54D754792013175E0015A1D7 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
-					54DE73C11FFB58420075B77B = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-					};
-					54DE73D21FFB586A0075B77B = {
-						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
-					};
-					54DE73F41FFB58860075B77B = {
-						CreatedOnToolsVersion = 9.1;
-						LastSwiftMigration = 0910;
-						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -867,23 +669,31 @@
 			targets = (
 				54884C8C1FF6C657007DBA43 /* ViperTwitterClient */,
 				54884CA01FF6C657007DBA43 /* ViperTwitterClientUITests */,
-				54DE73C11FFB58420075B77B /* ViperTwitterClientModel */,
-				54DE73D21FFB586A0075B77B /* ViperTwitterClientModules */,
-				54DE73F41FFB58860075B77B /* ViperTwitterClientUtill */,
-				54D754792013175E0015A1D7 /* ViperTwitterClientModulesTests */,
+				54579EB2203E55E700C4630F /* ViperTwitterClientTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		54579EB1203E55E700C4630F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54884C8B1FF6C657007DBA43 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54579EDB203E5A3400C4630F /* LoginViewController.storyboard in Resources */,
+				54579EDC203E5A3400C4630F /* TimelineViewController.storyboard in Resources */,
+				54579EDD203E5A3400C4630F /* TweetTableViewCell.xib in Resources */,
+				54579EDE203E5A3400C4630F /* ProfileTableViewCell.xib in Resources */,
+				54579EDF203E5A3400C4630F /* UserTimelineViewController.storyboard in Resources */,
 				54DE74081FFB59170075B77B /* Info.plist in Resources */,
 				54DE73A11FFB58220075B77B /* LaunchScreen.storyboard in Resources */,
 				5432DF6D1FFCEAF20067789A /* Assets.xcassets in Resources */,
-				54DE740A1FFB59170075B77B /* Info.plist in Resources */,
 				5433C70F203183330077CFC2 /* Key.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -895,97 +705,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		54D754782013175E0015A1D7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54DE73C01FFB58420075B77B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54DE73D11FFB586A0075B77B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				54DE747D1FFB596F0075B77B /* TweetTableViewCell.xib in Resources */,
-				54DE74791FFB596F0075B77B /* TimelineViewController.storyboard in Resources */,
-				54DE748F1FFB73D90075B77B /* UserTimelineViewController.storyboard in Resources */,
-				54DE747B1FFB596F0075B77B /* ProfileTableViewCell.xib in Resources */,
-				54DE74781FFB596F0075B77B /* LoginViewController.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54DE73F31FFB58860075B77B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		19FFE9BAC93E9731DFF6125B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PodsTarget-ViperTwitterClientModel/Pods-PodsTarget-ViperTwitterClientModel-resources.sh",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PodsTarget-ViperTwitterClientModel/Pods-PodsTarget-ViperTwitterClientModel-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1BB8173B1F0936C98F826109 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PodsTarget-ViperTwitterClientModules-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		361EABAD7B4B8FD66A88BB82 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PodsTarget-ViperTwitterClientUtill-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5432DF611FFB9F290067789A /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -999,138 +721,34 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
 		};
-		6328E65E97FC848605A4F0EC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PodsTarget-ViperTwitterClientUtill/Pods-PodsTarget-ViperTwitterClientUtill-resources.sh",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PodsTarget-ViperTwitterClientUtill/Pods-PodsTarget-ViperTwitterClientUtill-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8398F0BEFC84A82645488089 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PodsTarget-ViperTwitterClientModulesTests/Pods-PodsTarget-ViperTwitterClientModulesTests-resources.sh",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PodsTarget-ViperTwitterClientModulesTests/Pods-PodsTarget-ViperTwitterClientModulesTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9F51569E646A48A15CAE2F86 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PodsTarget-ViperTwitterClientModulesTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ABCBC4B42A8A1F75B0C50BDC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PodsTarget-ViperTwitterClientModulesTests/Pods-PodsTarget-ViperTwitterClientModulesTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
-				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
-				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PodsTarget-ViperTwitterClientModulesTests/Pods-PodsTarget-ViperTwitterClientModulesTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		AF03BAD0481D98E44EFB3465 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PodsTarget-ViperTwitterClient/Pods-PodsTarget-ViperTwitterClient-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-ViperTwitterClient/Pods-ViperTwitterClient-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nuke.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PodsTarget-ViperTwitterClient/Pods-PodsTarget-ViperTwitterClient-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E3FA06EE205CE9B419243C8C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PodsTarget-ViperTwitterClientModel-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperTwitterClient/Pods-ViperTwitterClient-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E6E24DAB994E4E17DB986A1F /* [CP] Check Pods Manifest.lock */ = {
@@ -1144,7 +762,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PodsTarget-ViperTwitterClient-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ViperTwitterClient-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1157,7 +775,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PodsTarget-ViperTwitterClient/Pods-PodsTarget-ViperTwitterClient-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-ViperTwitterClient/Pods-ViperTwitterClient-resources.sh",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
 				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
 			);
@@ -1167,35 +785,52 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PodsTarget-ViperTwitterClient/Pods-PodsTarget-ViperTwitterClient-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F920632A55DE77E7AFAC57D5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-PodsTarget-ViperTwitterClientModules/Pods-PodsTarget-ViperTwitterClientModules-resources.sh",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
-				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PodsTarget-ViperTwitterClientModules/Pods-PodsTarget-ViperTwitterClientModules-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperTwitterClient/Pods-ViperTwitterClient-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		54579EAF203E55E700C4630F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54579EB6203E55E700C4630F /* ViperTwitterClientTest.swift in Sources */,
+				54579EBD203E55F600C4630F /* TimelinePresenterTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54884C891FF6C657007DBA43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54579EBF203E5A0100C4630F /* ErrorHandler.swift in Sources */,
+				54579EC0203E5A0100C4630F /* TimelineInteractorOutput.swift in Sources */,
+				54579EC1203E5A0100C4630F /* ErrorableView.swift in Sources */,
+				54579EC2203E5A0100C4630F /* RootRouter.swift in Sources */,
+				54579EC4203E5A0100C4630F /* LoginPresenter.swift in Sources */,
+				54579EC5203E5A0100C4630F /* LoginRouter.swift in Sources */,
+				54579EC6203E5A0100C4630F /* LoginViewController.swift in Sources */,
+				54579EC7203E5A0100C4630F /* TimelineInteractor.swift in Sources */,
+				54579EE1203E5B2000C4630F /* StoryBoards.swift in Sources */,
+				54579EC8203E5A0100C4630F /* TimelinePresenter.swift in Sources */,
+				54579EC9203E5A0100C4630F /* TimelineRouter.swift in Sources */,
+				54579ECA203E5A0100C4630F /* TweetTableViewCell.swift in Sources */,
+				54579ECB203E5A0100C4630F /* TimelineViewController.swift in Sources */,
+				54579ECC203E5A0100C4630F /* UserTimelineInteractor.swift in Sources */,
+				54579ECD203E5A0100C4630F /* UserTimelinePresenter.swift in Sources */,
+				54579ECE203E5A0100C4630F /* UserTimelineRouter.swift in Sources */,
+				54579ECF203E5A0100C4630F /* ProfileTableViewCell.swift in Sources */,
+				54579ED0203E5A0100C4630F /* UserTimelineViewController.swift in Sources */,
+				54579ED1203E5A0100C4630F /* APIClient.swift in Sources */,
+				54579ED2203E5A0100C4630F /* Tweet.swift in Sources */,
+				54579ED3203E5A0100C4630F /* User.swift in Sources */,
+				54579ED4203E5A0100C4630F /* Media.swift in Sources */,
+				54579ED5203E5A0100C4630F /* TwitterAPI.swift in Sources */,
+				54579ED6203E5A0100C4630F /* TwitterAPIError.swift in Sources */,
+				54579ED7203E5A0100C4630F /* TwitterRequest.swift in Sources */,
+				54579ED8203E5A0100C4630F /* UIScrollView+Rx.swift in Sources */,
+				54579ED9203E5A0100C4630F /* KeyManager.swift in Sources */,
 				54DE739F1FFB58220075B77B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1204,95 +839,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54DE748C1FFB5C650075B77B /* FavotterTests.swift in Sources */,
-				54DE74891FFB5C240075B77B /* FavotterUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54D754762013175E0015A1D7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				54D7548720131A120015A1D7 /* TimelinePresenterTest.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54DE73BD1FFB58420075B77B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				54DE74571FFB59640075B77B /* TwitterAPI.swift in Sources */,
-				54DE74521FFB59640075B77B /* APIClient.swift in Sources */,
-				546FACE22038058200E02F40 /* Media.swift in Sources */,
-				54DE74531FFB59640075B77B /* Tweet.swift in Sources */,
-				54DE74581FFB59640075B77B /* TwitterAPIError.swift in Sources */,
-				54DE74541FFB59640075B77B /* User.swift in Sources */,
-				54DE74591FFB59640075B77B /* TwitterRequest.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54DE73CE1FFB586A0075B77B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				546FACE02037F8F800E02F40 /* Assets.xcassets in Sources */,
-				54DE74771FFB596F0075B77B /* LoginViewController.swift in Sources */,
-				54DE747A1FFB596F0075B77B /* ProfileTableViewCell.swift in Sources */,
-				54DE74761FFB596F0075B77B /* TimelineRouter.swift in Sources */,
-				5424318C20001EED00B56E90 /* StoryBoards.swift in Sources */,
-				54DE74751FFB596F0075B77B /* RootRouter.swift in Sources */,
-				54DE74721FFB596F0075B77B /* TimelineInteractor.swift in Sources */,
-				54DE747E1FFB596F0075B77B /* TimelineViewController.swift in Sources */,
-				546FACE92039492A00E02F40 /* TimelineInteractorOutput.swift in Sources */,
-				54DE74731FFB596F0075B77B /* TimelinePresenter.swift in Sources */,
-				54DE74741FFB596F0075B77B /* LoginRouter.swift in Sources */,
-				5433C70620316E9B0077CFC2 /* LoginPresenter.swift in Sources */,
-				546FACE7203833EC00E02F40 /* ErrorHandler.swift in Sources */,
-				54DE747C1FFB596F0075B77B /* TweetTableViewCell.swift in Sources */,
-				Q6H5SW86S8V5WWVJ4SLFO36C /* UserTimelineInteractor.swift in Sources */,
-				6OXG3H29LZYFX2WY3HTS05AH /* UserTimelinePresenter.swift in Sources */,
-				K6F6PADR836B55F1GBPGO52R /* UserTimelineRouter.swift in Sources */,
-				6AIZ6T9TMP8ESAE4QD64MXHI /* UserTimelineViewController.swift in Sources */,
-				5433C708203173060077CFC2 /* ErrorableView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		54DE73F01FFB58860075B77B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				54DD11A92007C7B80053A3D1 /* UIScrollView+Rx.swift in Sources */,
-				5433C70C20317E880077CFC2 /* KeyManager.swift in Sources */,
+				54DE74891FFB5C240075B77B /* ViperTwitterClientUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		54579EB9203E55E700C4630F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54884C8C1FF6C657007DBA43 /* ViperTwitterClient */;
+			targetProxy = 54579EB8203E55E700C4630F /* PBXContainerItemProxy */;
+		};
 		54884CA31FF6C657007DBA43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 54884C8C1FF6C657007DBA43 /* ViperTwitterClient */;
 			targetProxy = 54884CA21FF6C657007DBA43 /* PBXContainerItemProxy */;
-		};
-		54D754812013175E0015A1D7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 54DE73D21FFB586A0075B77B /* ViperTwitterClientModules */;
-			targetProxy = 54D754802013175E0015A1D7 /* PBXContainerItemProxy */;
-		};
-		54DE73C81FFB58420075B77B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 54DE73C11FFB58420075B77B /* ViperTwitterClientModel */;
-			targetProxy = 54DE73C71FFB58420075B77B /* PBXContainerItemProxy */;
-		};
-		54DE73D91FFB586A0075B77B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 54DE73D21FFB586A0075B77B /* ViperTwitterClientModules */;
-			targetProxy = 54DE73D81FFB586A0075B77B /* PBXContainerItemProxy */;
-		};
-		54DE73FB1FFB58860075B77B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 54DE73F41FFB58860075B77B /* ViperTwitterClientUtill */;
-			targetProxy = 54DE73FA1FFB58860075B77B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1308,6 +870,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		54579EBB203E55E700C4630F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G6788ACX5G;
+				INFOPLIST_FILE = ViperTwitterClientTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hirothings.ViperTwitterClientTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperTwitterClient.app/ViperTwitterClient";
+			};
+			name = Debug;
+		};
+		54579EBC203E55E700C4630F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G6788ACX5G;
+				INFOPLIST_FILE = ViperTwitterClientTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hirothings.ViperTwitterClientTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperTwitterClient.app/ViperTwitterClient";
+			};
+			name = Release;
+		};
 		54884CA81FF6C657007DBA43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1417,7 +1013,7 @@
 		};
 		54884CAB1FF6C657007DBA43 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D614F96AA94951FEC9D31E40 /* Pods-PodsTarget-ViperTwitterClient.debug.xcconfig */;
+			baseConfigurationReference = 89369074EEF95C6FA71ECA05 /* Pods-ViperTwitterClient.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1434,7 +1030,7 @@
 		};
 		54884CAC1FF6C657007DBA43 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD2B6A2559B9A2A979580376 /* Pods-PodsTarget-ViperTwitterClient.release.xcconfig */;
+			baseConfigurationReference = FFEA8DE9DF2BC87C2EDFB10A /* Pods-ViperTwitterClient.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1479,191 +1075,18 @@
 			};
 			name = Release;
 		};
-		54D754822013175E0015A1D7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1E6BF7E21B9D80503B0A469 /* Pods-PodsTarget-ViperTwitterClientModulesTests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G6788ACX5G;
-				INFOPLIST_FILE = ViperTwitterClientModulesTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hirothings.ViperTwitterClientModulesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		54D754832013175E0015A1D7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CD2354B8DFDD22644D6885C /* Pods-PodsTarget-ViperTwitterClientModulesTests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G6788ACX5G;
-				INFOPLIST_FILE = ViperTwitterClientModulesTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hirothings.ViperTwitterClientModulesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		54DE73CC1FFB58420075B77B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1B5199546F5199DB9D4DD2F /* Pods-PodsTarget-ViperTwitterClientModel.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ViperTwitterClientModel/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hirothings.ViperTwitterClientModel;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		54DE73CD1FFB58420075B77B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DFB4963176E8F3CE54877FF5 /* Pods-PodsTarget-ViperTwitterClientModel.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ViperTwitterClientModel/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hirothings.ViperTwitterClientModel;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		54DE73DD1FFB586A0075B77B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 837F8E70CC08D471EF083164 /* Pods-PodsTarget-ViperTwitterClientModules.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = G6788ACX5G;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ViperTwitterClientModules/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hirothings.ViperTwitterClientModules;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		54DE73DE1FFB586A0075B77B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E2DCD9B6FCE81481C1CD208 /* Pods-PodsTarget-ViperTwitterClientModules.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = G6788ACX5G;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ViperTwitterClientModules/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hirothings.ViperTwitterClientModules;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		54DE73FF1FFB58860075B77B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D1BFE27C34C6C6D00A887E7 /* Pods-PodsTarget-ViperTwitterClientUtill.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ViperTwitterClientUtill/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hirothings.ViperTwitterClientUtill;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		54DE74001FFB58860075B77B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D9B73026B5EDE75BC8EDA80 /* Pods-PodsTarget-ViperTwitterClientUtill.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ViperTwitterClientUtill/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hirothings.ViperTwitterClientUtill;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		54579EBA203E55E700C4630F /* Build configuration list for PBXNativeTarget "ViperTwitterClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54579EBB203E55E700C4630F /* Debug */,
+				54579EBC203E55E700C4630F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		54884C881FF6C657007DBA43 /* Build configuration list for PBXProject "ViperTwitterClient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1687,42 +1110,6 @@
 			buildConfigurations = (
 				54884CAE1FF6C657007DBA43 /* Debug */,
 				54884CAF1FF6C657007DBA43 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		54D754842013175E0015A1D7 /* Build configuration list for PBXNativeTarget "ViperTwitterClientModulesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				54D754822013175E0015A1D7 /* Debug */,
-				54D754832013175E0015A1D7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		54DE73CB1FFB58420075B77B /* Build configuration list for PBXNativeTarget "ViperTwitterClientModel" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				54DE73CC1FFB58420075B77B /* Debug */,
-				54DE73CD1FFB58420075B77B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		54DE73DC1FFB586A0075B77B /* Build configuration list for PBXNativeTarget "ViperTwitterClientModules" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				54DE73DD1FFB586A0075B77B /* Debug */,
-				54DE73DE1FFB586A0075B77B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		54DE73FE1FFB58860075B77B /* Build configuration list for PBXNativeTarget "ViperTwitterClientUtill" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				54DE73FF1FFB58860075B77B /* Debug */,
-				54DE74001FFB58860075B77B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
