@@ -9,9 +9,7 @@
 import XCTest
 import RxSwift
 import TwitterKit
-
-@testable import ViperTwitterClientModel
-@testable import ViperTwitterClientModules
+@testable import ViperTwitterClient
 
 enum TweetMock {
     case none
@@ -84,8 +82,8 @@ class TimelineViewSpy: UIViewController, TimelineView {
         self.tweets = tweets
     }
     
-    func updateTimeline(tweets: [Tweet], tweetsDiff: CountableRange<Int>) {
-        self.tweetsDiffCount = tweetsDiff.count
+    func updateTimeline(tweets: [Tweet]) {
+        self.tweetsDiffCount = tweets.count - self.tweets.count
     }
 }
 
