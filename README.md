@@ -17,9 +17,8 @@ More detail:<br>
 
 ## How to Build
 ### Create your Twitter application.
-1. Fork or Clone this repository.
-2. Visit https://apps.twitter.com/ to create your Twitter application.
-3. Click "Keys and Access Tokens" tab.
+1. Visit https://apps.twitter.com/ to create your Twitter application.
+2. Click "Keys and Access Tokens" tab.
 
 ### Build APP
 1. Fork or Clone this repository.
@@ -32,3 +31,7 @@ bundle exec pod install
 
 3. Set your app's Consumer Key and Consumer Seacret to `./ViperTwitterClient/Key.plist.`
 ![](https://user-images.githubusercontent.com/5630896/36472375-013c1d74-1735-11e8-9c0c-37be4513c70d.png)
+
+## Requirements
+* Xcode9
+* Swift4
