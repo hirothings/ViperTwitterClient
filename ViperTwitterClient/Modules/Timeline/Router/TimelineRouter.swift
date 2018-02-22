@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ViperTwitterClientModel
 
 protocol TimelineWireframe: class {
     var viewController: UIViewController? { get set }

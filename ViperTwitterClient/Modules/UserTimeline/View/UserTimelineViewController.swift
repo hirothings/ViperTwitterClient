@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import ViperTwitterClientModel
 import RxSwift
 
 class UserTimelineViewController: UIViewController {

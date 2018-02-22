@@ -8,7 +8,6 @@
 
 import Foundation
 import RxSwift
-import ViperTwitterClientModel
 import TwitterKit
 
 protocol TimelinePresentation: class {

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ViperTwitterClientModel
 
 protocol UserTimelinePresentation: class {
     init(

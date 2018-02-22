@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ViperTwitterClientModel
 
 protocol ErrorHandler: class {
     func handleErrorMessage(error: Error) -> String

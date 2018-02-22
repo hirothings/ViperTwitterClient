@@ -9,7 +9,6 @@
 import UIKit
 import RxSwift
 import Nuke
-import ViperTwitterClientModel
 import Reusable
 
 class TweetTableViewCell: UITableViewCell, NibReusable {

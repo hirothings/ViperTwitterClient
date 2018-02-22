@@ -8,7 +8,6 @@
 
 import Foundation
 import RxSwift
-import ViperTwitterClientModel
 
 protocol TimelineUsecase: class {
     var output: TimelineInteractorOutput! { get }

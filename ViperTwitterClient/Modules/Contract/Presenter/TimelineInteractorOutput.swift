@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import ViperTwitterClientModel
 
 protocol TimelineInteractorOutput: ErrorHandler {
     var view: TimelineView? { get }

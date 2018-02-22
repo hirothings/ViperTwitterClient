@@ -9,8 +9,6 @@
 import UIKit
 import RxSwift
 import RxCocoa
-import ViperTwitterClientModel
-import ViperTwitterClientUtill
 
 protocol TimelineView: ErrorableView {
     func showNoContentView()
